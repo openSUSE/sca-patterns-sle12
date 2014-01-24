@@ -11,7 +11,8 @@
 %define patdir %{patdirbase}/patterns
 %define patuser root
 %define patgrp root
-%define mode 544
+# change to 544 when patterns are available
+%define mode 644
 %define category SLE
 
 Name:         sca-patterns-sle12
