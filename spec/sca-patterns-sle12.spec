@@ -19,12 +19,10 @@ Name:         sca-patterns-sle12
 Summary:      Supportconfig Analysis Patterns for SLE12
 URL:          https://bitbucket.org/g23guy/sca-patterns-sle12
 Group:        Documentation/SuSE
-Distribution: SUSE Linux Enterprise
-Vendor:       SUSE Support
 License:      GPL-2.0
 Autoreqprov:  on
 Version:      1.0
-Release:      0
+Release:      1
 Source:       %{name}-%{version}.tar.gz
 BuildRoot:    %{_tmppath}/%{name}-%{version}
 Buildarch:    noarch
