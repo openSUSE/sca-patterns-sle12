@@ -21,7 +21,7 @@ Group:        Documentation/SuSE
 License:      GPL-2.0
 Autoreqprov:  on
 Version:      1.0
-Release:      2
+Release:      3
 Source:       %{name}-%{version}.tar.gz
 BuildRoot:    %{_tmppath}/%{name}-%{version}
 Buildarch:    noarch
@@ -58,7 +58,8 @@ install -m %{mode} patterns/%{category}/sle12all/* $RPM_BUILD_ROOT/%{patdir}/%{c
 rm -rf $RPM_BUILD_ROOT
 
 %changelog
-* Tue Jan 28 2014 jrecord@suse.com
+* Wed Jan 29 2014 jrecord@suse.com
+- includes pertinent patterns from sca-patterns-samba
 - includes pertinent patterns from sca-patterns-basic
 
 * Fri Jan 24 2014 jrecord@suse.com
