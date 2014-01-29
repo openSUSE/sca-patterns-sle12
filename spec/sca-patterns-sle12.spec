@@ -21,7 +21,7 @@ Group:        Documentation/SuSE
 License:      GPL-2.0
 Autoreqprov:  on
 Version:      1.0
-Release:      3
+Release:      4
 Source:       %{name}-%{version}.tar.gz
 BuildRoot:    %{_tmppath}/%{name}-%{version}
 Buildarch:    noarch
@@ -59,6 +59,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Wed Jan 29 2014 jrecord@suse.com
+- includes pertinent patterns from sca-patterns-sleall
 - includes pertinent patterns from sca-patterns-samba
 - includes pertinent patterns from sca-patterns-basic
 
