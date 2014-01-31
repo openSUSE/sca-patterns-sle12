@@ -58,7 +58,9 @@ install -m %{mode} patterns/%{category}/sle12all/* $RPM_BUILD_ROOT/%{patdir}/%{c
 rm -rf $RPM_BUILD_ROOT
 
 %changelog
-* Wed Jan 29 2014 jrecord@suse.com
+* Thu Jan 30 2014 jrecord@suse.com
+- added
+  sle11all/net-7007649.py
 - includes pertinent patterns from sca-patterns-sleall
 - includes pertinent patterns from sca-patterns-samba
 - includes pertinent patterns from sca-patterns-basic
