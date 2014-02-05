@@ -1,4 +1,7 @@
+# spec file for package sca-patterns-sle12
+#
 # Copyright (C) 2014 SUSE LLC
+#
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
@@ -21,7 +24,7 @@ Group:        Documentation/SuSE
 License:      GPL-2.0
 Autoreqprov:  on
 Version:      1.0
-Release:      4
+Release:      5
 Source:       %{name}-%{version}.tar.gz
 BuildRoot:    %{_tmppath}/%{name}-%{version}
 Buildarch:    noarch
@@ -58,13 +61,4 @@ install -m %{mode} patterns/%{category}/sle12all/* $RPM_BUILD_ROOT/%{patdir}/%{c
 rm -rf $RPM_BUILD_ROOT
 
 %changelog
-* Thu Jan 30 2014 jrecord@suse.com
-- added
-  sle11all/net-7007649.py
-- includes pertinent patterns from sca-patterns-sleall
-- includes pertinent patterns from sca-patterns-samba
-- includes pertinent patterns from sca-patterns-basic
-
-* Fri Jan 24 2014 jrecord@suse.com
-- initial
 

@@ -1,0 +1,14 @@
+-------------------------------------------------------------------
+Fri Jan 31 19:46:07 UTC 2014 - jrecord@suse.com
+
+- added
+  sle11all/net-7007649.py
+- includes pertinent patterns from sca-patterns-sleall
+- includes pertinent patterns from sca-patterns-samba
+- includes pertinent patterns from sca-patterns-basic
+
+-------------------------------------------------------------------
+Fri Jan 24 10:59:32 MST 2014 jrecord@suse.com
+
+- initial
+
