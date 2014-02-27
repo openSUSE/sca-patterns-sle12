@@ -1,4 +1,19 @@
 -------------------------------------------------------------------
+Thu Feb 27 12:33:44 UTC 2014 - jrecord@suse.com
+
+- Ported to sle12
+  sle12all/bhc-7014607-cron.py
+  sle12all/bhc-7014607-cups.py
+  sle12all/bhc-7014607-dhcp4.py
+  sle12all/bhc-7014607-dns.py
+  sle12all/bhc-7014607-nmb.py
+  sle12all/bhc-7014607-ntp.py
+  sle12all/bhc-7014607-slp.py
+  sle12all/bhc-7014607-smb.py
+  sle12all/bhc-7014607-sshd.py
+  sle12all/bhc-7014607-winbind.py
+
+-------------------------------------------------------------------
 Sat Feb  8 22:30:36 UTC 2014 - jrecord@suse.com
 
 - Packaged COPYING.GPLv2
