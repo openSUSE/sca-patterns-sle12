@@ -2,10 +2,10 @@
 
 # Title:       Basic Health Check - Free Memory and Disk Swapping
 # Description: Check the available memory and disk swapping activity
-# Modified:    2013 Jun 20
+# Modified:    2014 Mar 4
 
 ##############################################################################
-#  Copyright (C) 2013 SUSE LLC
+#  Copyright (C) 2013,2014 SUSE LLC
 ##############################################################################
 #
 #  This program is free software; you can redistribute it and/or modify
@@ -68,6 +68,7 @@ sub checkMemUsed() {
 	use constant MEM_USED_FIELD   => 2;
 	use constant MEM_TOTAL_FIELD  => 1;
 	use constant SWAP_FIELD       => 2;
+	use constant FIELDS_REQUIRED  => 15;
 	my $FILE_OPEN     = 'basic-health-check.txt';
 	my @CONTENT       = ();
 	my @LINE_ARRAY    = ();
@@ -88,9 +89,13 @@ sub checkMemUsed() {
 			$_ =~ s/^\s+//; # remove leading white space
 			SDP::Core::printDebug("  checkMemUsed LINE $LINE", $_);
 			@LINE_ARRAY = split(/\s+/, $_);
-			if ( $LINE_ARRAY[SWAP_FIELD] != $SWAP_VALUE ) {
-				$SWAP_VALUE = $LINE_ARRAY[SWAP_FIELD];
-				$SWAP_CHANGES++;
+			if ( $#LINE_ARRAY > FIELDS_REQUIRED ) {
+				if ( $LINE_ARRAY[SWAP_FIELD] != $SWAP_VALUE ) {
+					$SWAP_VALUE = $LINE_ARRAY[SWAP_FIELD];
+					$SWAP_CHANGES++;
+				}
+			} else {
+				$SWAP_VALUE = -1;
 			}
 			SDP::Core::printDebug("  checkMemUsed SWAPPING/CHANGES/VALUE", "$SWAPPING/$SWAP_CHANGES/$SWAP_VALUE");
 		}
@@ -111,7 +116,7 @@ sub checkMemUsed() {
 	@CONTENT          = ();
 	my $MEM_USED_PCT  = 0;
 	my $MEM_USED      = 0;
-	my $MEM_TOTAL     = 0;
+	my $MEM_TOTAL     = -1;
 	# get memory information
 	if ( SDP::Core::getSection($FILE_OPEN, $SECTION, \@CONTENT) ) {
 		foreach $_ (@CONTENT) {
@@ -133,7 +138,11 @@ sub checkMemUsed() {
 	}
 
 	SDP::Core::printDebug('  checkMemUsed STATUS', "Memory Used $MEM_USED_PCT%, Swapping: $SWAPPING");
-	if ( $MEM_USED_PCT >= LIMIT_OPT_MEMRED ) {
+	if ( $MEM_TOTAL == -1 ) {
+		SDP::Core::updateStatus(STATUS_ERROR, "ERROR: Invalid total memory count");
+	} elsif ( $SWAP_VALUE == -1 ) {
+		SDP::Core::updateStatus(STATUS_ERROR, "ERROR: Invalid swap value");
+	} elsif ( $MEM_USED_PCT >= LIMIT_OPT_MEMRED ) {
 		SDP::Core::updateStatus(STATUS_CRITICAL, "Memory used $MEM_USED_PCT"."\% exceeds ".LIMIT_OPT_MEMRED."\% - Swapping: $SWAPPING");
 	} elsif ( $MEM_USED_PCT >= LIMIT_OPT_MEMYEL ) {
 		if ( $SWAPPING eq "Yes" ) {
