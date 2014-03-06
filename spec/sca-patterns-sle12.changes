@@ -1,8 +1,11 @@
 -------------------------------------------------------------------
-Tue Mar  4 21:30:27 UTC 2014 - jrecord@suse.com
+Thu Mar  6 18:06:37 UTC 2014 - jrecord@suse.com
 
 - Fixed out of range index errors
   sle12all/bhc-memused-00001.pl
+- New pattern
+  sle12all/chmod-7014410.py
+  sle12all/login-7014706.py
 
 -------------------------------------------------------------------
 Thu Feb 27 12:33:44 UTC 2014 - jrecord@suse.com
