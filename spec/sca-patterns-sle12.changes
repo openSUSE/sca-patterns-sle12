@@ -1,4 +1,10 @@
 -------------------------------------------------------------------
+Thu Mar 13 17:22:06 UTC 2014 - jrecord@suse.com
+
+- Change to System/Monitoring spec Group
+- Fixed FSF Address in all patterns
+
+-------------------------------------------------------------------
 Thu Mar  6 18:06:37 UTC 2014 - jrecord@suse.com
 
 - Fixed out of range index errors
