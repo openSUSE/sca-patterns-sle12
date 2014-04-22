@@ -2,10 +2,10 @@
 
 # Title:       Basic Health Check - Tainted Kernel
 # Description: Checks if the kernel is tainted or not
-# Modified:    2013 Jun 20
+# Modified:    2014 Apr 22
 
 ##############################################################################
-#  Copyright (C) 2013 SUSE LLC
+#  Copyright (C) 2013,2014 SUSE LLC
 ##############################################################################
 #
 #  This program is free software; you can redistribute it and/or modify
@@ -67,7 +67,11 @@ sub checkKernelTaint() {
 
 	if ( SDP::Core::getSection($FILE_OPEN, $SECTION, \@CONTENT) ) {
 		$TAINT = $CONTENT[0];
-		$RCODE = 1 if ( $TAINT != 0 );
+		if ( (length($TAINT) > 0) && ($TAINT !~ /\D/) ) {
+			$RCODE = 1 if ( $TAINT != 0 );
+		} else {
+			SDP::Core::updateStatus(STATUS_ERROR, "Invalid taint status, aborting.");
+		}
 		for $_ (@CONTENT) {
 			if ( /Kernel Status.*Tainted/i ) {
 				s/\s+/ /g; # change to single space

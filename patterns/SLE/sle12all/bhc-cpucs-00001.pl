@@ -2,10 +2,10 @@
 
 # Title:       Basic Health Check - CPU Context switches per second
 # Description: Checks if the host's CPU Context switches are within normal parameters.
-# Modified:    2013 Jun 20
+# Modified:    2014 Apr 22
 
 ##############################################################################
-#  Copyright (C) 2013 SUSE LLC
+#  Copyright (C) 2014 SUSE LLC
 ##############################################################################
 #
 #  This program is free software; you can redistribute it and/or modify
@@ -79,6 +79,9 @@ sub checkCPUcs() {
 			$LINE++;
 			next if ( $LINE < HEADER_LINES );
 			next if ( m/^$/ );
+			if ( m/To mount.*proc/i ) {
+				SDP::Core::updateStatus(STATUS_ERROR, "Error: Proc fs not mounted");
+			}
 			$_ =~ s/^\s+//;
 			printDebug("  checkCPUcs LINE $LINE", $_);
 			@VMDATA = split(/\s+/, $_);

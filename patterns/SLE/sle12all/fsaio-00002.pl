@@ -2,10 +2,10 @@
 
 # Title:       Oracle and Asynchronous I/O Threads
 # Description: A server with Oracle and insufficient Asynchronous I/O threads can cause swapping and poor server performance.
-# Modified:    2013 Jun 27
+# Modified:    2014 Apr 22
 
 ##############################################################################
-#  Copyright (C) 2013,2012 SUSE LLC
+#  Copyright (C) 2014 SUSE LLC
 ##############################################################################
 #
 #  This program is free software; you can redistribute it and/or modify
@@ -105,6 +105,9 @@ sub check_fsaio_limits {
 				SDP::Core::updateStatus(STATUS_CRITICAL, "Oracle with default asynchronous I/O threads ($MAXAIO) is insufficient");
 			}
 			$FSAIO_RATIO = sprintf("%0.0i", ($CURAIO * 100 / $MAXAIO) );
+			if ( length($FSAIO_RATIO) == 0 ) {
+				$FSAIO_RATIO = 0
+			}
 			if ( $FSAIO_RATIO >= FSAIO_RED ) {
 				SDP::Core::updateStatus(STATUS_CRITICAL, "Oracle with Asynchronous I/O threads used: ${FSAIO_RATIO}%. Exceeds limit of " . FSAIO_RED . "% ($CURAIO/$MAXAIO)");
 			} elsif ( $FSAIO_RATIO >= FSAIO_YEL ) {
@@ -132,6 +135,9 @@ sub oracleRunning {
 	my $LINE = 0;
 
 	if ( SDP::Core::getSection($FILE_OPEN, $SECTION, \@CONTENT) ) {
+		if ( scalar(@CONTENT) < 3 ) {
+			SDP::Core::updateStatus(STATUS_ERROR, "ERROR: Invalid ps output");
+		}
 		foreach $_ (@CONTENT) {
 			$LINE++;
 			next if ( /^\s*$/ ); # Skip blank lines
