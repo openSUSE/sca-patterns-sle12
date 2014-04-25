@@ -1,4 +1,9 @@
 -------------------------------------------------------------------
+Fri Apr 25 20:41:23 UTC 2014 - jrecord@suse.com
+
+- Fixed mntspace-00001.pl df error handling
+
+-------------------------------------------------------------------
 Tue Apr 22 16:33:35 UTC 2014 - jrecord@suse.com
 
 - Fixed Use of uninitialized value in addition in bhc-cpucs-00001.pl

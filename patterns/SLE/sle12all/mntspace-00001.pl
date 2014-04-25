@@ -2,10 +2,10 @@
 
 # Title:       Mount Point May Conceal Used Disk Space
 # Description: Checks for potential used disk space under a file system mount point
-# Modified:    2013 Jun 27
+# Modified:    2014 Apr 25
 
 ##############################################################################
-#  Copyright (C) 2013,2012 SUSE LLC
+#  Copyright (C) 2014 SUSE LLC
 ##############################################################################
 #
 #  This program is free software; you can redistribute it and/or modify
@@ -71,6 +71,7 @@ sub getDFData {
 	if ( SDP::Core::getSection($FILE_OPEN, $SECTION, \@CONTENT) ) {
 		foreach $_ (@CONTENT) {
 			next if ( m/^Filesystem/ ); # Skip header line
+			next if ( m/^\/bin\/df: / ); # skip df errors
 			next if ( m/^\s*$/ ); # Skip blank lines
 			$_ =~ s/^\s*|%//g; # removes leading spaces and percents
 			@LNDATA = split(/\s+/, $_);
