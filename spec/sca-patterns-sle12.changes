@@ -1,4 +1,9 @@
 -------------------------------------------------------------------
+Mon Jun  2 18:29:40 UTC 2014 - jrecord@suse.com
+
+- Fixed calculation errors in sle12all/parted-00001.pl
+
+-------------------------------------------------------------------
 Fri Apr 25 20:41:23 UTC 2014 - jrecord@suse.com
 
 - Fixed mntspace-00001.pl df error handling

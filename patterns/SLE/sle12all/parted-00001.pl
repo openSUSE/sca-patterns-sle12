@@ -2,10 +2,10 @@
 
 # Title:       Unused disk space with four primary partitions
 # Description: The partition table has four primary partitioned defined but the hard drive also has unpartitioned, unusable space.
-# Modified:    2013 Jun 27
+# Modified:    2014 Jun 02
 
 ##############################################################################
-#  Copyright (C) 2013,2012 SUSE LLC
+#  Copyright (C) 2014 SUSE LLC
 ##############################################################################
 #
 #  This program is free software; you can redistribute it and/or modify
@@ -117,6 +117,7 @@ sub trappedDiskSpace {
 						next if ( $DISK =~ /^$/ ); # Skip blank lines
 						SDP::Core::printDebug("PART TABLE", "$DISK_DEV => $DISK");
 						$DISK =~ s/^\s+//; # remove leading white space
+						$DISK =~ s/,/./g; # change , to . for numerical calculations
 						if ( $DISK =~ /Disk geometry for \S+ \S+ - (\S+)/i ) {
 							$DISK_SIZE = convertSize($1);
 						} elsif ( $DISK =~ m/Disk \/.*:\s+(.*)/i ) {
