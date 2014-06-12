@@ -2,10 +2,10 @@
 
 # Title:       NTP Time Drift with VMware
 # Description: Time drifting when running a Linux guest under VMware
-# Modified:    2013 Jun 24
+# Modified:    2014 Jun 12
 
 ##############################################################################
-#  Copyright (C) 2013 SUSE LLC
+#  Copyright (C) 2014 SUSE LLC
 ##############################################################################
 #
 #  This program is free software; you can redistribute it and/or modify
@@ -62,8 +62,9 @@ use constant YEL_OFFSET => 64;
 
 sub ntp_time_offset {
 	printDebug('> ntp_time_offset', 'BEGIN');
-	use constant      NTP_HEADERS   => 3;
-	use constant      OFFSET_FIELD  => 8;
+	use constant OFFSET_FIELD  => 8;
+	use constant STRATUM_FIELD => 2;
+	use constant REQUIRED_FIELDS => 9;
 	my $NTP_OFFSET = -1;
 	my $NOPREF_OFFSET = -1;
 	my $CURR_OFFSET = 0;
@@ -71,21 +72,19 @@ sub ntp_time_offset {
 	my $SECTION = 'ntpq -p';
 	my @CONTENT = ();
 	my @TIME_LINE = ();
-	my $LINE = 0;
 	my $SYNC_LINE;
 
 	if ( SDP::Core::getSection($FILE_OPEN, $SECTION, \@CONTENT) ) {
 		foreach $_ (@CONTENT) {
-			$LINE++;
-			next if ( $LINE < NTP_HEADERS ); # skips the two ntpq header lines
 			chomp;
 			s/^\s+//;
+			@TIME_LINE = split(/\s+/, $_);
+			next if ( $#TIME_LINE != REQUIRED_FIELDS );
+			next if ( $TIME_LINE[STRATUM_FIELD] =~ m/\D/ );
 			next if ( m/^LOCAL/ || m/^$/ ); # skips the local clock if defined
 			if ( /^\*/ ) { # prefer time sources in use, marked by ntpq with an '*'
 				printDebug("TAKE ACTION ON", $_);
-				@TIME_LINE = split(/\s+/, $_);
 				$NTP_OFFSET = $TIME_LINE[OFFSET_FIELD];
-				printDebug("TIME OFFSET FIELD", $NTP_OFFSET);
 				if ( $NTP_OFFSET =~ m/(\d+)\./ ) { # parse out the digits before the . in the offset field
 					$NTP_OFFSET = $1;
 				}
@@ -93,7 +92,6 @@ sub ntp_time_offset {
 				last;
 			} else {
 				printDebug("NOT PREFERRED", $_);
-				@TIME_LINE = split(/\s+/, $_);
 				$CURR_OFFSET = $TIME_LINE[OFFSET_FIELD];
 				printDebug("TIME OFFSET FIELD", $CURR_OFFSET);
 				if ( $CURR_OFFSET =~ m/(\d+)\./ ) { # parse out the digits before the . in the offset field
@@ -152,7 +150,7 @@ SDP::Core::processOptions();
 			} elsif ( $TIME_OFFSET >= YEL_OFFSET ) {
 				SDP::Core::updateStatus(STATUS_WARNING, "NTP synch warning; offset $TIME_OFFSET meets or exceeds ".YEL_OFFSET);
 			} else {
-				SDP::Core::updateStatus(STATUS_ERROR, "NTP time offset observed: $TIME_OFFSET");
+				SDP::Core::updateStatus(STATUS_IGNORE, "NTP time offset observed: $TIME_OFFSET");
 			}
 		} else {
 			SDP::Core::updateStatus(STATUS_ERROR, "Cannot determine NTP time sync offset");
