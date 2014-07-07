@@ -1,4 +1,9 @@
 -------------------------------------------------------------------
+Mon Jul  7 16:16:00 UTC 2014 - jrecord@suse.com
+
+- Fixed invalid header processing in mntspace-00001.pl
+
+-------------------------------------------------------------------
 Thu Jun 12 18:47:11 UTC 2014 - jrecord@suse.com
 
 - Fixed invalid NTP fields in sle12all/ntp-00002.pl

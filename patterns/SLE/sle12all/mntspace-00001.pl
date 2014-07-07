@@ -2,7 +2,7 @@
 
 # Title:       Mount Point May Conceal Used Disk Space
 # Description: Checks for potential used disk space under a file system mount point
-# Modified:    2014 Apr 25
+# Modified:    2014 Jul 07
 
 ##############################################################################
 #  Copyright (C) 2014 SUSE LLC
@@ -57,6 +57,8 @@ use constant THRESHOLD => 85;
 sub getDFData {
 	#SDP::Core::printDebug('> getDFData', 'BEGIN');
 	my $RCODE = 0;
+	my $HEADER_LINES = 1;
+	my $LINE_CNT = 0;
 	my @LNDATA = ();
 	my $FILE_OPEN = 'basic-health-check.txt';
 	my $SECTION = '/bin/df -h';
@@ -70,7 +72,8 @@ sub getDFData {
 
 	if ( SDP::Core::getSection($FILE_OPEN, $SECTION, \@CONTENT) ) {
 		foreach $_ (@CONTENT) {
-			next if ( m/^Filesystem/ ); # Skip header line
+			$LINE_CNT++;
+			next if ( $LINE_CNT <= $HEADER_LINES); # Skip header lines
 			next if ( m/^\/bin\/df: / ); # skip df errors
 			next if ( m/^\s*$/ ); # Skip blank lines
 			$_ =~ s/^\s*|%//g; # removes leading spaces and percents
