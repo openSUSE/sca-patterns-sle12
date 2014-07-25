@@ -1,4 +1,9 @@
 -------------------------------------------------------------------
+Fri Jul 25 19:26:42 UTC 2014 - jrecord@suse.com
+
+- Removed bhc-lastdown-3301593.py for failing to find proper server failures
+
+-------------------------------------------------------------------
 Mon Jul  7 16:16:00 UTC 2014 - jrecord@suse.com
 
 - Fixed invalid header processing in mntspace-00001.pl
