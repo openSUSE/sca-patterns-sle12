@@ -26,7 +26,7 @@ Group:        System/Monitoring
 License:      GPL-2.0
 Autoreqprov:  on
 Version:      1.0
-Release:      24
+Release:      25
 Source:       %{name}-%{version}.tar.gz
 BuildRoot:    %{_tmppath}/%{name}-%{version}
 Buildarch:    noarch
@@ -63,6 +63,7 @@ install -m %{mode} patterns/%{category}/sle12sp0/* $RPM_BUILD_ROOT/%{patdir}/%{c
 %dir %{patdir}
 %dir %{patdir}/%{category}
 %dir %{patdir}/%{category}/sle12all
+%dir %{patdir}/%{category}/sle12sp0
 %dir /usr/share/doc/packages/%{sca_common}
 %doc %attr(-,root,root) /usr/share/doc/packages/%{sca_common}/*
 %attr(%{mode},%{patuser},%{patgrp}) %{patdir}/%{category}/sle12all/*

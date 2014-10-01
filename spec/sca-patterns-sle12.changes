@@ -1,7 +1,8 @@
 -------------------------------------------------------------------
-Tue Sep 30 22:37:31 UTC 2014 - jrecord@suse.com
+Wed Oct  1 15:53:32 UTC 2014 - jrecord@suse.com
 
 - Added sle12sp0 directory
+- Added sle12sp0 spec information
 - New Patterns
   sle12sp0/bash_SUSE-SU-2014_1259-1_12.0.py
   sle12sp0/bash_SUSE-SU-2014_1260-1_12.0.py
