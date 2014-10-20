@@ -1,4 +1,21 @@
 -------------------------------------------------------------------
+Mon Oct 20 21:21:04 UTC 2014 - jrecord@suse.com
+
+- New Technology Preview Patterns
+  sle12sp0/tp_docker-sle12.0.py
+  sle12sp0/tp_openjdk-sle12.0.py
+  sle12sp0/tp_ppc64le_kvm-sle12.0.py
+  sle12sp0/tp_s390x_hot_patching-sle12.0.py
+  sle12sp0/tp_s390x_kdump-sle12.0.py
+  sle12sp0/tp_s390x_kvm-sle12.0.py
+  sle12sp0/tp_tpm_trusted-sle12.0.py
+  sle12sp0/tp_virt_sandbox-sle12.0.py
+  sle12sp0/tp_virtio_blk_data_plane-sle12.0.py
+  sle12sp0/tp_xen_vpmu-sle12.0.py
+  sle12sp0/tp_zswap-sle12.0.py
+  sle12sp0/ts_postgresql-sle12.0.py
+
+-------------------------------------------------------------------
 Wed Oct  1 15:53:32 UTC 2014 - jrecord@suse.com
 
 - Added sle12sp0 directory
