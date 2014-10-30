@@ -1,4 +1,10 @@
 -------------------------------------------------------------------
+Thu Oct 30 15:51:50 UTC 2014 - jrecord@suse.com
+
+- New Pattern
+  sle12all/numa-7015827.py
+
+-------------------------------------------------------------------
 Mon Oct 20 21:21:04 UTC 2014 - jrecord@suse.com
 
 - New Technology Preview Patterns
