@@ -2,7 +2,7 @@
 
 # Title:       NTP fails to start
 # Description: NTP Service Fails to Start or Hangs on SLES12
-# Modified:    2014 Nov 08
+# Modified:    2014 Nov 10
 #
 ##############################################################################
 # Copyright (C) 2014 SUSE LLC
@@ -54,14 +54,24 @@ Core.init(META_CLASS, META_CATEGORY, META_COMPONENT, PATTERN_ID, PRIMARY_LINK, O
 ##############################################################################
 
 def appArmorError():
-	fileOpen = "messages.txt"
-	section = "/var/log/messages"
+	ERROR = re.compile(r'apparmor="DENIED".*profile="/usr/sbin/ntpd"', re.IGNORECASE)
+
+	fileOpen = "security-apparmor.txt"
+	section = "audit.log"
 	content = {}
-	ERROR = re.compile(r'apparmor="DENIED".*profile="/usr/sbin/ntpd".*requested_mask="r"', re.IGNORECASE)
 	if Core.getSection(fileOpen, section, content):
 		for line in content:
 			if ERROR.search(content[line]):
 				return True
+
+	fileOpen = "messages.txt"
+	section = "/var/log/messages"
+	content = {}
+	if Core.getSection(fileOpen, section, content):
+		for line in content:
+			if ERROR.search(content[line]):
+				return True
+
 	return False
 
 ##############################################################################
@@ -77,9 +87,9 @@ if( len(NTPD) > 0 ):
 		if( len(APPARMOR) > 0 ):
 			if( APPARMOR['ActiveState'].lower() == 'active' and APPARMOR['SubState'].lower() == 'exited' ):
 				if( appArmorError() ):
-					Core.updateStatus(Core.CRIT, "NTP Service Failure, Check AppArmor")
+					Core.updateStatus(Core.CRIT, "NTP Service Failure, Check AppArmor NTP Profile")
 				else:
-					Core.updateStatus(Core.WARN, "NTP Service Failure Probable, Check AppArmor")
+					Core.updateStatus(Core.WARN, "NTP Service Failure Probable, Check AppArmor NTP Profile")
 			else:
 				Core.updateStatus(Core.ERROR, "AppArmor not running, NTP not running but skipping NTP conflict check")
 		else:
