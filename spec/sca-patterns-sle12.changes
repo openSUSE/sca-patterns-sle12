@@ -1,6 +1,8 @@
 -------------------------------------------------------------------
-Mon Nov 10 18:02:35 UTC 2014 - jrecord@suse.com
+Mon Nov 10 20:47:00 UTC 2014 - jrecord@suse.com
 
+- New Pattern
+  sle12all/resolve-7015868.py
 - Fixed ntpstart-7015867.py to include audit.log check
 
 -------------------------------------------------------------------
