@@ -2,7 +2,7 @@
 
 # Title:       Crashdump Failure
 # Description: System fails to generate a kernel crashdump and drops into bash shell after triggering kdump
-# Modified:    2014 Nov 6
+# Modified:    2014 Nov 18
 #
 ##############################################################################
 # Copyright (C) 2014 SUSE LLC
@@ -69,8 +69,8 @@ def getKdumpInfo():
 SERVER = SUSE.getHostInfo()
 if 'ppc64le' in SERVER['Architecture'].lower():
 	if( SERVER['DistroVersion'] == 12 and SERVER['DistroPatchLevel'] < 1 ):
-		PACKAGE = 'kexec-tools'
-		AFFECTED_PACKAGE_VER = '2.0.5-9.22'
+		PACKAGE = 'kdump'
+		AFFECTED_PACKAGE_VER = '0.8.15-10.1'
 		KDUMP = getKdumpInfo()
 		if( KDUMP['Active'] ):
 			if( Core.compareVersions(SUSE.getRpmInfo(PACKAGE)['version'], AFFECTED_PACKAGE_VER) <= 0 ):

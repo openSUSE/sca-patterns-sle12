@@ -1,4 +1,12 @@
 -------------------------------------------------------------------
+Tue Nov 18 16:20:11 UTC 2014 - jrecord@suse.com
+
+- Fixed crashdump-7015824.py to reference the kdump package
+- New Patterns
+  sle12sp0/flash-player_SUSE-SU-2014_1423-1_12.0.py
+  sle12sp0/java-1_7_0-openjdk_SUSE-SU-2014_1422-1_12.0.py
+
+-------------------------------------------------------------------
 Mon Nov 10 20:47:00 UTC 2014 - jrecord@suse.com
 
 - New Pattern
