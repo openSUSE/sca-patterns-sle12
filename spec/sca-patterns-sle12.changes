@@ -1,4 +1,9 @@
 -------------------------------------------------------------------
+Wed Nov 26 18:57:03 UTC 2014 - jrecord@suse.com
+
+- sle12all/apparmor-7015867.py replaces sle12all/apparmor-00002.pl
+
+-------------------------------------------------------------------
 Tue Nov 18 16:20:11 UTC 2014 - jrecord@suse.com
 
 - Fixed crashdump-7015824.py to reference the kdump package
