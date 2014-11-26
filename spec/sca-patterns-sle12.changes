@@ -1,7 +1,8 @@
 -------------------------------------------------------------------
-Wed Nov 26 18:57:03 UTC 2014 - jrecord@suse.com
+Wed Nov 26 19:13:52 UTC 2014 - jrecord@suse.com
 
 - sle12all/apparmor-7015867.py replaces sle12all/apparmor-00002.pl
+- fixed apparmor-7015867.py to use /var/log/messages too
 
 -------------------------------------------------------------------
 Tue Nov 18 16:20:11 UTC 2014 - jrecord@suse.com

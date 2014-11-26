@@ -77,7 +77,8 @@ def checkRejectMessages():
 		content = {}
 		if Core.getSection(fileOpen, section, content):
 			for line in content:
-				if ERROR.search(content[line]):
+				MATCHED = ERROR.search(content[line])
+				if MATCHED:
 					try:
 						DENIED[MATCHED.group(1)] = True
 						DENIED_COUNT += 1
