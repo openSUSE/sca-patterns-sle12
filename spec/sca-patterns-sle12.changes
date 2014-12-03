@@ -1,4 +1,10 @@
 -------------------------------------------------------------------
+Wed Dec  3 22:02:00 UTC 2014 - jrecord@suse.com
+
+- New Pattern
+  sle12sp0/java-1_7_1-ibm_SUSE-SU-2014_1549-1_12.0.py
+
+-------------------------------------------------------------------
 Wed Nov 26 19:13:52 UTC 2014 - jrecord@suse.com
 
 - sle12all/apparmor-7015867.py replaces sle12all/apparmor-00002.pl
