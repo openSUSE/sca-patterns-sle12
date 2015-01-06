@@ -3,7 +3,7 @@
 # Title:       Important Security Announcement for bash SUSE-SU-2014:1259-1
 # Description: Security fixes for SUSE Linux Enterprise 12 SP0
 # Source:      Security Announcement Parser v1.0.3
-# Modified:    2014 Sep 30
+# Modified:    2015 Jan 06
 #
 ##############################################################################
 # Copyright (C) 2014 SUSE LLC
@@ -25,6 +25,7 @@
 #   Jason Record (jrecord@suse.com)
 #
 ##############################################################################
+# The shipping code includes these fixes, so I change the bash version to shipping
 
 import os
 import Core
@@ -51,16 +52,7 @@ SERVER = SUSE.getHostInfo()
 if ( SERVER['DistroVersion'] == 12):
 	if ( SERVER['DistroPatchLevel'] == 0 ):
 		PACKAGES = {
-			'bash-lang': '4.2-81.1',
-			'readline-devel': '6.2-81.1',
-			'libreadline6-debuginfo': '6.2-81.1',
-			'bash-doc': '4.2-81.1',
-			'libreadline6': '6.2-81.1',
-			'bash-debuginfo': '4.2-81.1',
-			'bash-devel': '4.2-81.1',
-			'bash-debugsource': '4.2-81.1',
-			'bash': '4.2-81.1',
-			'readline-doc': '6.2-81.1',
+			'bash': '4.2-75.2',
 		}
 		SUSE.securityAnnouncementPackageCheck(NAME, MAIN, LTSS, SEVERITY, TAG, PACKAGES)
 	else:

@@ -1,8 +1,11 @@
 -------------------------------------------------------------------
-Tue Jan  6 18:41:30 UTC 2015 - jrecord@suse.com
+Tue Jan  6 19:39:14 UTC 2015 - jrecord@suse.com
 
 - New Pattern
   sle12sp0/mutt_SUSE-SU-2015_0012-1_12.0.py
+- Fixed version to shipping, as these fixes were included.
+  sle12sp0/bash_SUSE-SU-2014_1259-1_12.0.py
+  sle12sp0/bash_SUSE-SU-2014_1260-1_12.0.py
 
 -------------------------------------------------------------------
 Wed Dec 24 19:44:09 UTC 2014 - jrecord@suse.com
