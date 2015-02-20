@@ -1,4 +1,12 @@
 -------------------------------------------------------------------
+Fri Feb 20 18:17:06 UTC 2015 - jrecord@suse.com
+
+- New Patterns
+  sle12sp0/java_SUSE-SU-2015_0304-1_12.0.py
+  sle12sp0/krb5_SUSE-SU-2015_0290-1_12.0.py
+  sle12sp0/krb5_SUSE-SU-2015_0290-2_12.0.py
+
+-------------------------------------------------------------------
 Fri Feb 13 21:23:15 UTC 2015 - jrecord@suse.com
 
 - New Patterns
