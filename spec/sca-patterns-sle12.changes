@@ -1,4 +1,11 @@
 -------------------------------------------------------------------
+Fri Mar  6 21:35:57 UTC 2015 - jrecord@suse.com
+
+- New Patterns
+  sle12sp0/appvirt-7016245.py
+  sle12sp0/mozillafirefox_SUSE-SU-2015_0412-1_12.0.py
+
+-------------------------------------------------------------------
 Mon Feb 23 20:32:53 UTC 2015 - jrecord@suse.com
 
 - New Pattern
