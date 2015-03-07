@@ -2,7 +2,7 @@
 
 # Title:       Virtual Guests Fail to Start
 # Description: libvirtd apparmor profile prevents Xen domains from starting
-# Modified:    2015 Mar 06
+# Modified:    2015 Mar 07
 #
 ##############################################################################
 # Copyright (C) 2015 SUSE LLC
@@ -71,7 +71,7 @@ if( SUSE.packageInstalled(RPM_NAME) ):
 		if( INSTALLED_VERSION == 0 ):
 			Core.updateStatus(Core.CRIT, "SLES 12 virtual guests will fail to load, update system to apply newest " + RPM_NAME + " package.")
 		else:
-			Core.updateStatus(Core.IGNORE, "Apparmor conflict with " + RPM_NAME + " AVOIDED")
+			Core.updateStatus(Core.IGNORE, "No known conflict between Apparmor and " + RPM_NAME)
 	else:
 		Core.updateStatus(Core.ERROR, "ERROR: AppArmor not active, skipping")
 else:

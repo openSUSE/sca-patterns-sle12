@@ -1,4 +1,9 @@
 -------------------------------------------------------------------
+Sat Mar  7 15:05:04 UTC 2015 - jrecord@suse.com
+
+- Fixed status message in appvirt-7016245.py
+
+-------------------------------------------------------------------
 Fri Mar  6 21:35:57 UTC 2015 - jrecord@suse.com
 
 - New Patterns
