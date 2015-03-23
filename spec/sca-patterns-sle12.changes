@@ -1,4 +1,14 @@
 -------------------------------------------------------------------
+Mon Mar 23 22:22:44 UTC 2015 - jrecord@suse.com
+
+- New Patterns
+  sle12sp0/compat-openssl098_SUSE-SU-2015_0553-2_12.0.py
+  sle12sp0/flash-player_SUSE-SU-2015_0491-1_12.0.py
+  sle12sp0/java_SUSE-SU-2015_0503-1_12.0.py
+  sle12sp0/kernel_SUSE-SU-2015_0529-1_12.0.py
+  sle12sp0/openssl_SUSE-SU-2015_0541-1_12.0.py
+
+-------------------------------------------------------------------
 Sat Mar  7 15:05:04 UTC 2015 - jrecord@suse.com
 
 - Fixed status message in appvirt-7016245.py
