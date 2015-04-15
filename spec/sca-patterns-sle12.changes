@@ -1,4 +1,14 @@
 -------------------------------------------------------------------
+Wed Apr 15 19:09:55 UTC 2015 - jrecord@suse.com
+
+- New Patterns
+  sle12sp0/kernel_SUSE-SU-2015_0658-1_12.0.py
+  sle12sp0/libxfont_SUSE-SU-2015_0702-1_12.0.py
+  sle12sp0/mozillafirefox_SUSE-SU-2015_0704-1_12.0.py
+  sle12sp0/mozillafirefox_SUSE-SU-2015_0704-2_12.0.py
+  sle12sp0/player_SUSE-SU-2015_0722-1_12.0.py
+
+-------------------------------------------------------------------
 Wed Apr  1 18:21:25 UTC 2015 - jrecord@suse.com
 
 - Additional Pattern
