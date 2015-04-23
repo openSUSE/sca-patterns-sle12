@@ -29,7 +29,6 @@
 # Module Definition
 ##############################################################################
 
-import re
 import os
 import Core
 import SUSE
@@ -53,39 +52,16 @@ Core.init(META_CLASS, META_CATEGORY, META_COMPONENT, PATTERN_ID, PRIMARY_LINK, O
 # Local Function Definitions
 ##############################################################################
 
-def getZypperRepoList():
-	fileOpen = "updates.txt"
-	section = "/zypper\s.*\srepos"
-	startRepos = re.compile("^-*\+-*\+")
-	endRepos = re.compile("^#==|^$")
-	REPOS = []
-	IN_REPOS = False
-	content = {}
-	if Core.getSection(fileOpen, section, content):
-		for line in content:
-			if( IN_REPOS ):
-				if endRepos.search(content[line]):
-					IN_REPOS = False
-				else:
-					
-					print content[line].replace(" *", " ")
-			elif startRepos.search(content[line]):
-				IN_REPOS = True
-	return REPOS
-
-def getZypperProductsList():
-	return False
-
 ##############################################################################
 # Main Program Execution
 ##############################################################################
 
-REPO = getZypperRepoList()
-
-if( REPO ):
-	Core.updateStatus(Core.IGNORE, "Repos Found")
+REQUIRED_VERSION = '2.25-173';
+SC_INFO = SUSE.getSCCInfo();
+if( Core.compareVersions(SC_INFO['version'], REQUIRED_VERSION) >= 0 ):
+	Core.updateStatus(Core.IGNORE, "Supportconfig v" + str(SC_INFO['version']) + " meets minimum requirement")
 else:
-	Core.updateStatus(Core.ERROR, "ERROR: Not zypper repositories found")
+	Core.updateStatus(Core.WARN, "Supportconfig v" + str(SC_INFO['version']) + " NOT sufficient, " + str(REQUIRED_VERSION) + " or higher needed")	
 
 Core.printPatternResults()
 
