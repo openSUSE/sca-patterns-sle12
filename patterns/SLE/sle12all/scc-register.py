@@ -29,7 +29,6 @@
 # Module Definition
 ##############################################################################
 
-import re
 import os
 import Core
 import SUSE
@@ -53,39 +52,17 @@ Core.init(META_CLASS, META_CATEGORY, META_COMPONENT, PATTERN_ID, PRIMARY_LINK, O
 # Local Function Definitions
 ##############################################################################
 
-def getZypperRepoList():
-	fileOpen = "updates.txt"
-	section = "/zypper\s.*\srepos"
-	startRepos = re.compile("^-*\+-*\+")
-	endRepos = re.compile("^#==|^$")
-	REPOS = []
-	IN_REPOS = False
-	content = {}
-	if Core.getSection(fileOpen, section, content):
-		for line in content:
-			if( IN_REPOS ):
-				if endRepos.search(content[line]):
-					IN_REPOS = False
-				else:
-					
-					print content[line].replace(" *", " ")
-			elif startRepos.search(content[line]):
-				IN_REPOS = True
-	return REPOS
-
-def getZypperProductsList():
-	return False
 
 ##############################################################################
 # Main Program Execution
 ##############################################################################
 
-REPO = getZypperRepoList()
-
-if( REPO ):
-	Core.updateStatus(Core.IGNORE, "Repos Found")
+import datetime
+SC_RUN_TIME = SUSE.getSCRunTime()
+if( SC_RUN_TIME < datetime.datetime.now() - datetime.timedelta(days=30) ):
+	Core.updateStatus(Core.WARN, "Supportconfig data are older than 30 days, run a new supportconfig")
 else:
-	Core.updateStatus(Core.ERROR, "ERROR: Not zypper repositories found")
+	Core.updateStatus(Core.IGNORE, "Supportconfig data is current")	
 
 Core.printPatternResults()
 
