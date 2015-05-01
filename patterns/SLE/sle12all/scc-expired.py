@@ -2,7 +2,7 @@
 
 # Title:       Expired SCC Registrations
 # Description: Identify if SCC registration has expired
-# Modified:    2015 Apr 17
+# Modified:    2015 May 01
 #
 ##############################################################################
 # Copyright (C) 2015 SUSE LLC
@@ -56,45 +56,35 @@ Core.init(META_CLASS, META_CATEGORY, META_COMPONENT, PATTERN_ID, PRIMARY_LINK, O
 SCC_INFO = SUSE.getSCCInfo()
 REG_EXPIRED = []
 REG_EXPIRING = []
+TODAY = datetime.datetime.today()
+DAYSAGO30 = TODAY - datetime.timedelta(days=30)
 if( SCC_INFO ):
 	for PRODUCT in SCC_INFO:
 		#print "PRODUCT:    " + str(PRODUCT)
-		ID = ''
-		VER = ''
 		EXPIRE_DATE = ''
 		EXPIRE_STR = ''
-		for ELEMENT in PRODUCT:
-			#print " ELEMENT:   " + str(ELEMENT)
-			if ELEMENT.lower().startswith("expires_at:"):
-				TMP = ELEMENT.split(':', 1)[1].split()
-				#print "  TMP:      ", TMP
-				EXPIRE_DATE = TMP[0]
-				#print "  EXP_DATE: ", EXPIRE_DATE
-				del TMP[-1]
-				EXPIRE_STR = ' '.join(TMP)
-				#print "  STR:      ", EXPIRE_STR
-				EXPIRATION = datetime.datetime.strptime(EXPIRE_STR, "%Y-%m-%d %H:%M:%S")
-				#print "  EXP:      ", EXPIRATION
-				EXPIRED = SUSE.compareDateTime('today', EXPIRATION)
-				EXPIRING = SUSE.compareDateTime('today', EXPIRATION - datetime.timedelta(days=30))
-				#print "   EXPIRED: ", EXPIRED
-				#print "  EXPIRING: ", EXPIRING
-			elif ELEMENT.lower().startswith("identifier:"):
-				ID = str(ELEMENT.split(":")[1])
-			elif ELEMENT.lower().startswith("version:"):
-				VER = str(ELEMENT.split(":")[1])
+		if 'expires_at' in PRODUCT:
+			TMP = PRODUCT['expires_at'].split()
+			del TMP[-1]
+			EXPIRE_DATE = TMP[0]
+			EXPIRE_STR = ' '.join(TMP)
+			EXPIRATION = datetime.datetime.strptime(EXPIRE_STR, "%Y-%m-%d %H:%M:%S")
 		if( EXPIRE_STR ):
-			if( EXPIRED >= 0 ):
-				REG_EXPIRED.append(str(ID) + " " + str(VER) + ": " + str(EXPIRE_DATE))
-			elif( EXPIRING >= 0 ):
-				REG_EXPIRING.append(str(ID) + " " + str(VER) + ": " + str(EXPIRE_DATE))
+			print "Today:    ", TODAY
+			print "Today-30: ", DAYSAGO30
+			print "Expires:  ", EXPIRATION
+			if( TODAY > EXPIRATION ):
+				print "==Today", TODAY, "is greater than", EXPIRATION
+				REG_EXPIRED.append(str(PRODUCT['identifier']) + " " + str(PRODUCT['version']) + ": " + str(EXPIRE_DATE))
+			elif( TODAY > DAYSAGO30 ):
+				REG_EXPIRING.append(str(PRODUCT['identifier']) + " " + str(PRODUCT['version']) + ": " + str(EXPIRE_DATE))
 	if( REG_EXPIRED ):
 		if( REG_EXPIRING ):
-			Core.updateStatus(Core.CRIT, "Detected expired product registrations: " + str(REG_EXPIRED) + ", about to expire: " + str(REG_EXPIRING))
+			Core.updateStatus(Core.CRIT, "Detected expired product registrations: " + str(REG_EXPIRED) + ", expiring within 30 days: " + str(REG_EXPIRING))
 		else:
 			Core.updateStatus(Core.CRIT, "Detected expired product registrations: " + str(REG_EXPIRED))
 	elif( REG_EXPIRING ):
-			Core.updateStatus(Core.WARN, "Detected product registrations expiring soon: " + str(REG_EXPIRING))
+			Core.updateStatus(Core.WARN, "Detected product registrations expiring within 30 days: " + str(REG_EXPIRING))
 	else:
 		Core.updateStatus(Core.IGNORE, "No product registrations have expired or will expire within 30 days.")
 else:
