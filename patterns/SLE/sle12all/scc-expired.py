@@ -74,10 +74,14 @@ if( SCC_INFO ):
 			print "Today-30: ", DAYSAGO30
 			print "Expires:  ", EXPIRATION
 			if( TODAY > EXPIRATION ):
-				print "==Today", TODAY, "is greater than", EXPIRATION
+				print "==Today", TODAY, "is greater than expiration", EXPIRATION
 				REG_EXPIRED.append(str(PRODUCT['identifier']) + " " + str(PRODUCT['version']) + ": " + str(EXPIRE_DATE))
 			elif( TODAY > DAYSAGO30 ):
+				print "==Today", TODAY, "is greater than daysago30", DAYSAGO30
 				REG_EXPIRING.append(str(PRODUCT['identifier']) + " " + str(PRODUCT['version']) + ": " + str(EXPIRE_DATE))
+			else:
+				print "==Today", TODAY, "is less than expiration", EXPIRATION, "and dayago30", DAYSAGO30
+
 	if( REG_EXPIRED ):
 		if( REG_EXPIRING ):
 			Core.updateStatus(Core.CRIT, "Detected expired product registrations: " + str(REG_EXPIRED) + ", expiring within 30 days: " + str(REG_EXPIRING))
