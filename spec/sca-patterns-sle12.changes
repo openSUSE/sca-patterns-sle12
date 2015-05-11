@@ -1,4 +1,12 @@
 -------------------------------------------------------------------
+Mon May 11 13:25:55 UTC 2015 - jrecord@suse.com
+
+- New Patterns
+  sle12sp0/directfb_SUSE-SU-2015_0839-1_12.0.py
+  sle12sp0/kgraft_SUSE-SU-2015_0832-1_12.0.py
+- Fixed sle12all/scc-expired.py
+
+-------------------------------------------------------------------
 Thu Apr 23 15:21:07 UTC 2015 - jrecord@suse.com
 
 - New Patterns
