@@ -1,4 +1,12 @@
 -------------------------------------------------------------------
+Tue May 19 23:02:33 UTC 2015 - jrecord@suse.com
+
+- New Patterns
+  sle12sp0/flash-player_SUSE-SU-2015_0878-1_12.0.py
+  sle12sp0/qemu_SUSE-SU-2015_0896-1_12.0.py
+  sle12sp0/spice_SUSE-SU-2015_0884-1_12.0.py
+
+-------------------------------------------------------------------
 Mon May 11 13:25:55 UTC 2015 - jrecord@suse.com
 
 - New Patterns
