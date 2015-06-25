@@ -53,24 +53,10 @@ Core.init(META_CLASS, META_CATEGORY, META_COMPONENT, PATTERN_ID, PRIMARY_LINK, O
 ##############################################################################
 
 def separateBootPartition():
-	return True
-	fileOpen = "filename.txt"
-	section = "CommandToIdentifyFileSection"
-	content = {}
-	if Core.getSection(fileOpen, section, content):
-		for line in content:
-			if "something" in content[line]:
-				return True
-	return False
-
-def checkSomething():
-	fileOpen = "filename.txt"
-	section = "CommandToIdentifyFileSection"
-	content = {}
-	if Core.getSection(fileOpen, section, content):
-		for line in content:
-			if "something" in content[line]:
-				return True
+	FSLIST = SUSE.getFileSystems()
+	for FILESYSTEM in FSLIST:
+		if( FILESYSTEM['MountPoint'] == "/boot" ):
+			return True
 	return False
 
 ##############################################################################
