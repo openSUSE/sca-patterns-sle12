@@ -2,7 +2,7 @@
 
 # Title:       Boot Failure with FIPS
 # Description: Server will not boot when fips=1 is in the kernel parameter and /boot is a separate partition
-# Modified:    2015 Jun 24
+# Modified:    2015 Jun 25
 #
 ##############################################################################
 # Copyright (C) 2015 SUSE LLC
