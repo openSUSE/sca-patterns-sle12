@@ -49,49 +49,32 @@ OTHER_LINKS = "META_LINK_TID=https://www.suse.com/support/kb/doc.php?id=7016636"
 Core.init(META_CLASS, META_CATEGORY, META_COMPONENT, PATTERN_ID, PRIMARY_LINK, OVERALL, OVERALL_INFO, OTHER_LINKS)
 
 ##############################################################################
-# Local Function Definitions
-##############################################################################
-
-def getBasicFIPSData():
-	FIPS = {'Installed': False, 'Enabled': False, 'Grub': False, 'Initrd': None}
-	
-	if( SUSE.packageInstalled('dracut-fips') ):
-		FIPS['Installed'] = True
-		CONTENT = []
-		if Core.getRegExSection('proc.txt', '/proc/sys/crypto/fips_enabled', CONTENT):
-			for LINE in CONTENT:
-				if( LINE.isdigit() ):
-					if( int(LINE) > 0 ):
-						FIPS['Enabled'] = True
-		GRUB2 = SUSE.getGrub2Config()
-		if( "fips=1" in GRUB2['GRUB_CMDLINE_LINUX_DEFAULT'].lower() ):
-			FIPS['Grub'] = True
-		if Core.getRegExSection('boot.txt', '/bin/lsinitrd', CONTENT):
-			FOUND = False
-			MODS = False
-			for LINE in CONTENT:
-				TEST = LINE.lower()
-				if( MODS ):
-					if TEST.startswith("=="):
-						MODS = False
-						break
-					elif TEST.startswith("fips"):
-						FOUND = True
-						break
-				elif TEST.startswith("dracut modules:"):
-					MODS = True
-
-	return FIPS
-
-##############################################################################
 # Main Program Execution
 ##############################################################################
 
-FIPS = getBasicFIPSData()
+FIPS = SUSE.getBasicFIPSData()
 if( FIPS['Installed'] ):
-	print "FIPS", FIPS
+	if( FIPS['Grub'] ):
+		if( FIPS['Enabled'] ):
+			if( 'Initrd' in FIPS.keys() ):
+				if( FIPS['Initrd'] ):
+					Core.updateStatus(Core.IGNORE, "FIPS installed, configured and active")
+				else:
+					Core.updateStatus(Core.WARN, "FIPS installed and configured, but a new ramdisk is needed; run mkinitrd and reboot")
+			else:
+				Core.updateStatus(Core.REC, "FIPS installed and configured, confirm a new ramdisk has been built (supportconfig outdated)")
+		else:
+			Core.updateStatus(Core.CRIT, "FIPS installed and configured in grub, but not enabled; build the grub.cfg, ramdisk and reboot")
+	else:
+		if( FIPS['Enabled'] ):
+			Core.updateStatus(Core.CRIT, "FIPS enabled, but not configured to be persistent across reboots; build the grub.cfg, ramdisk and reboot")
+		else:
+			Core.updateStatus(Core.WARN, "FIPS installed, but not configured; build the grub.cfg, ramdisk and reboot")
 else:
-	Core.updateStatus(Core.ERROR, "FIPS packages missing, not applicable")
+	if( FIPS['Enabled'] ):
+		Core.updateStatus(Core.CRIT, "FIPS enabled, but packages are not installed; install FIPS pattern and reconfigure")
+	else:
+		Core.updateStatus(Core.ERROR, "FIPS packages missing, not applicable")
 
 Core.printPatternResults()
 
