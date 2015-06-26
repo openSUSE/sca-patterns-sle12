@@ -63,22 +63,13 @@ def separateBootPartition():
 # Main Program Execution
 ##############################################################################
 
-if( SUSE.packageInstalled('dracut-fips') ):
+FIPS = SUSE.getBasicFIPSData()
+if( FIPS['Installed'] ):
 	if( separateBootPartition() ):
-		FIPS_ENABLED = False
-		BOOT_DEFINED = False
-		CMDLINE = SUSE.getProcCmdLine()
-		for OPTION in CMDLINE:
-			TEST = OPTION.lower()
-			if "fips=1" in TEST:
-				FIPS_ENABLED = True
-			elif "boot=" in TEST:
-				BOOT_DEFINED = True
-
-		if( BOOT_DEFINED ):
+		if( FIPS['KernBoot'] ):
 			Core.updateStatus(Core.IGNORE, "Boot works regardless of FIPS enablement")
 		else:
-			if( FIPS_ENABLED ):
+			if( FIPS['GrubFips'] or FIPS['KernFips'] ):
 				Core.updateStatus(Core.CRIT, "Boot failure probable, configure boot device")
 			else:
 				Core.updateStatus(Core.WARN, "Enabling FIPS may cause server boot failure, configure boot device first.")

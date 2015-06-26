@@ -1,4 +1,12 @@
 -------------------------------------------------------------------
+Fri Jun 26 19:00:26 UTC 2015 - jrecord@suse.com
+
+- New Patterns
+  sle12all/fips-boot-7016546.py
+  sle12all/fips-config-7016636.py
+  sle12all/fips-packages-7016637.py
+
+-------------------------------------------------------------------
 Wed Jun 24 16:45:11 UTC 2015 - jrecord@suse.com
 
 - New Security Patterns

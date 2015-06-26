@@ -54,7 +54,7 @@ Core.init(META_CLASS, META_CATEGORY, META_COMPONENT, PATTERN_ID, PRIMARY_LINK, O
 
 FIPS = SUSE.getBasicFIPSData()
 if( FIPS['Installed'] ):
-	if( FIPS['Grub'] ):
+	if( FIPS['GrubFips'] ):
 		if( FIPS['Enabled'] ):
 			if( 'Initrd' in FIPS.keys() ):
 				if( FIPS['Initrd'] ):
