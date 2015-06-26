@@ -31,6 +31,7 @@
 
 import os
 import Core
+import SUSE
 
 ##############################################################################
 # Overriden (eventually or in part) from SDP::Core Module
@@ -51,25 +52,46 @@ Core.init(META_CLASS, META_CATEGORY, META_COMPONENT, PATTERN_ID, PRIMARY_LINK, O
 # Local Function Definitions
 ##############################################################################
 
-def checkSomething():
-	fileOpen = "filename.txt"
-	section = "CommandToIdentifyFileSection"
-	content = {}
-	if Core.getSection(fileOpen, section, content):
-		for line in content:
-			if "something" in content[line]:
-				return True
-	return False
+def getBasicFIPSData():
+	FIPS = {'Installed': False, 'Enabled': False, 'Grub': False, 'Initrd': None}
+	
+	if( SUSE.packageInstalled('dracut-fips') ):
+		FIPS['Installed'] = True
+		CONTENT = []
+		if Core.getRegExSection('proc.txt', '/proc/sys/crypto/fips_enabled', CONTENT):
+			for LINE in CONTENT:
+				if( LINE.isdigit() ):
+					if( int(LINE) > 0 ):
+						FIPS['Enabled'] = True
+		GRUB2 = SUSE.getGrub2Config()
+		if( "fips=1" in GRUB2['GRUB_CMDLINE_LINUX_DEFAULT'].lower() ):
+			FIPS['Grub'] = True
+		if Core.getRegExSection('boot.txt', '/bin/lsinitrd', CONTENT):
+			FOUND = False
+			MODS = False
+			for LINE in CONTENT:
+				TEST = LINE.lower()
+				if( MODS ):
+					if TEST.startswith("=="):
+						MODS = False
+						break
+					elif TEST.startswith("fips"):
+						FOUND = True
+						break
+				elif TEST.startswith("dracut modules:"):
+					MODS = True
+
+	return FIPS
 
 ##############################################################################
 # Main Program Execution
 ##############################################################################
 
-if( checkSomething() ):
-	Core.updateStatus(Core.CRIT, "A critical severity is set")
+FIPS = getBasicFIPSData()
+if( FIPS['Installed'] ):
+	print "FIPS", FIPS
 else:
-	Core.updateStatus(Core.IGNORE, "Ignore this pattern, not applicable")
+	Core.updateStatus(Core.ERROR, "FIPS packages missing, not applicable")
 
 Core.printPatternResults()
-
 
