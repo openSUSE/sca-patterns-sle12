@@ -1,4 +1,11 @@
 -------------------------------------------------------------------
+Mon Jun 29 19:09:06 UTC 2015 - jrecord@suse.com
+
+- New Security Patterns
+  sle12sp0/compat-openssl098_SUSE-SU-2015_1150-1_12.0.py
+  sle12sp0/openssl_SUSE-SU-2015_1143-1_12.0.py
+
+-------------------------------------------------------------------
 Fri Jun 26 19:00:26 UTC 2015 - jrecord@suse.com
 
 - New Patterns
