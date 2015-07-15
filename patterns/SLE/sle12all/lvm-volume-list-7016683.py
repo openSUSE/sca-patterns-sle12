@@ -1,8 +1,8 @@
 #!/usr/bin/python
 
-# Title:       Boot Failure with FIPS
-# Description: Server will not boot when fips=1 is in the kernel parameter and /boot is a separate partition
-# Modified:    2015 Jun 25
+# Title:       Check for volume_list exit status
+# Description: Validate volume_list does not generate exit 5
+# Modified:    2015 Jul 15
 #
 ##############################################################################
 # Copyright (C) 2015 SUSE LLC
@@ -38,13 +38,13 @@ import SUSE
 ##############################################################################
 
 META_CLASS = "SLE"
-META_CATEGORY = "Boot"
-META_COMPONENT = "FIPS"
+META_CATEGORY = "LVM"
+META_COMPONENT = "Activation"
 PATTERN_ID = os.path.basename(__file__)
 PRIMARY_LINK = "META_LINK_TID"
 OVERALL = Core.TEMP
 OVERALL_INFO = "NOT SET"
-OTHER_LINKS = "META_LINK_TID=https://www.suse.com/support/kb/doc.php?id=7016546|META_LINK_BUG=https://bugzilla.suse.com/show_bug.cgi?id=924393"
+OTHER_LINKS = "META_LINK_TID=https://www.suse.com/support/kb/doc.php?id=7016683|https://bugzilla.suse.com/show_bug.cgi?id=938098"
 
 Core.init(META_CLASS, META_CATEGORY, META_COMPONENT, PATTERN_ID, PRIMARY_LINK, OVERALL, OVERALL_INFO, OTHER_LINKS)
 
@@ -52,31 +52,36 @@ Core.init(META_CLASS, META_CATEGORY, META_COMPONENT, PATTERN_ID, PRIMARY_LINK, O
 # Local Function Definitions
 ##############################################################################
 
-def separateBootPartition():
-	FSLIST = SUSE.getFileSystems()
-	for FILESYSTEM in FSLIST:
-		if( FILESYSTEM['MountPoint'] == "/boot" ):
-			return True
+def activationVolumeListFound():
+	FILE_OPEN = "lvm.txt"
+	SECTION = "lvm.conf"
+	CONTENT = []
+	if Core.getRegExSection(FILE_OPEN, SECTION, CONTENT):
+		for LINE in CONTENT:
+			if LINE.startswith("volume_list"):
+				TMP = LINE.split("=")[1].strip("\n []\" '")
+				if( len(TMP) > 0 ):
+					return True
+	return False
+
+def lvmActivationFailed():
+	SERVICE = 'lvm2-activation.service'
+	SERVICE_INFO = SUSE.getServiceDInfo(SERVICE)
+	if( SERVICE_INFO['ActiveState'] == 'failed' and SERVICE_INFO['ExecMainStatus'] == '5' ):
+		return True
 	return False
 
 ##############################################################################
 # Main Program Execution
 ##############################################################################
 
-FIPS = SUSE.getBasicFIPSData()
-if( FIPS['Installed'] ):
-	if( separateBootPartition() ):
-		if( FIPS['KernBoot'] ):
-			Core.updateStatus(Core.IGNORE, "Boot works regardless of FIPS enablement")
-		else:
-			if( FIPS['GrubFips'] or FIPS['KernFips'] ):
-				Core.updateStatus(Core.CRIT, "Boot failure probable, configure boot device")
-			else:
-				Core.updateStatus(Core.WARN, "Enabling FIPS may cause server boot failure, configure boot device first.")
+if( activationVolumeListFound() ):
+	if( lvmActivationFailed() ):
+		Core.updateStatus(Core.WARN, "Detected LVM activation errors, consider activation/auto_activation_volume_list")
 	else:
-		Core.updateStatus(Core.ERROR, "Separate boot partiton not found")
+		Core.updateStatus(Core.IGNORE, "LVM activation/volume_list in use, but no errors found")
 else:
-	Core.updateStatus(Core.ERROR, "FIPS not installed, not applicable")
+	Core.updateStatus(Core.ERROR, "LVM activation/volume_list is undefined")
 
 Core.printPatternResults()
 

@@ -1,4 +1,10 @@
 -------------------------------------------------------------------
+Wed Jul 15 09:20:07 UTC 2015 - jrecord@suse.com
+
+- New Pattern
+  sle12all/lvm-volume-list-7016683.py
+
+-------------------------------------------------------------------
 Thu Jul  9 15:28:58 UTC 2015 - jrecord@suse.com
 
 - New Security Pattern
