@@ -52,28 +52,30 @@ Core.init(META_CLASS, META_CATEGORY, META_COMPONENT, PATTERN_ID, PRIMARY_LINK, O
 # Local Function Definitions
 ##############################################################################
 
-def activationVolumeListFound():
+def getVolumeLists():
 	FILE_OPEN = "lvm.txt"
 	SECTION = "lvm.conf"
 	CONTENT = []
+	VLIST = {'volume_list': '', 'auto_activation_volume_list': ''}
 	if Core.getRegExSection(FILE_OPEN, SECTION, CONTENT):
 		for LINE in CONTENT:
 			if LINE.startswith("volume_list"):
 				TMP = LINE.split("=")[1].strip("\n []\" '")
 				if( len(TMP) > 0 ):
-					return True
-	return False
+			elif LINE.startswith("auto_activation_volume_list"):
 
-def lvmActivationFailed():
-	SERVICE = 'lvm2-activation.service'
-	SERVICE_INFO = SUSE.getServiceDInfo(SERVICE)
-	if( SERVICE_INFO['ActiveState'] == 'failed' and SERVICE_INFO['ExecMainStatus'] == '5' ):
-		return True
-	return False
+	return VLIST
 
 ##############################################################################
 # Main Program Execution
 ##############################################################################
+
+SERVICE = 'lvm2-activation.service'
+SERVICE_INFO = SUSE.getServiceDInfo(SERVICE)
+if "vgchange -aay" in SERVICE_INFO['ExecStart']: #auto activation detected
+	ACTIVATIONS = getVolumeLists()
+else:
+	Core.updateStatus(Core.ERROR, "LVM auto activation required")
 
 if( activationVolumeListFound() ):
 	if( lvmActivationFailed() ):
