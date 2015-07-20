@@ -2,7 +2,7 @@
 
 # Title:       Check for volume_list exit status
 # Description: Validate volume_list does not generate exit 5
-# Modified:    2015 Jul 15
+# Modified:    2015 Jul 20
 #
 ##############################################################################
 # Copyright (C) 2015 SUSE LLC
