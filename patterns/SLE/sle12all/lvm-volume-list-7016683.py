@@ -59,9 +59,9 @@ Core.init(META_CLASS, META_CATEGORY, META_COMPONENT, PATTERN_ID, PRIMARY_LINK, O
 
 SERVICE = 'lvm2-activation.service'
 SERVICE_INFO = SUSE.getServiceDInfo(SERVICE)
-LVM_CONFIG = SUSE.getConfigFileLVM('activation')
+LVM_CONFIG = SUSE.getConfigFileLVM('log')
 if "vgchange -aay" in SERVICE_INFO['ExecStart']: #auto activation detected
-	print 'HERE'
+	print 'Auto-activation set'
 else:
 	Core.updateStatus(Core.ERROR, "LVM auto activation required")
 
