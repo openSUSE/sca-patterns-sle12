@@ -2,7 +2,7 @@
 
 # Title:       Check for volume_list exit status
 # Description: Validate volume_list does not generate exit 5
-# Modified:    2015 Jul 20
+# Modified:    2015 Jul 27
 #
 ##############################################################################
 # Copyright (C) 2015 SUSE LLC
@@ -59,7 +59,7 @@ Core.init(META_CLASS, META_CATEGORY, META_COMPONENT, PATTERN_ID, PRIMARY_LINK, O
 
 SERVICE = 'lvm2-activation.service'
 SERVICE_INFO = SUSE.getServiceDInfo(SERVICE)
-LVM_CONFIG = SUSE.getConfigFileLVM('log')
+LVM_CONFIG = SUSE.getConfigFileLVM('activation')
 if "vgchange -aay" in SERVICE_INFO['ExecStart']: #auto activation detected
 	print 'Auto-activation set'
 else:
