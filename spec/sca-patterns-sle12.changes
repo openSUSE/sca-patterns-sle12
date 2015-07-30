@@ -1,8 +1,14 @@
 -------------------------------------------------------------------
-Thu Jul 30 15:47:26 UTC 2015 - jrecord@suse.com
+Thu Jul 30 16:33:24 UTC 2015 - jrecord@suse.com
 
 - New Pattern
   sle12all/lvm-volume-list-7016683.py
+- New Security Patterns
+  sle12sp0/MozillaFirefox_SUSE-SU-2015_1269-1_12.0.py
+  sle12sp0/flash-player_SUSE-SU-2015_1255-1_12.0.py
+  sle12sp0/java_SUSE-SU-2015_1319-1_12.0.py
+  sle12sp0/mariadb_SUSE-SU-2015_1273-1_12.0.py
+  sle12sp0/xen_SUSE-SU-2015_1302-1_12.0.py
 
 -------------------------------------------------------------------
 Thu Jul  9 15:28:58 UTC 2015 - jrecord@suse.com
