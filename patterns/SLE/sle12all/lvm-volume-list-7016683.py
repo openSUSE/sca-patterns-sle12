@@ -2,7 +2,7 @@
 
 # Title:       Check for volume_list exit status
 # Description: Validate volume_list does not generate exit 5
-# Modified:    2015 Jul 27
+# Modified:    2015 Jul 30
 #
 ##############################################################################
 # Copyright (C) 2015 SUSE LLC
@@ -60,27 +60,38 @@ Core.init(META_CLASS, META_CATEGORY, META_COMPONENT, PATTERN_ID, PRIMARY_LINK, O
 SERVICE = 'lvm2-activation.service'
 SERVICE_INFO = SUSE.getServiceDInfo(SERVICE)
 LVM_CONFIG = SUSE.getConfigFileLVM('activation')
-print "KEYS", LVM_CONFIG.keys()
-print
-print "LVM_CONFIG", LVM_CONFIG
-print
 if "vgchange -aay" in SERVICE_INFO['ExecStart']: #auto activation detected
-	if( LVM_CONFIG ):
-		if( len(LVM_CONFIG['volume_list']) > 0 ):
-			if( 'volume_list' in LVM_CONFIG.keys() and 'auto_activation_volume_list' in LVM_CONFIG.keys() ):
-				if set(LVM_CONFIG['volume_list']).issubset(LVM_CONFIG['auto_activation_volume_list']):
-					Core.updateStatus(Core.IGNORE, "LVM volume_list is a subset of auto_activation_volume_list, ignore")
-				else:
-					if( SERVICE_INFO['ExecMainStatus'] == '5' ):
-						Core.updateStatus(Core.CRIT, "Update activation/auto_activation_volume_list to avoid exit status error on " + str(SERVICE))
-					else:
-						Core.updateStatus(Core.WARN, "Update activation/auto_activation_volume_list to avoid exit status error on " + str(SERVICE))
-			else:
+	if( LVM_CONFIG ): # a valid lvm config file exists
+		if( 'volume_list' in LVM_CONFIG.keys() ): # there is a volume_list entry in lvm.conf
+			if( len(LVM_CONFIG['volume_list']) > 0 ): # there are values associated with the volume_list entry
+				if( 'auto_activation_volume_list' in LVM_CONFIG.keys() ): # there is an auto_activation_volume_list entry in lvm.conf
+					if( len(LVM_CONFIG['auto_activation_volume_list']) > 0 ): # there are values associated with the auto_activation_volume_list entry
+						if set(LVM_CONFIG['volume_list']).issubset(LVM_CONFIG['auto_activation_volume_list']): # all required entries found in auto_activation_volume_list
+							Core.updateStatus(Core.IGNORE, "All volume_list entries are found within the auto_activation_volume_list, ignore")
+						else: # some volume_list entries are missing from the auto_activation_volume_list
+							if( SERVICE_INFO['ExecMainStatus'] == '5' ): # found the error associated with missing auto_activation_volume_list entries
+								Core.updateStatus(Core.WARN, "Missing auto_activation_volume_list entries in lvm.conf")
+							else: # didn't fine the error associated with missing auto_activation_volume_list entries
+								Core.updateStatus(Core.WARN, "An auto_activation_volume_list entry in lvm.conf may be needed to avoid errors")
+					else: # no auto_activation_volume_list entries found
+						if( SERVICE_INFO['ExecMainStatus'] == '5' ): # found the error associated with missing auto_activation_volume_list entries
+							Core.updateStatus(Core.WARN, "Missing auto_activation_volume_list entries in lvm.conf")
+						else: # didn't fine the error associated with missing auto_activation_volume_list entries
+							Core.updateStatus(Core.WARN, "An auto_activation_volume_list entry in lvm.conf may be needed to avoid errors")
+				else: # no auto_activation_volume_list entries found
+					if( SERVICE_INFO['ExecMainStatus'] == '5' ): # found the error associated with missing auto_activation_volume_list entries
+						Core.updateStatus(Core.WARN, "Missing auto_activation_volume_list entries in lvm.conf")
+					else: # didn't fine the error associated with missing auto_activation_volume_list entries
+						Core.updateStatus(Core.WARN, "An auto_activation_volume_list entry in lvm.conf may be needed to avoid errors")
+			else: # volume_list is empty
+				Core.updateStatus(Core.IGNORE, "The volume_list values are empty, ignore")
+		elif( 'auto_activation_volume_list' in LVM_CONFIG.keys() ): # found auto_activation_volume_list that is used for vgchange -aay
+			Core.updateStatus(Core.IGNORE, "The auto_activation_volume_list key matches the use of vgchange -aay, ignore")
 		else:
-			Core.updateStatus(Core.ERROR, "ERROR: LVM configuration file missing activation section")
-	else:
+			Core.updateStatus(Core.ERROR, "ERROR: LVM configuration file missing activation volume_list and auto_activation_volume_list")
+	else: # no lvm.conf activation section found
 		Core.updateStatus(Core.ERROR, "ERROR: LVM configuration file missing activation section")
-else:
+else: # vgchange -aay auto activation is not in use
 	Core.updateStatus(Core.ERROR, "ERROR: LVM auto activation required")
 
 Core.printPatternResults()
