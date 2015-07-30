@@ -60,10 +60,28 @@ Core.init(META_CLASS, META_CATEGORY, META_COMPONENT, PATTERN_ID, PRIMARY_LINK, O
 SERVICE = 'lvm2-activation.service'
 SERVICE_INFO = SUSE.getServiceDInfo(SERVICE)
 LVM_CONFIG = SUSE.getConfigFileLVM('activation')
+print "KEYS", LVM_CONFIG.keys()
+print
+print "LVM_CONFIG", LVM_CONFIG
+print
 if "vgchange -aay" in SERVICE_INFO['ExecStart']: #auto activation detected
-	print 'Auto-activation set'
+	if( LVM_CONFIG ):
+		if( len(LVM_CONFIG['volume_list']) > 0 ):
+			if( 'volume_list' in LVM_CONFIG.keys() and 'auto_activation_volume_list' in LVM_CONFIG.keys() ):
+				if set(LVM_CONFIG['volume_list']).issubset(LVM_CONFIG['auto_activation_volume_list']):
+					Core.updateStatus(Core.IGNORE, "LVM volume_list is a subset of auto_activation_volume_list, ignore")
+				else:
+					if( SERVICE_INFO['ExecMainStatus'] == '5' ):
+						Core.updateStatus(Core.CRIT, "Update activation/auto_activation_volume_list to avoid exit status error on " + str(SERVICE))
+					else:
+						Core.updateStatus(Core.WARN, "Update activation/auto_activation_volume_list to avoid exit status error on " + str(SERVICE))
+			else:
+		else:
+			Core.updateStatus(Core.ERROR, "ERROR: LVM configuration file missing activation section")
+	else:
+		Core.updateStatus(Core.ERROR, "ERROR: LVM configuration file missing activation section")
 else:
-	Core.updateStatus(Core.ERROR, "LVM auto activation required")
+	Core.updateStatus(Core.ERROR, "ERROR: LVM auto activation required")
 
 Core.printPatternResults()
 
