@@ -1,4 +1,12 @@
 -------------------------------------------------------------------
+Thu Sep 17 20:51:25 UTC 2015 - jrecord@suse.com
+
+- New Security Patterns
+  sle12sp0/bind_SUSE-SU-2015_1481-1_12.0.py
+  sle12sp0/mozilla-nss_SUSE-SU-2015_1476-1_12.0.py
+  sle12sp0/qemu_SUSE-SU-2015_1519-1_12.0.py
+
+-------------------------------------------------------------------
 Fri Aug 14 19:38:57 UTC 2015 - jrecord@suse.com
 
 - New Security Pattern
