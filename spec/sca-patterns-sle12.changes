@@ -1,4 +1,11 @@
 -------------------------------------------------------------------
+Thu Oct  8 17:20:26 UTC 2015 - jrecord@suse.com
+
+- New Security Patterns
+  sle12sp0/flash-player_SUSE-SU-2015_1618-1_12.0.py
+  sle12sp0/mozilla-nspr_SUSE-SU-2015_1680-1_12.0.py
+
+-------------------------------------------------------------------
 Thu Sep 17 20:51:25 UTC 2015 - jrecord@suse.com
 
 - New Security Patterns
