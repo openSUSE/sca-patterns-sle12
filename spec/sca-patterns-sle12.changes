@@ -1,4 +1,13 @@
 -------------------------------------------------------------------
+Thu Oct 29 20:38:33 UTC 2015 - jrecord@suse.com
+
+- New Security Patterns
+  sle12sp0/flash-player_SUSE-SU-2015_1740-1_12.0.py
+  sle12sp0/flash-player_SUSE-SU-2015_1770-1_12.0.py
+  sle12sp0/kernel-source_SUSE-SU-2015_1727-1_12.0.py
+  sle12sp0/qemu_SUSE-SU-2015_1782-1_12.0.py
+
+-------------------------------------------------------------------
 Thu Oct  8 17:20:26 UTC 2015 - jrecord@suse.com
 
 - New Security Patterns
