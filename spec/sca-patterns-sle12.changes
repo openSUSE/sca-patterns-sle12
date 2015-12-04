@@ -1,4 +1,11 @@
 -------------------------------------------------------------------
+Fri Dec  4 15:45:46 UTC 2015 - jrecord@suse.com
+
+- New Security Patterns
+  sle12sp0/java_SUSE-SU-2015_2168-1_12.0.py
+  sle12sp0/kernel_SUSE-SU-2015_2194-1_12.0.py
+
+-------------------------------------------------------------------
 Wed Nov 18 22:01:25 UTC 2015 - jrecord@suse.com
 
 - New Security Patterns
