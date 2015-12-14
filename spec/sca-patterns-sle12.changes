@@ -1,4 +1,14 @@
 -------------------------------------------------------------------
+Mon Dec 14 23:29:35 UTC 2015 - jrecord@suse.com
+
+- Added sle12sp1 pattern directory
+- New Security Patterns
+  sle12sp0/flash-player_SUSE-SU-2015_2247-1_12.0.py
+  sle12sp1/flash-player_SUSE-SU-2015_2247-1_12.1.py
+  sle12sp1/java_SUSE-SU-2015_2168-2_12.1.py
+  sle12sp1/java_SUSE-SU-2015_2268-1_12.1.py
+
+-------------------------------------------------------------------
 Fri Dec  4 15:45:46 UTC 2015 - jrecord@suse.com
 
 - New Security Patterns
