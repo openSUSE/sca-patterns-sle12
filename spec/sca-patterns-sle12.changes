@@ -1,4 +1,22 @@
 -------------------------------------------------------------------
+Fri Jan  8 20:36:00 UTC 2016 - jrecord@suse.com
+
+- New Security Patterns
+  sle12sp0/bind_SUSE-SU-2015_2341-1_12.0.py
+  sle12sp0/flash-player_SUSE-SU-2015_2401-1_12.0.py
+  sle12sp0/grub2_SUSE-SU-2015_2399-1_12.0.py
+  sle12sp0/kernel_SUSE-SU-2015_2292-1_12.0.py
+  sle12sp0/mozillafirefox_SUSE-SU-2015_2335-1_12.0.py
+  sle12sp0/tevent_SUSE-SU-2015_2304-1_12.0.py
+  sle12sp1/bind_SUSE-SU-2015_2359-1_12.1.py
+  sle12sp1/flash-player_SUSE-SU-2015_2401-1_12.1.py
+  sle12sp1/grub2_SUSE-SU-2015_2387-1_12.1.py
+  sle12sp1/kernel_SUSE-SU-2015_2292-1_12.1.py
+  sle12sp1/mozillafirefox_SUSE-SU-2015_2335-1_12.1.py
+  sle12sp1/strongswan_SUSE-SU-2015_2183-2_12.1.py
+  sle12sp1/tevent_SUSE-SU-2015_2305-1_12.1.py
+
+-------------------------------------------------------------------
 Mon Dec 14 23:29:35 UTC 2015 - jrecord@suse.com
 
 - Added sle12sp1 pattern directory
