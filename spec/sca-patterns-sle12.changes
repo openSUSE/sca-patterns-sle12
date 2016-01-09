@@ -1,4 +1,11 @@
 -------------------------------------------------------------------
+Sat Jan  9 17:56:36 UTC 2016 - jrecord@suse.com
+
+- New Patterns
+  sle12all/systemd-current-failed-7017137.py
+  sle12all/systemd-failure-logged-7017137.py
+
+-------------------------------------------------------------------
 Fri Jan  8 20:36:00 UTC 2016 - jrecord@suse.com
 
 - New Security Patterns
