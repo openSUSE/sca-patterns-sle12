@@ -1,4 +1,11 @@
 -------------------------------------------------------------------
+Wed Jan 27 18:05:20 UTC 2016 - jrecord@suse.com
+
+- New XFS Patterns
+  sle12sp0/xfs-zero-corruption-7017183.py
+  sle12sp1/xfs-zero-corruption-7017183.py
+
+-------------------------------------------------------------------
 Sat Jan  9 17:56:36 UTC 2016 - jrecord@suse.com
 
 - New Patterns
