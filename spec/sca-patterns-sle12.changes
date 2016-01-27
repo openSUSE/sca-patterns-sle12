@@ -1,4 +1,20 @@
 -------------------------------------------------------------------
+Wed Jan 27 18:28:15 UTC 2016 - jrecord@suse.com
+
+- New Security Patterns
+  sle12sp0/bind_SUSE-SU-2016_0180-1_12.0.py
+  sle12sp0/kernel_SUSE-SU-2016_0168-1_12.0.py
+  sle12sp0/kernel_SUSE-SU-2016_0186-1_12.0.py
+  sle12sp0/kernel_SUSE-SU-2016_0205-1_12.0.py
+  sle12sp0/openldap2_SUSE-SU-2016_0224-1_12.0.py
+  sle12sp0/openssh_SUSE-SU-2016_0118-1_12.0.py
+  sle12sp1/bind_SUSE-SU-2016_0174-1_12.1.py
+  sle12sp1/java_SUSE-SU-2016_0256-1_12.1.py
+  sle12sp1/kernel_SUSE-SU-2016_0186-1_12.1.py
+  sle12sp1/openldap2_SUSE-SU-2016_0224-1_12.1.py
+  sle12sp1/openssh_SUSE-SU-2016_0118-1_12.1.py
+
+-------------------------------------------------------------------
 Wed Jan 27 18:05:20 UTC 2016 - jrecord@suse.com
 
 - New XFS Patterns
