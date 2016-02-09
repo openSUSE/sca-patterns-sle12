@@ -71,11 +71,15 @@ if( SUSE.packageInstalled(RPM_NAME) ):
         INSTALLED_VERSION = SUSE.compareRPM(RPM_NAME, RPM_VERSION)
         if( INSTALLED_VERSION == 0 ):
                 if ( ntpchrootinfo() ):
-			Core.updateStatus(Core.CRIT, "Bug detected in " + RPM_VERSION + ", update server for fixes")
+                	SERVICE_INFO = SUSE.getServiceDInfo(RPM_NAME)
+                	if( SERVICE_INFO['UnitFileState'] == "enabled" ): # SLES12 SP1 specific
+				Core.updateStatus(Core.CRIT, "Bug detected in " + RPM_VERSION + ", disable NTP chroot to resolve.")
+			else:
+				Core.updateStatus(Core.IGNORE, "But not applicable when NTP is not in use.")
 		else:
 			Core.updateStatus(Core.IGNORE, "Bug not applicable when chroot is disabled.")
         else:
-                Core.updateStatus(Core.IGNORE, "Bug fixes applied for " + RPM_VERSION)
+                Core.updateStatus(Core.IGNORE, "Bug doesn't exist in " + RPM_VERSION)
 else:
         Core.updateStatus(Core.ERROR, "ERROR: " + RPM_NAME + " not installed")
 
