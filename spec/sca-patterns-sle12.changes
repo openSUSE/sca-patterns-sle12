@@ -1,4 +1,12 @@
 -------------------------------------------------------------------
+Wed Feb 17 15:45:31 UTC 2016 - jrecord@suse.com
+
+- New Security Patterns
+  sle12sp0/glibc_SUSE-SU-2016_0473-1_12.0.py
+  sle12sp1/glibc_SUSE-SU-2016_0471-1_12.1.py
+  sle12sp1/qemu_SUSE-SU-2016_0459-1_12.1.py
+
+-------------------------------------------------------------------
 Wed Feb 10 21:09:12 UTC 2016 - jrecord@suse.com
 
 - New Security Patterns
