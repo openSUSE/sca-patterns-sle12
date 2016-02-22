@@ -30,6 +30,7 @@
 ##############################################################################
 
 import os
+import re
 import Core
 import SUSE
 
@@ -54,10 +55,22 @@ Core.init(META_CLASS, META_CATEGORY, META_COMPONENT, PATTERN_ID, PRIMARY_LINK, O
 def ntpchrootinfo():
 	fileOpen = "sysconfig.txt"
 	section = "/etc/sysconfig/ntp"
-	content = {}
-	if Core.getSection(fileOpen, section, content):
+	content = []
+	regresults = re.compile("CHROOTED.*yes", re.IGNORECASE)
+	if Core.getRegExSection(fileOpen, section, content):
 		for line in content:
-			if 'CHROOTED="yes"' in content[line]:
+			if regresults.search(line):
+				return True
+	return False
+
+def ntpdnsinfo():
+	fileOpen = "ntp.txt"
+	section = "/etc/ntp.conf"
+	content = []
+	regresults = re.compile("^(server|fudge|restrict)[ \t][a-zA-Z0-9\.]*[a-zA-Z]", re.IGNORECASE)
+	if Core.getRegExSection(fileOpen, section, content):
+		for line in content:
+			if regresults.search(line):
 				return True
 	return False
 
@@ -68,19 +81,23 @@ def ntpchrootinfo():
 RPM_NAME = 'ntp'
 RPM_VERSION = '4.2.8'
 if( SUSE.packageInstalled(RPM_NAME) ):
-        INSTALLED_VERSION = SUSE.compareRPM(RPM_NAME, RPM_VERSION)
-        if( INSTALLED_VERSION == 0 ):
-                if ( ntpchrootinfo() ):
-                	SERVICE_INFO = SUSE.getServiceDInfo(RPM_NAME)
-                	if( SERVICE_INFO['UnitFileState'] == "enabled" ): # SLES12 SP1 specific
-				Core.updateStatus(Core.CRIT, "Bug detected in " + RPM_VERSION + ", disable NTP chroot to resolve.")
+	INSTALLED_VERSION = SUSE.compareRPM(RPM_NAME, RPM_VERSION)
+	if( INSTALLED_VERSION == 0 ):
+		if ( ntpchrootinfo() ):
+			SERVICE = "ntpd.service"
+			SERVICE_INFO = SUSE.getServiceDInfo(SERVICE)
+			if( SERVICE_INFO['UnitFileState'] == "enabled" ): # SLES12 SP1 specific
+				if ( ntpdnsinfo() ):
+					Core.updateStatus(Core.CRIT, "NTP issue resolving DNS detected, disable NTP chroot to resolve.")
+				else:
+					Core.updateStatus(Core.IGNORE, "Bug not applicate when NTP isn't using DNS.")	
 			else:
-				Core.updateStatus(Core.IGNORE, "But not applicable when NTP is not in use.")
+				Core.updateStatus(Core.IGNORE, "Bug not applicable when NTP is not in use.")
 		else:
 			Core.updateStatus(Core.IGNORE, "Bug not applicable when chroot is disabled.")
-        else:
-                Core.updateStatus(Core.IGNORE, "Bug doesn't exist in " + RPM_VERSION)
+	else:
+		Core.updateStatus(Core.IGNORE, "Bug doesn't exist in " + RPM_VERSION)
 else:
-        Core.updateStatus(Core.ERROR, "ERROR: " + RPM_NAME + " not installed")
+	Core.updateStatus(Core.ERROR, "ERROR: " + RPM_NAME + " not installed")
 
 Core.printPatternResults()
