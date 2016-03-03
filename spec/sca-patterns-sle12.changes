@@ -1,4 +1,19 @@
 -------------------------------------------------------------------
+Thu Mar  3 20:55:33 UTC 2016 - jrecord@suse.com
+
+- New Security Patterns
+  sle12sp0/kernel_SUSE-SU-2016_0585-1_12.0.py
+  sle12sp0/mozillafirefox_SUSE-SU-2016_0554-1_12.0.py
+  sle12sp0/openssl_SUSE-SU-2016_0617-1_12.0.py (DROWN)
+  sle12sp0/openssl_SUSE-SU-2016_0641-1_12.0.py (DROWN)
+  sle12sp0/postgresql94_SUSE-SU-2016_0555-1_12.0.py
+  sle12sp1/kernel_SUSE-SU-2016_0585-1_12.1.py
+  sle12sp1/mozillafirefox_SUSE-SU-2016_0554-1_12.1.py
+  sle12sp1/openssl_SUSE-SU-2016_0620-1_12.1.py (DROWN)
+  sle12sp1/openssl_SUSE-SU-2016_0641-1_12.1.py (DROWN)
+  sle12sp1/postgresql94_SUSE-SU-2016_0555-1_12.1.py
+
+-------------------------------------------------------------------
 Tue Feb 23 19:42:51 UTC 2016 - jrecord@suse.com
 
 - Updated patterns (bsc#953203)
