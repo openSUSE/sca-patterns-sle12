@@ -1,4 +1,13 @@
 -------------------------------------------------------------------
+Mon Mar 14 18:09:46 UTC 2016 - jrecord@suse.com
+
+- New Security Patterns
+  sle12sp0/firefox_SUSE-SU-2016_0727-1_12.0.py
+  sle12sp0/flash-player_SUSE-SU-2016_0715-1_12.0.py
+  sle12sp1/firefox_SUSE-SU-2016_0727-1_12.1.py
+  sle12sp1/flash-player_SUSE-SU-2016_0715-1_12.1.py
+
+-------------------------------------------------------------------
 Thu Mar  3 20:55:33 UTC 2016 - jrecord@suse.com
 
 - New Security Patterns
