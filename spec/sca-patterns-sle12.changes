@@ -1,4 +1,25 @@
 -------------------------------------------------------------------
+Thu Apr  7 18:49:14 UTC 2016 - jrecord@suse.com
+
+- New Security Patterns
+  sle12sp0/bind_SUSE-SU-2016_0780-1_12.0.py
+  sle12sp0/git_SUSE-SU-2016_0796-1_12.0.py
+  sle12sp0/graphite2_SUSE-SU-2016_0779-1_12.0.py
+  sle12sp0/pidgin-otr_SUSE-SU-2016_0912-1_12.0.py
+  sle12sp0/samba_SUSE-SU-2016_0814-1_12.0.py
+  sle12sp0/tomcat_SUSE-SU-2016_0822-1_12.0.py
+  sle12sp1/bind_SUSE-SU-2016_0759-1_12.1.py
+  sle12sp1/git_SUSE-SU-2016_0796-1_12.1.py
+  sle12sp1/graphite2_SUSE-SU-2016_0779-1_12.1.py
+  sle12sp1/java_SUSE-SU-2016_0957-1_12.1.py
+  sle12sp1/java_SUSE-SU-2016_0959-1_12.0.py
+  sle12sp1/java_SUSE-SU-2016_0959-1_12.1.py
+  sle12sp1/pidgin-otr_SUSE-SU-2016_0912-1_12.1.py
+  sle12sp1/samba_SUSE-SU-2016_0816-1_12.1.py
+  sle12sp1/tomcat_SUSE-SU-2016_0769-1_12.1.py
+  sle12sp1/xen_SUSE-SU-2016_0873-1_12.1.py
+
+-------------------------------------------------------------------
 Mon Mar 14 18:09:46 UTC 2016 - jrecord@suse.com
 
 - New Security Patterns
