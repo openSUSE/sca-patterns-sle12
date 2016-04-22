@@ -1,4 +1,15 @@
 -------------------------------------------------------------------
+Fri Apr 22 15:26:53 UTC 2016 - jrecord@suse.com
+
+- New Security Patterns
+  sle12sp0/flash-player_SUSE-SU-2016_0990-1_12.0.py
+  sle12sp0/kernel_SUSE-SU-2016_1019-1_12.0.py
+  sle12sp0/samba_SUSE-SU-2016_1022-1_12.0.py (badlock)
+  sle12sp1/flash-player_SUSE-SU-2016_0990-1_12.1.py
+  sle12sp1/kernel_SUSE-SU-2016_1019-1_12.1.py
+  sle12sp1/samba_SUSE-SU-2016_1024-1_12.1.py (badlock)
+
+-------------------------------------------------------------------
 Thu Apr  7 18:49:14 UTC 2016 - jrecord@suse.com
 
 - New Security Patterns
