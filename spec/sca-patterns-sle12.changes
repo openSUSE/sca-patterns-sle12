@@ -1,4 +1,31 @@
 -------------------------------------------------------------------
+Fri Jun  3 16:33:56 UTC 2016 - jason.record@suse.com
+
+- New Security Patterns
+  sle12sp0/compat-openssl098_SUSE-SU-2016_1267-1_12.0.py
+  sle12sp0/cyrus-imapd_SUSE-SU-2016_1457-1_12.0.py
+  sle12sp0/firefox_SUSE-SU-2016_1258-1_12.0.py
+  sle12sp0/flash-player_SUSE-SU-2016_1305-1_12.0.py
+  sle12sp0/imagemagick_SUSE-SU-2016_1260-1_12.0.py
+  sle12sp0/java_SUSE-SU-2016_1250-1_12.0.py
+  sle12sp0/java_SUSE-SU-2016_1299-1_12.0.py
+  sle12sp0/ntp_SUSE-SU-2016_1247-1_12.0.py
+  sle12sp0/openssl_SUSE-SU-2016_1228-1_12.0.py
+  sle12sp0/xen_SUSE-SU-2016_1318-1_12.0.py
+  sle12sp1/compat-openssl098_SUSE-SU-2016_1267-1_12.1.py
+  sle12sp1/cyrus-imapd_SUSE-SU-2016_1457-1_12.1.py
+  sle12sp1/firefox_SUSE-SU-2016_1258-1_12.1.py
+  sle12sp1/flash-player_SUSE-SU-2016_1305-1_12.1.py
+  sle12sp1/imagemagick_SUSE-SU-2016_1260-1_12.1.py
+  sle12sp1/java_SUSE-SU-2016_1248-1_12.1.py
+  sle12sp1/java_SUSE-SU-2016_1250-1_12.1.py
+  sle12sp1/java_SUSE-SU-2016_1299-1_12.1.py
+  sle12sp1/java_SUSE-SU-2016_1475-1_12.1.py
+  sle12sp1/ntp_SUSE-SU-2016_1177-1_12.1.py
+  sle12sp1/ntp_SUSE-SU-2016_1291-1_12.1.py
+  sle12sp1/openssl_SUSE-SU-2016_1233-1_12.1.py
+
+-------------------------------------------------------------------
 Tue Apr 26 16:13:40 UTC 2016 - jrecord@suse.com
 
 - New Security Pattern
