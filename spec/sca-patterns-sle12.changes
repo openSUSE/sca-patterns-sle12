@@ -1,4 +1,15 @@
 -------------------------------------------------------------------
+Mon Jun 13 19:57:15 UTC 2016 - jason.record@suse.com
+
+- New Security Patterns
+  sle12sp0/expat_SUSE-SU-2016_1508-1_12.0.py
+  sle12sp0/libxml2_SUSE-SU-2016_1538-1_12.0.py
+  sle12sp0/qemu_SUSE-SU-2016_1560-1_12.0.py
+  sle12sp1/expat_SUSE-SU-2016_1508-1_12.1.py
+  sle12sp1/libxml2_SUSE-SU-2016_1538-1_12.1.py
+  sle12sp1/ntp_SUSE-SU-2016_1563-1_12.1.py
+
+-------------------------------------------------------------------
 Fri Jun  3 16:33:56 UTC 2016 - jason.record@suse.com
 
 - New Security Patterns
