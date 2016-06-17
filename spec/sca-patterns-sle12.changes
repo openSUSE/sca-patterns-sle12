@@ -1,4 +1,14 @@
 -------------------------------------------------------------------
+Fri Jun 17 16:31:03 UTC 2016 - jason.record@suse.com
+
+- New Security Patterns
+  sle12sp0/flash-player_SUSE-SU-2016_1613-1_12.0.py
+  sle12sp0/kernel_SUSE-SU-2016_1596-1_12.0.py
+  sle12sp1/flash-player_SUSE-SU-2016_1613-1_12.1.py
+- virsh/xl domu shutdown hangs domain, name changes to null
+  sle12sp1/xen-vm-hang-7017679.py
+
+-------------------------------------------------------------------
 Wed Jun 15 17:45:21 UTC 2016 - jason.record@suse.com
 
 - New Security Patterns
