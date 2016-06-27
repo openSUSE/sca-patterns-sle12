@@ -1,4 +1,15 @@
 -------------------------------------------------------------------
+Mon Jun 27 19:42:48 UTC 2016 - jason.record@suse.com
+
+- New Security Patterns
+  sle12sp0/kernel_SUSE-SU-2016_1690-1_12.0.py
+  sle12sp0/mariadb_SUSE-SU-2016_1619-1_12.0.py
+  sle12sp0/usbmuxd_SUSE-SU-2016_1639-1_12.0.py
+  sle12sp1/mariadb_SUSE-SU-2016_1620-1_12.1.py
+  sle12sp1/php53_SUSE-SU-2016_1638-1_11.2.py
+  sle12sp1/usbmuxd_SUSE-SU-2016_1639-1_12.1.py
+
+-------------------------------------------------------------------
 Fri Jun 17 16:31:03 UTC 2016 - jason.record@suse.com
 
 - New Security Patterns
