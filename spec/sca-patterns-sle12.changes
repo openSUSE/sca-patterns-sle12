@@ -1,4 +1,20 @@
 -------------------------------------------------------------------
+Tue Jul  5 22:31:17 UTC 2016 - jason.record@suse.com
+
+- New Security Patterns
+  sle12sp0/firefox_SUSE-SU-2016_1691-1_12.0.py
+  sle12sp0/kernel_SUSE-SU-2016_1696-1_12.0.py
+  sle12sp0/kernel_SUSE-SU-2016_1709-1_12.0.py
+  sle12sp0/kernel_SUSE-SU-2016_1710-1_12.0.py
+  sle12sp1/firefox_SUSE-SU-2016_1691-1_12.1.py
+  sle12sp1/kernel_SUSE-SU-2016_1696-1_12.1.py
+  sle12sp1/kernel_SUSE-SU-2016_1709-1_12.1.py
+  sle12sp1/qemu_SUSE-SU-2016_1703-1_12.1.py
+- systemd-coredump is not consistent in dumping systemd service cores
+  sle12sp0/systemd-coredump-7017378.py
+  sle12sp1/systemd-coredump-7017378.py
+
+-------------------------------------------------------------------
 Mon Jun 27 19:42:48 UTC 2016 - jason.record@suse.com
 
 - New Security Patterns
