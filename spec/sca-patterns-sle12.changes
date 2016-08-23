@@ -1,4 +1,30 @@
 -------------------------------------------------------------------
+Tue Aug 23 15:49:12 UTC 2016 - jrecord@suse.com
+
+- New Security Patterns
+  sle12sp0/kernel_SUSE-SU-2016_2105-1_12.0.py
+  sle12sp0/kgraft-patch_SUSE-SU-2016_1995-1_12.0.py
+  sle12sp0/kgraft-patch_SUSE-SU-2016_1998-1_12.0.py
+  sle12sp0/kgraft-patch_SUSE-SU-2016_1999-1_12.0.py
+  sle12sp0/kgraft-patch_SUSE-SU-2016_2001-1_12.0.py
+  sle12sp0/kgraft-patch_SUSE-SU-2016_2002-1_12.0.py
+  sle12sp0/kgraft-patch_SUSE-SU-2016_2005-1_12.0.py
+  sle12sp0/kgraft-patch_SUSE-SU-2016_2006-1_12.0.py
+  sle12sp0/kgraft-patch_SUSE-SU-2016_2010-1_12.0.py
+  sle12sp0/kgraft-patch_SUSE-SU-2016_2014-1_12.0.py
+  sle12sp0/mozillafirefox_SUSE-SU-2016_2131-1_12.0.py
+  sle12sp1/flash-player_SUSE-SU-2016_1826-1_12.1.py
+  sle12sp1/imagemagick_SUSE-SU-2016_1784-1_12.1.py
+  sle12sp1/java_SUSE-SU-2016_1997-1_12.1.py
+  sle12sp1/java_SUSE-SU-2016_2012-1_12.1.py
+  sle12sp1/kernel-rt_SUSE-SU-2016_1764-1_12.1.py
+  sle12sp1/kernel-rt_SUSE-SU-2016_1937-1_12.1.py
+  sle12sp1/kernel_SUSE-SU-2016_2105-1_12.1.py
+  sle12sp1/libarchive_SUSE-SU-2016_1909-1_12.1.py
+  sle12sp1/mozillafirefox_SUSE-SU-2016_2131-1_12.1.py
+  sle12sp1/xen_SUSE-SU-2016_2093-1_12.1.py
+
+-------------------------------------------------------------------
 Tue Jul  5 22:31:17 UTC 2016 - jason.record@suse.com
 
 - New Security Patterns
