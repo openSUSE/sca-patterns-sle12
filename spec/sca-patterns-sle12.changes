@@ -1,6 +1,8 @@
 -------------------------------------------------------------------
-Tue Aug 23 15:49:12 UTC 2016 - jrecord@suse.com
+Tue Aug 23 16:00:59 UTC 2016 - jason.record@suse.com
 
+- Orarun fails to install due to missing libraries
+  sle12sp1/orarun-7017965.py
 - New Security Patterns
   sle12sp0/kernel_SUSE-SU-2016_2105-1_12.0.py
   sle12sp0/kgraft-patch_SUSE-SU-2016_1995-1_12.0.py
