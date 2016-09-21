@@ -1,4 +1,10 @@
 -------------------------------------------------------------------
+Wed Sep 21 16:33:03 UTC 2016 - jason.record@suse.com
+
+- New Security Pattern
+  sle12sp1/flash-player_SUSE-SU-2016_2312-1_12.1.py
+
+-------------------------------------------------------------------
 Tue Aug 23 16:00:59 UTC 2016 - jason.record@suse.com
 
 - Orarun fails to install due to missing libraries
