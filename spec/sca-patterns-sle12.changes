@@ -1,4 +1,34 @@
 -------------------------------------------------------------------
+Mon Oct 24 16:21:24 UTC 2016 - jason.record@suse.com
+
+- New Security Patterns
+  sle12sp0/bind_SUSE-SU-2016_2401-1_12.0.py
+  sle12sp0/compat-openssl098_SUSE-SU-2016_2468-1_12.0.py
+  sle12sp0/ghostscript-library_SUSE-SU-2016_2492-1_12.0.py
+  sle12sp0/java_SUSE-SU-2016_2347-1_12.0.py
+  sle12sp0/kernel_SUSE-SU-2016_2592-1_12.0.py
+  sle12sp0/kernel_SUSE-SU-2016_2593-1_12.0.py
+  sle12sp0/mariadb_SUSE-SU-2016_2395-1_12.0.py
+  sle12sp0/mozillafirefox_SUSE-SU-2016_2434-1_12.0.py
+  sle12sp0/openssl_SUSE-SU-2016_2387-1_12.0.py
+  sle12sp0/postgresql93_SUSE-SU-2016_2414-1_12.0.py
+  sle12sp0/systemd_SUSE-SU-2016_2475-1_12.0.py
+  sle12sp0/xen_SUSE-SU-2016_2533-1_12.0.py
+  sle12sp1/bind_SUSE-SU-2016_2399-1_12.1.py
+  sle12sp1/compat-openssl098_SUSE-SU-2016_2468-1_12.1.py
+  sle12sp1/flash-playerqemu_SUSE-SU-2016_2512-1_12.1.py
+  sle12sp1/ghostscript-library_SUSE-SU-2016_2492-1_12.1.py
+  sle12sp1/java_SUSE-SU-2016_2347-1_12.1.py
+  sle12sp1/kernel_SUSE-SU-2016_2592-1_12.1.py
+  sle12sp1/mariadb_SUSE-SU-2016_2404-1_12.1.py
+  sle12sp1/mozillafirefox_SUSE-SU-2016_2434-1_12.1.py
+  sle12sp1/openssl_SUSE-SU-2016_2394-1_12.1.py
+  sle12sp1/postgresql94_SUSE-SU-2016_2415-1_12.1.py
+  sle12sp1/qemu_SUSE-SU-2016_2589-1_12.1.py
+  sle12sp1/systemd_SUSE-SU-2016_2476-1_12.1.py
+  sle12sp1/xen_SUSE-SU-2016_2473-1_12.1.py
+
+-------------------------------------------------------------------
 Wed Sep 21 16:33:03 UTC 2016 - jason.record@suse.com
 
 - New Security Pattern
