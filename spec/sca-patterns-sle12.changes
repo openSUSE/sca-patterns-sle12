@@ -1,4 +1,19 @@
 -------------------------------------------------------------------
+Fri Oct 28 22:10:21 UTC 2016 - jrecord@suse.com
+
+- New Security Patterns
+  sle12sp0/kgraft-patch_SUSE-SU-2016_2632-1_12.0.py
+  sle12sp0/kgraft-patch_SUSE-SU-2016_2633-1_12.0.py
+  sle12sp0/kgraft-patch_SUSE-SU-2016_2636-1_12.0.py
+  sle12sp0/kgraft-patch_SUSE-SU-2016_2655-1_12.0.py
+  sle12sp0/kgraft-patch_SUSE-SU-2016_2657-1_12.0.py
+  sle12sp0/kgraft-patch_SUSE-SU-2016_2658-1_12.0.py
+  sle12sp0/kgraft-patch_SUSE-SU-2016_2659-1_12.0.py
+  sle12sp1/flash-player_SUSE-SU-2016_2662-1_12.1.py
+  sle12sp1/gd_SUSE-SU-2016_2668-1_12.1.py
+  sle12sp1/quagga_SUSE-SU-2016_2618-1_12.1.py
+
+-------------------------------------------------------------------
 Mon Oct 24 16:21:24 UTC 2016 - jason.record@suse.com
 
 - New Security Patterns
