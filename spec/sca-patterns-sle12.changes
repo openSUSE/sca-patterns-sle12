@@ -1,4 +1,21 @@
 -------------------------------------------------------------------
+Mon Nov 28 20:15:47 UTC 2016 - jason.record@suse.com
+
+- New Security Patterns
+  sle12sp0/bind_SUSE-SU-2016_2696-1_12.0.ltss.py
+  sle12sp0/bind_SUSE-SU-2016_2696-1_12.0.py
+  sle12sp0/kernel_SUSE-SU-2016_0785-1_12.0.py
+  sle12sp0/mariadb_SUSE-SU-2016_2932-1_12.0.ltss.py
+  sle12sp0/mariadb_SUSE-SU-2016_2932-1_12.0.py
+  sle12sp1/bind_SUSE-SU-2016_2697-1_12.1.py
+  sle12sp1/curl_SUSE-SU-2016_2699-1_12.1.py
+  sle12sp1/flash-player_SUSE-SU-2016_2778-1_12.1.py
+  sle12sp1/java_SUSE-SU-2016_2726-1_12.1.py
+  sle12sp1/java_SUSE-SU-2016_2887-1_12.1.py
+  sle12sp1/kernel_SUSE-SU-2016_2912-1_12.1.py
+  sle12sp1/mariadb_SUSE-SU-2016_2933-1_12.1.py
+
+-------------------------------------------------------------------
 Fri Oct 28 22:10:21 UTC 2016 - jrecord@suse.com
 
 - New Security Patterns
