@@ -1,4 +1,14 @@
 -------------------------------------------------------------------
+Mon Nov 28 20:34:21 UTC 2016 - jason.record@suse.com
+
+- Added sle12sp2, sle12sp3 and sle12sp4 directories (bsc#1012472)
+- New Security Patterns
+  sle12sp2/bind_SUSE-SU-2016_2697-1_12.2.py
+  sle12sp2/bind_SUSE-SU-2016_2697-2_12.2.py
+  sle12sp2/java_SUSE-SU-2016_2887-1_12.2.py
+  sle12sp2/mariadb_SUSE-SU-2016_2933-1_12.2.py
+
+-------------------------------------------------------------------
 Mon Nov 28 20:15:47 UTC 2016 - jason.record@suse.com
 
 - New Security Patterns
