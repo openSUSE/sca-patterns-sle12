@@ -1,4 +1,44 @@
 -------------------------------------------------------------------
+Wed Dec 14 16:48:27 UTC 2016 - jason.record@suse.com
+
+- New Security Patterns
+  sle12sp0/java_SUSE-SU-2016_3043-1_12.0.ltss.py
+  sle12sp0/java_SUSE-SU-2016_3043-1_12.0.py
+  sle12sp0/kernel_SUSE-SU-2016_3063-1_12.0.ltss.py
+  sle12sp0/kernel_SUSE-SU-2016_3063-1_12.0.py
+  sle12sp0/kgraft-patch_SUSE-SU-2016_3109-1_12.0.ltss.py
+  sle12sp0/kgraft-patch_SUSE-SU-2016_3109-1_12.0.py
+  sle12sp0/kgraft-patch_SUSE-SU-2016_3111-1_12.0.ltss.py
+  sle12sp0/kgraft-patch_SUSE-SU-2016_3111-1_12.0.py
+  sle12sp0/kgraft-patch_SUSE-SU-2016_3112-1_12.0.ltss.py
+  sle12sp0/kgraft-patch_SUSE-SU-2016_3112-1_12.0.py
+  sle12sp0/kgraft-patch_SUSE-SU-2016_3113-1_12.0.ltss.py
+  sle12sp0/kgraft-patch_SUSE-SU-2016_3113-1_12.0.py
+  sle12sp0/kgraft-patch_SUSE-SU-2016_3119-1_12.0.ltss.py
+  sle12sp0/kgraft-patch_SUSE-SU-2016_3119-1_12.0.py
+  sle12sp0/mozilla-nss_SUSE-SU-2016_3014-1_12.0.ltss.py
+  sle12sp0/mozilla-nss_SUSE-SU-2016_3014-1_12.0.py
+  sle12sp0/mozillafirefox_SUSE-SU-2016_3048-1_12.0.ltss.py
+  sle12sp0/mozillafirefox_SUSE-SU-2016_3048-1_12.0.py
+  sle12sp1/flash-player_SUSE-SU-2016_3148-1_12.1.py
+  sle12sp1/java_SUSE-SU-2016_3043-1_12.1.py
+  sle12sp1/java_SUSE-SU-2016_3078-1_12.1.py
+  sle12sp1/kernel_SUSE-SU-2016_3039-1_12.1.py
+  sle12sp1/mozilla-nss_SUSE-SU-2016_3014-1_12.1.py
+  sle12sp1/mozillafirefox_SUSE-SU-2016_3048-1_12.1.py
+  sle12sp1/qemu_SUSE-SU-2016_2988-1_12.1.py
+  sle12sp1/tomcat_SUSE-SU-2016_3079-1_12.1.py
+  sle12sp1/xen_SUSE-SU-2016_3083-1_12.1.py
+  sle12sp2/java_SUSE-SU-2016_3043-1_12.2.py
+  sle12sp2/java_SUSE-SU-2016_3078-1_12.2.py
+  sle12sp2/kernel_SUSE-SU-2016_3049-1_12.2.py
+  sle12sp2/kernel_SUSE-SU-2016_3146-1_12.2.py
+  sle12sp2/mozilla-nss_SUSE-SU-2016_3014-1_12.2.py
+  sle12sp2/mozillafirefox_SUSE-SU-2016_3048-1_12.2.py
+  sle12sp2/tomcat_SUSE-SU-2016_3081-1_12.2.py
+  sle12sp2/xen_SUSE-SU-2016_3067-1_12.2.py
+
+-------------------------------------------------------------------
 Tue Nov 29 20:36:38 UTC 2016 - jrecord@suse.com
 
 - New Security Patterns
