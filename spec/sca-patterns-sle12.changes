@@ -1,4 +1,39 @@
 -------------------------------------------------------------------
+Fri Dec 30 21:25:03 UTC 2016 - jason.record@suse.com
+
+- New Security Patterns
+  sle12sp0/kernel_SUSE-SU-2016_3217-1_12.0.ltss.py
+  sle12sp0/kernel_SUSE-SU-2016_3217-1_12.0.py
+  sle12sp0/kgraft-patch_SUSE-SU-2016_3197-1_12.0.ltss.py
+  sle12sp0/kgraft-patch_SUSE-SU-2016_3197-1_12.0.py
+  sle12sp0/kgraft-patch_SUSE-SU-2016_3247-1_12.0.ltss.py
+  sle12sp0/kgraft-patch_SUSE-SU-2016_3247-1_12.0.py
+  sle12sp0/kgraft-patch_SUSE-SU-2016_3249-1_12.0.ltss.py
+  sle12sp0/kgraft-patch_SUSE-SU-2016_3249-1_12.0.py
+  sle12sp0/mozillafirefox_SUSE-SU-2016_3222-1_12.0.ltss.py
+  sle12sp0/mozillafirefox_SUSE-SU-2016_3222-1_12.0.py
+  sle12sp0/xen_SUSE-SU-2016_3156-1_12.0.ltss.py
+  sle12sp0/xen_SUSE-SU-2016_3156-1_12.0.py
+  sle12sp0/xen_SUSE-SU-2016_3241-1_12.0.ltss.py
+  sle12sp0/xen_SUSE-SU-2016_3241-1_12.0.py
+  sle12sp1/dnsmasq_SUSE-SU-2016_3269-1_12.1.py
+  sle12sp1/gstreamer-plugins-bad_SUSE-SU-2016_3297-1_12.1.py
+  sle12sp1/gstreamer-plugins-good_SUSE-SU-2016_3288-1_12.1.py
+  sle12sp1/imagemagick_SUSE-SU-2016_3258-1_12.1.py
+  sle12sp1/kernel_SUSE-SU-2016_3188-1_12.1.py
+  sle12sp1/libgme_SUSE-SU-2016_3250-1_12.1.py
+  sle12sp1/mozillafirefox_SUSE-SU-2016_3222-1_12.1.py
+  sle12sp1/xen_SUSE-SU-2016_3207-1_12.1.py
+  sle12sp2/dnsmasq_SUSE-SU-2016_3269-1_12.2.py
+  sle12sp2/gstreamer-plugins-bad_SUSE-SU-2016_3297-1_12.2.py
+  sle12sp2/gstreamer-plugins-good_SUSE-SU-2016_3303-1_12.2.py
+  sle12sp2/imagemagick_SUSE-SU-2016_3258-1_12.2.py
+  sle12sp2/libgme_SUSE-SU-2016_3250-1_12.2.py
+  sle12sp2/mozillafirefox_SUSE-SU-2016_3222-1_12.2.py
+  sle12sp2/openjpeg2_SUSE-SU-2016_3270-1_12.2.py
+  sle12sp2/xen_SUSE-SU-2016_3208-1_12.2.py
+
+-------------------------------------------------------------------
 Thu Dec 15 13:39:21 UTC 2016 - jason.record@suse.com
 
 - Pattern to detect insufficient /boot space for updates
