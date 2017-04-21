@@ -1,4 +1,21 @@
 -------------------------------------------------------------------
+Fri Apr 21 15:40:26 UTC 2017 - jason.record@suse.com
+
+- New Security Patterns
+  sle12sp0/bind_SUSE-SU-2017_0999-1_12.0.ltss.py
+  sle12sp0/bind_SUSE-SU-2017_0999-1_12.0.py
+  sle12sp0/xen_SUSE-SU-2017_1080-1_12.0.ltss.py
+  sle12sp0/xen_SUSE-SU-2017_1080-1_12.0.py
+  sle12sp1/bind_SUSE-SU-2017_0998-1_12.1.py
+  sle12sp1/flash-player_SUSE-SU-2017_0990-1_12.1.py
+  sle12sp1/ruby2.1_SUSE-SU-2017_1067-1_12.1.py
+  sle12sp1/tiff_SUSE-SU-2017_1044-1_12.1.py
+  sle12sp2/bind_SUSE-SU-2017_0998-1_12.2.py
+  sle12sp2/ruby2.1_SUSE-SU-2017_1067-1_12.2.py
+  sle12sp2/tiff_SUSE-SU-2017_1044-1_12.2.py
+  sle12sp2/xen_SUSE-SU-2017_0983-1_12.2.py
+
+-------------------------------------------------------------------
 Tue Apr  4 14:33:36 UTC 2017 - jason.record@suse.com
 
 - New Security Patterns
