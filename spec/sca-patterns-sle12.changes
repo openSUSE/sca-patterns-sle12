@@ -1,4 +1,21 @@
 -------------------------------------------------------------------
+Wed May 10 20:17:15 UTC 2017 - jason.record@suse.com
+
+- Check for kernel ext3/4 mount failure (bsc#1029986)
+  sle12sp2/ext-failure-kernel.py
+- New Security Patterns
+  sle12sp0/xen_SUSE-SU-2017_1148-1_12.0.ltss.py
+  sle12sp0/xen_SUSE-SU-2017_1148-1_12.0.py
+  sle12sp1/ghostscript_SUSE-SU-2017_1138-1_12.1.py
+  sle12sp1/graphite2_SUSE-SU-2017_1149-1_12.1.py
+  sle12sp1/xen_SUSE-SU-2017_1147-1_12.1.py
+  sle12sp2/ghostscript_SUSE-SU-2017_1138-1_12.2.py
+  sle12sp2/graphite2_SUSE-SU-2017_1149-1_12.2.py
+  sle12sp2/kernel_SUSE-SU-2017_1183-1_12.2.py
+  sle12sp2/tomcat_SUSE-SU-2017_1229-1_12.2.py
+  sle12sp2/xen_SUSE-SU-2017_1143-1_12.2.py
+
+-------------------------------------------------------------------
 Fri Apr 21 15:40:26 UTC 2017 - jason.record@suse.com
 
 - New Security Patterns
