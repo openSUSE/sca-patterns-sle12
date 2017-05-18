@@ -1,4 +1,37 @@
 -------------------------------------------------------------------
+Thu May 18 15:51:57 UTC 2017 - jason.record@suse.com
+
+- New Security Patterns
+  sle12sp0/kernel_SUSE-SU-2017_1247-1_12.0.ltss.py
+  sle12sp0/kernel_SUSE-SU-2017_1247-1_12.0.py
+  sle12sp0/kgraft-patch_SUSE-SU-2017_1278-1_12.0.ltss.py
+  sle12sp0/kgraft-patch_SUSE-SU-2017_1278-1_12.0.py
+  sle12sp0/kgraft-patch_SUSE-SU-2017_1281-1_12.0.ltss.py
+  sle12sp0/kgraft-patch_SUSE-SU-2017_1281-1_12.0.py
+  sle12sp0/kgraft-patch_SUSE-SU-2017_1287-1_12.0.ltss.py
+  sle12sp0/kgraft-patch_SUSE-SU-2017_1287-1_12.0.py
+  sle12sp0/kgraft-patch_SUSE-SU-2017_1291-1_12.0.ltss.py
+  sle12sp0/kgraft-patch_SUSE-SU-2017_1291-1_12.0.py
+  sle12sp0/kgraft-patch_SUSE-SU-2017_1299-1_12.0.ltss.py
+  sle12sp0/kgraft-patch_SUSE-SU-2017_1299-1_12.0.py
+  sle12sp0/kgraft-patch_SUSE-SU-2017_1300-1_12.0.ltss.py
+  sle12sp0/kgraft-patch_SUSE-SU-2017_1300-1_12.0.py
+  sle12sp0/kgraft-patch_SUSE-SU-2017_1302-1_12.0.ltss.py
+  sle12sp0/kgraft-patch_SUSE-SU-2017_1302-1_12.0.py
+  sle12sp0/mariadb_SUSE-SU-2017_1311-1_12.0.ltss.py
+  sle12sp0/mariadb_SUSE-SU-2017_1311-1_12.0.py
+  sle12sp0/mozilla-nss_SUSE-SU-2017_1248-1_12.0.ltss.py
+  sle12sp0/mozilla-nss_SUSE-SU-2017_1248-1_12.0.py
+  sle12sp1/flash-player_SUSE-SU-2017_1238-1_12.1.py
+  sle12sp1/libtirpc_SUSE-SU-2017_1306-1_12.1.py
+  sle12sp1/mariadb_SUSE-SU-2017_1315-1_12.1.py
+  sle12sp1/mozilla-nss_SUSE-SU-2017_1248-1_12.1.py
+  sle12sp1/qemu_SUSE-SU-2017_1241-1_12.1.py
+  sle12sp2/libtirpc_SUSE-SU-2017_1314-1_12.2.py
+  sle12sp2/mariadb_SUSE-SU-2017_1315-1_12.2.py
+  sle12sp2/mozilla-nss_SUSE-SU-2017_1248-1_12.2.py
+
+-------------------------------------------------------------------
 Wed May 10 20:17:15 UTC 2017 - jason.record@suse.com
 
 - Check for kernel ext3/4 mount failure (bsc#1029986)
