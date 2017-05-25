@@ -1,4 +1,26 @@
 -------------------------------------------------------------------
+Thu May 25 13:59:37 UTC 2017 - jason.record@suse.com
+
+- New Security Patterns
+  sle12sp0/ghostscript_SUSE-SU-2017_1404-1_12.0.ltss.py
+  sle12sp0/ghostscript_SUSE-SU-2017_1404-1_12.0.py
+  sle12sp1/ghostscript_SUSE-SU-2017_1404-1_12.1.py
+  sle12sp1/java_SUSE-SU-2017_1386-1_12.1.py
+  sle12sp1/java_SUSE-SU-2017_1400-1_12.1.py
+  sle12sp1/kdelibs4_SUSE-SU-2017_1335-1_12.1.py
+  sle12sp1/kernel_SUSE-SU-2017_1360-1_12.1.py
+  sle12sp1/rpcbind_SUSE-SU-2017_1336-1_12.1.py
+  sle12sp1/samba_SUSE-SU-2017_1392-1_12.1.py
+  sle12sp1/tomcat_SUSE-SU-2017_1382-1_12.1.py
+  sle12sp2/ghostscript_SUSE-SU-2017_1404-1_12.2.py
+  sle12sp2/java_SUSE-SU-2017_1386-1_12.2.py
+  sle12sp2/java_SUSE-SU-2017_1400-1_12.2.py
+  sle12sp2/kdelibs4_SUSE-SU-2017_1335-1_12.2.py
+  sle12sp2/rpcbind_SUSE-SU-2017_1328-1_12.2.py
+  sle12sp2/samba_SUSE-SU-2017_1392-1_12.2.py
+  sle12sp2/samba_SUSE-SU-2017_1393-1_12.2.py
+
+-------------------------------------------------------------------
 Thu May 18 15:51:57 UTC 2017 - jason.record@suse.com
 
 - New Security Patterns
