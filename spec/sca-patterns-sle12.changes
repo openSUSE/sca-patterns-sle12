@@ -1,4 +1,9 @@
 -------------------------------------------------------------------
+Fri Jun  2 23:05:22 UTC 2017 - jason.record@suse.com
+
+- Added security patterns (bsc#1042514)
+
+-------------------------------------------------------------------
 Thu May 25 13:59:37 UTC 2017 - jason.record@suse.com
 
 - New Security Patterns
