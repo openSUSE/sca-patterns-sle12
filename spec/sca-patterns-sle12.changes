@@ -1,4 +1,14 @@
 -------------------------------------------------------------------
+Mon Jun 12 21:10:46 UTC 2017 - jason.record@suse.com
+
+- New Security Patterns
+  sle12sp0/sudo_SUSE-SU-2017_1446-1_12.0.ltss.py
+  sle12sp0/sudo_SUSE-SU-2017_1446-1_12.0.py
+  sle12sp1/sudo_SUSE-SU-2017_1446-1_12.1.py
+  sle12sp2/java_SUSE-SU-2017_1445-1_12.2.py
+  sle12sp2/sudo_SUSE-SU-2017_1450-1_12.2.py
+
+-------------------------------------------------------------------
 Fri Jun  2 23:05:22 UTC 2017 - jason.record@suse.com
 
 - Added security patterns (bsc#1042514)
