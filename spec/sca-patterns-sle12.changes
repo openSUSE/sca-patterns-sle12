@@ -1,4 +1,108 @@
 -------------------------------------------------------------------
+Mon Jul 24 17:00:29 UTC 2017 - jason.record@suse.com
+
+- New Security Patterns
+  sle12sp0/bind_SUSE-SU-2017_1738-1_12.0.ltss.py
+  sle12sp0/bind_SUSE-SU-2017_1738-1_12.0.py
+  sle12sp0/clamav_SUSE-SU-2017_1716-1_12.0.ltss.py
+  sle12sp0/clamav_SUSE-SU-2017_1716-1_12.0.py
+  sle12sp0/evince_SUSE-SU-2017_1894-1_12.0.ltss.py
+  sle12sp0/evince_SUSE-SU-2017_1894-1_12.0.py
+  sle12sp0/glibc_SUSE-SU-2017_1611-1_12.0.ltss.py
+  sle12sp0/glibc_SUSE-SU-2017_1611-1_12.0.py
+  sle12sp0/kernel_SUSE-SU-2017_1618-1_12.0.ltss.py
+  sle12sp0/kernel_SUSE-SU-2017_1618-1_12.0.py
+  sle12sp0/kernel_SUSE-SU-2017_1735-1_12.0.ltss.py
+  sle12sp0/kernel_SUSE-SU-2017_1735-1_12.0.py
+  sle12sp0/kgraft-patch_SUSE-SU-2017_1905-1_12.0.ltss.py
+  sle12sp0/kgraft-patch_SUSE-SU-2017_1905-1_12.0.py
+  sle12sp0/kgraft-patch_SUSE-SU-2017_1906-1_12.0.ltss.py
+  sle12sp0/kgraft-patch_SUSE-SU-2017_1906-1_12.0.py
+  sle12sp0/kgraft-patch_SUSE-SU-2017_1912-1_12.0.ltss.py
+  sle12sp0/kgraft-patch_SUSE-SU-2017_1912-1_12.0.py
+  sle12sp0/kgraft-patch_SUSE-SU-2017_1922-1_12.0.ltss.py
+  sle12sp0/kgraft-patch_SUSE-SU-2017_1922-1_12.0.py
+  sle12sp0/kgraft-patch_SUSE-SU-2017_1924-1_12.0.ltss.py
+  sle12sp0/kgraft-patch_SUSE-SU-2017_1924-1_12.0.py
+  sle12sp0/mozillafirefox_SUSE-SU-2017_1669-1_12.0.ltss.py
+  sle12sp0/mozillafirefox_SUSE-SU-2017_1669-1_12.0.py
+  sle12sp0/openvpn_SUSE-SU-2017_1635-1_12.0.ltss.py
+  sle12sp0/openvpn_SUSE-SU-2017_1635-1_12.0.py
+  sle12sp0/spice_SUSE-SU-2017_1839-1_12.0.ltss.py
+  sle12sp0/spice_SUSE-SU-2017_1839-1_12.0.py
+  sle12sp0/sudo_SUSE-SU-2017_1627-1_12.0.ltss.py
+  sle12sp0/sudo_SUSE-SU-2017_1627-1_12.0.py
+  sle12sp0/sudo_SUSE-SU-2017_1778-1_12.0.ltss.py
+  sle12sp0/sudo_SUSE-SU-2017_1778-1_12.0.py
+  sle12sp0/tomcat_SUSE-SU-2017_1660-1_12.0.ltss.py
+  sle12sp0/tomcat_SUSE-SU-2017_1660-1_12.0.py
+  sle12sp0/unrar_SUSE-SU-2017_1745-1_12.0.ltss.py
+  sle12sp0/unrar_SUSE-SU-2017_1745-1_12.0.py
+  sle12sp0/xen_SUSE-SU-2017_1795-1_12.0.ltss.py
+  sle12sp0/xen_SUSE-SU-2017_1795-1_12.0.py
+  sle12sp0/xorg-x11-server_SUSE-SU-2017_1861-1_12.0.ltss.py
+  sle12sp0/xorg-x11-server_SUSE-SU-2017_1861-1_12.0.py
+  sle12sp1/bind_SUSE-SU-2017_1736-1_12.1.ltss.py
+  sle12sp1/bind_SUSE-SU-2017_1736-1_12.1.py
+  sle12sp1/clamav_SUSE-SU-2017_1716-1_12.1.ltss.py
+  sle12sp1/clamav_SUSE-SU-2017_1716-1_12.1.py
+  sle12sp1/evince_SUSE-SU-2017_1894-1_12.1.ltss.py
+  sle12sp1/evince_SUSE-SU-2017_1894-1_12.1.py
+  sle12sp1/glibc_SUSE-SU-2017_1614-1_12.1.ltss.py
+  sle12sp1/glibc_SUSE-SU-2017_1614-1_12.1.py
+  sle12sp1/kernel_SUSE-SU-2017_1615-1_12.1.ltss.py
+  sle12sp1/kernel_SUSE-SU-2017_1615-1_12.1.py
+  sle12sp1/kernel_SUSE-SU-2017_1704-1_12.1.ltss.py
+  sle12sp1/kernel_SUSE-SU-2017_1704-1_12.1.py
+  sle12sp1/kgraft-patch_SUSE-SU-2017_1909-1_12.1.ltss.py
+  sle12sp1/kgraft-patch_SUSE-SU-2017_1909-1_12.1.py
+  sle12sp1/kgraft-patch_SUSE-SU-2017_1910-1_12.1.ltss.py
+  sle12sp1/kgraft-patch_SUSE-SU-2017_1910-1_12.1.py
+  sle12sp1/kgraft-patch_SUSE-SU-2017_1915-1_12.1.ltss.py
+  sle12sp1/kgraft-patch_SUSE-SU-2017_1915-1_12.1.py
+  sle12sp1/mozillafirefox_SUSE-SU-2017_1669-1_12.1.ltss.py
+  sle12sp1/mozillafirefox_SUSE-SU-2017_1669-1_12.1.py
+  sle12sp1/openvpn_SUSE-SU-2017_1635-1_12.1.ltss.py
+  sle12sp1/openvpn_SUSE-SU-2017_1635-1_12.1.py
+  sle12sp1/spice_SUSE-SU-2017_1832-1_12.1.ltss.py
+  sle12sp1/spice_SUSE-SU-2017_1832-1_12.1.py
+  sle12sp1/sudo_SUSE-SU-2017_1627-1_12.1.ltss.py
+  sle12sp1/sudo_SUSE-SU-2017_1627-1_12.1.py
+  sle12sp1/sudo_SUSE-SU-2017_1778-1_12.1.ltss.py
+  sle12sp1/sudo_SUSE-SU-2017_1778-1_12.1.py
+  sle12sp1/unrar_SUSE-SU-2017_1745-1_12.1.ltss.py
+  sle12sp1/unrar_SUSE-SU-2017_1745-1_12.1.py
+  sle12sp1/xen_SUSE-SU-2017_1812-1_12.1.ltss.py
+  sle12sp1/xen_SUSE-SU-2017_1812-1_12.1.py
+  sle12sp1/xorg-x11-server_SUSE-SU-2017_1859-1_12.1.ltss.py
+  sle12sp1/xorg-x11-server_SUSE-SU-2017_1859-1_12.1.py
+  sle12sp2/bind_SUSE-SU-2017_1736-1_12.2.py
+  sle12sp2/clamav_SUSE-SU-2017_1716-1_12.2.py
+  sle12sp2/cryptctl_SUSE-SU-2017_1865-1_12.2.py
+  sle12sp2/dracut_SUSE-SU-2017_1898-1_12.2.py
+  sle12sp2/evince_SUSE-SU-2017_1893-1_12.2.py
+  sle12sp2/glibc_SUSE-SU-2017_1619-1_12.2.py
+  sle12sp2/jakarta-taglibs-standard_SUSE-SU-2017_1568-1_12.2.py
+  sle12sp2/kernel_SUSE-SU-2017_1707-1_12.2.py
+  sle12sp2/kernel_SUSE-SU-2017_1853-1_12.2.py
+  sle12sp2/mozillafirefox_SUSE-SU-2017_1669-1_12.2.py
+  sle12sp2/ncurses_SUSE-SU-2017_1815-1_12.2.py
+  sle12sp2/openvpn_SUSE-SU-2017_1622-1_12.2.py
+  sle12sp2/openvpn_SUSE-SU-2017_1635-1_12.2.py
+  sle12sp2/qemu_SUSE-SU-2017_1774-1_12.2.py
+  sle12sp2/spice_SUSE-SU-2017_1836-1_12.2.py
+  sle12sp2/sudo_SUSE-SU-2017_1626-1_12.2.py
+  sle12sp2/unrar_SUSE-SU-2017_1745-1_12.2.py
+  sle12sp2/xen_SUSE-SU-2017_1742-1_12.2.py
+  sle12sp2/xorg-x11-server_SUSE-SU-2017_1860-1_12.2.py
+
+-------------------------------------------------------------------
+Mon Jul 24 16:35:44 UTC 2017 - jason.record@suse.com
+
+- Checks for TasksCurrent approaching TasksMax
+  sle12all/tasks-max-7021112.py
+
+-------------------------------------------------------------------
 Mon Jun 12 21:10:46 UTC 2017 - jason.record@suse.com
 
 - New Security Patterns
