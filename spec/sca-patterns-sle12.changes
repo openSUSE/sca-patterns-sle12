@@ -1,4 +1,36 @@
 -------------------------------------------------------------------
+Fri Aug  4 19:10:10 UTC 2017 - jason.record@suse.com
+
+- Check for MCE messages in the logs
+  sle12all/mce-msg-7003695.py
+
+- New Security Patterns
+  sle12sp0/kgraft-patch_SUSE-SU-2017_1939-1_12.0.ltss.py
+  sle12sp0/kgraft-patch_SUSE-SU-2017_1939-1_12.0.py
+  sle12sp0/kgraft-patch_SUSE-SU-2017_1945-1_12.0.ltss.py
+  sle12sp0/kgraft-patch_SUSE-SU-2017_1945-1_12.0.py
+  sle12sp0/mariadb_SUSE-SU-2017_2034-1_12.0.ltss.py
+  sle12sp0/mariadb_SUSE-SU-2017_2034-1_12.0.py
+  sle12sp1/kernel_SUSE-SU-2017_2042-1_12.1.ltss.py
+  sle12sp1/kernel_SUSE-SU-2017_2042-1_12.1.py
+  sle12sp1/kgraft-patch_SUSE-SU-2017_1937-1_12.1.ltss.py
+  sle12sp1/kgraft-patch_SUSE-SU-2017_1937-1_12.1.py
+  sle12sp1/kgraft-patch_SUSE-SU-2017_1941-1_12.1.ltss.py
+  sle12sp1/kgraft-patch_SUSE-SU-2017_1941-1_12.1.py
+  sle12sp1/kgraft-patch_SUSE-SU-2017_1943-1_12.1.ltss.py
+  sle12sp1/kgraft-patch_SUSE-SU-2017_1943-1_12.1.py
+  sle12sp1/kgraft-patch_SUSE-SU-2017_1944-1_12.1.ltss.py
+  sle12sp1/kgraft-patch_SUSE-SU-2017_1944-1_12.1.py
+  sle12sp1/kgraft-patch_SUSE-SU-2017_1946-1_12.1.ltss.py
+  sle12sp1/kgraft-patch_SUSE-SU-2017_1946-1_12.1.py
+  sle12sp1/mariadb_SUSE-SU-2017_2035-1_12.1.ltss.py
+  sle12sp1/mariadb_SUSE-SU-2017_2035-1_12.1.py
+  sle12sp2/kernel_SUSE-SU-2017_2041-1_12.2.py
+  sle12sp2/mariadb_SUSE-SU-2017_2035-1_12.2.py
+  sle12sp2/zypper_SUSE-SU-2017_2040-1_12.2.py
+  sle12sp3/mariadb_SUSE-SU-2017_2035-1_12.3.py
+
+-------------------------------------------------------------------
 Mon Jul 24 17:00:29 UTC 2017 - jason.record@suse.com
 
 - New Security Patterns
