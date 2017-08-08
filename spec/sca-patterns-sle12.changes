@@ -1,4 +1,41 @@
 -------------------------------------------------------------------
+Tue Aug  8 17:01:43 UTC 2017 - jason.record@suse.com
+
+- New Security Patterns
+  sle12sp0/kernel_SUSE-SU-2017_2074-1_12.0.ltss.py
+  sle12sp0/kernel_SUSE-SU-2017_2074-1_12.0.py
+  sle12sp0/kgraft-patch_SUSE-SU-2017_2095-1_12.0.ltss.py
+  sle12sp0/kgraft-patch_SUSE-SU-2017_2095-1_12.0.py
+  sle12sp0/kgraft-patch_SUSE-SU-2017_2096-1_12.0.ltss.py
+  sle12sp0/kgraft-patch_SUSE-SU-2017_2096-1_12.0.py
+  sle12sp0/kgraft-patch_SUSE-SU-2017_2098-1_12.0.ltss.py
+  sle12sp0/kgraft-patch_SUSE-SU-2017_2098-1_12.0.py
+  sle12sp0/kgraft-patch_SUSE-SU-2017_2099-1_12.0.ltss.py
+  sle12sp0/kgraft-patch_SUSE-SU-2017_2099-1_12.0.py
+  sle12sp0/kgraft-patch_SUSE-SU-2017_2102-1_12.0.ltss.py
+  sle12sp0/kgraft-patch_SUSE-SU-2017_2102-1_12.0.py
+  sle12sp0/kgraft-patch_SUSE-SU-2017_2103-1_12.0.ltss.py
+  sle12sp0/kgraft-patch_SUSE-SU-2017_2103-1_12.0.py
+  sle12sp1/kgraft-patch_SUSE-SU-2017_2049-1_12.1.ltss.py
+  sle12sp1/kgraft-patch_SUSE-SU-2017_2049-1_12.1.py
+  sle12sp1/kgraft-patch_SUSE-SU-2017_2060-1_12.1.ltss.py
+  sle12sp1/kgraft-patch_SUSE-SU-2017_2060-1_12.1.py
+  sle12sp1/kgraft-patch_SUSE-SU-2017_2072-1_12.1.ltss.py
+  sle12sp1/kgraft-patch_SUSE-SU-2017_2072-1_12.1.py
+  sle12sp1/kgraft-patch_SUSE-SU-2017_2088-1_12.1.ltss.py
+  sle12sp1/kgraft-patch_SUSE-SU-2017_2088-1_12.1.py
+  sle12sp1/kgraft-patch_SUSE-SU-2017_2089-1_12.1.ltss.py
+  sle12sp1/kgraft-patch_SUSE-SU-2017_2089-1_12.1.py
+  sle12sp1/kgraft-patch_SUSE-SU-2017_2090-1_12.1.ltss.py
+  sle12sp1/kgraft-patch_SUSE-SU-2017_2090-1_12.1.py
+  sle12sp1/kgraft-patch_SUSE-SU-2017_2091-1_12.1.ltss.py
+  sle12sp1/kgraft-patch_SUSE-SU-2017_2091-1_12.1.py
+  sle12sp1/kgraft-patch_SUSE-SU-2017_2092-1_12.1.ltss.py
+  sle12sp1/kgraft-patch_SUSE-SU-2017_2092-1_12.1.py
+  sle12sp1/kgraft-patch_SUSE-SU-2017_2094-1_12.1.ltss.py
+  sle12sp1/kgraft-patch_SUSE-SU-2017_2094-1_12.1.py
+
+-------------------------------------------------------------------
 Fri Aug  4 19:10:10 UTC 2017 - jason.record@suse.com
 
 - Check for MCE messages in the logs
