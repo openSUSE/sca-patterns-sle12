@@ -1,4 +1,76 @@
 -------------------------------------------------------------------
+Fri Sep  8 22:54:12 UTC 2017 - jason.record@suse.com
+
+- New Security Patterns
+  sle12sp0/git_SUSE-SU-2017_2320-1_12.0.ltss.py
+  sle12sp0/git_SUSE-SU-2017_2320-1_12.0.py
+  sle12sp0/java_SUSE-SU-2017_2280-1_12.0.ltss.py
+  sle12sp0/java_SUSE-SU-2017_2280-1_12.0.py
+  sle12sp0/kernel_SUSE-SU-2017_2142-1_12.0.ltss.py
+  sle12sp0/kernel_SUSE-SU-2017_2142-1_12.0.py
+  sle12sp0/libsoup_SUSE-SU-2017_2130-1_12.0.ltss.py
+  sle12sp0/libsoup_SUSE-SU-2017_2130-1_12.0.py
+  sle12sp0/postgresql93_SUSE-SU-2017_2236-1_12.0.ltss.py
+  sle12sp0/postgresql93_SUSE-SU-2017_2236-1_12.0.py
+  sle12sp0/postgresql94_SUSE-SU-2017_2355-1_12.0.ltss.py
+  sle12sp0/postgresql94_SUSE-SU-2017_2355-1_12.0.py
+  sle12sp0/postgresql96_SUSE-SU-2017_2356-1_12.0.ltss.py
+  sle12sp0/postgresql96_SUSE-SU-2017_2356-1_12.0.py
+  sle12sp1/git_SUSE-SU-2017_2320-1_12.1.ltss.py
+  sle12sp1/git_SUSE-SU-2017_2320-1_12.1.py
+  sle12sp1/java_SUSE-SU-2017_2175-1_12.1.ltss.py
+  sle12sp1/java_SUSE-SU-2017_2175-1_12.1.py
+  sle12sp1/java_SUSE-SU-2017_2263-1_12.1.ltss.py
+  sle12sp1/java_SUSE-SU-2017_2263-1_12.1.py
+  sle12sp1/java_SUSE-SU-2017_2280-1_12.1.ltss.py
+  sle12sp1/java_SUSE-SU-2017_2280-1_12.1.py
+  sle12sp1/kernel_SUSE-SU-2017_2150-1_12.1.ltss.py
+  sle12sp1/kernel_SUSE-SU-2017_2150-1_12.1.py
+  sle12sp1/libsoup_SUSE-SU-2017_2130-1_12.1.ltss.py
+  sle12sp1/libsoup_SUSE-SU-2017_2130-1_12.1.py
+  sle12sp1/postgresql94_SUSE-SU-2017_2355-1_12.1.ltss.py
+  sle12sp1/postgresql94_SUSE-SU-2017_2355-1_12.1.py
+  sle12sp1/postgresql96_SUSE-SU-2017_2356-1_12.1.ltss.py
+  sle12sp1/postgresql96_SUSE-SU-2017_2356-1_12.1.py
+  sle12sp1/xen_SUSE-SU-2017_2319-1_12.1.ltss.py
+  sle12sp1/xen_SUSE-SU-2017_2319-1_12.1.py
+  sle12sp2/evince_SUSE-SU-2017_2390-1_12.2.py
+  sle12sp2/freerdp_SUSE-SU-2017_2234-1_12.2.py
+  sle12sp2/gdk-pixbuf_SUSE-SU-2017_2381-1_12.2.py
+  sle12sp2/git_SUSE-SU-2017_2320-1_12.2.py
+  sle12sp2/imagemagick_SUSE-SU-2017_2199-1_12.2.py
+  sle12sp2/java_SUSE-SU-2017_2175-1_12.2.py
+  sle12sp2/java_SUSE-SU-2017_2263-1_12.2.py
+  sle12sp2/java_SUSE-SU-2017_2280-1_12.2.py
+  sle12sp2/kernel_SUSE-SU-2017_2131-1_12.2.py
+  sle12sp2/libsoup_SUSE-SU-2017_2129-1_12.2.py
+  sle12sp2/postgresql94_SUSE-SU-2017_2355-1_12.2.py
+  sle12sp2/postgresql96_SUSE-SU-2017_2356-1_12.2.py
+  sle12sp2/puppet_SUSE-SU-2017_2113-1_12.2.py
+  sle12sp2/quagga_SUSE-SU-2017_2294-1_12.2.py
+  sle12sp2/xen_SUSE-SU-2017_2326-1_12.2.py
+  sle12sp3/evince_SUSE-SU-2017_2390-1_12.3.py
+  sle12sp3/freeradius-server_SUSE-SU-2017_2202-1_12.3.py
+  sle12sp3/freerdp_SUSE-SU-2017_2234-1_12.3.py
+  sle12sp3/gdk-pixbuf_SUSE-SU-2017_2381-1_12.3.py
+  sle12sp3/git_SUSE-SU-2017_2320-1_12.3.py
+  sle12sp3/imagemagick_SUSE-SU-2017_2199-1_12.3.py
+  sle12sp3/java_SUSE-SU-2017_2175-1_12.3.py
+  sle12sp3/java_SUSE-SU-2017_2263-1_12.3.py
+  sle12sp3/java_SUSE-SU-2017_2280-1_12.3.py
+  sle12sp3/kernel_SUSE-SU-2017_2286-1_12.3.py
+  sle12sp3/libsoup_SUSE-SU-2017_2129-1_12.3.py
+  sle12sp3/libzypp_SUSE-SU-2017_2264-1_12.3.py
+  sle12sp3/openvswitch_SUSE-SU-2017_2212-1_12.3.py
+  sle12sp3/postgresql96_SUSE-SU-2017_2356-1_12.3.py
+  sle12sp3/puppet_SUSE-SU-2017_2113-1_12.3.py
+  sle12sp3/quagga_SUSE-SU-2017_2294-1_12.3.py
+  sle12sp3/resource-agents_SUSE-SU-2017_2237-1_12.3.py
+  sle12sp3/tcmu-runner_SUSE-SU-2017_2109-1_12.3.py
+  sle12sp3/xen_SUSE-SU-2017_2327-1_12.3.py
+  sle12sp3/zypper_SUSE-SU-2017_2344-1_12.3.py
+
+-------------------------------------------------------------------
 Tue Aug  8 17:01:43 UTC 2017 - jason.record@suse.com
 
 - New Security Patterns
