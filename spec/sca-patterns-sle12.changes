@@ -1,4 +1,12 @@
 -------------------------------------------------------------------
+Wed Oct 11 19:49:48 UTC 2017 - jason.record@suse.com
+
+- Module is unknown and cannot login at the console
+  sle12all/unknown-module-7022033.py
+- YaST clone_system module errors on ntp.conf changes
+  sle12sp3/clone-system-ntp-7021385.py (bsc#1058510)
+
+-------------------------------------------------------------------
 Fri Sep  8 22:54:12 UTC 2017 - jason.record@suse.com
 
 - New Security Patterns
