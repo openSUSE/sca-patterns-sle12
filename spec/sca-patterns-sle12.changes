@@ -1,4 +1,71 @@
 -------------------------------------------------------------------
+Wed Oct 11 20:35:31 UTC 2017 - jason.record@suse.com
+
+- New Security Patterns
+  sle12sp0/dnsmasq_SUSE-SU-2017_2616-1_12.0.ltss.py
+  sle12sp0/emacs_SUSE-SU-2017_2529-1_12.0.ltss.py
+  sle12sp0/kernel_SUSE-SU-2017_2534-1_12.0.ltss.py
+  sle12sp0/kgraft-patch_SUSE-SU-2017_2475-1_12.0.ltss.py
+  sle12sp0/kgraft-patch_SUSE-SU-2017_2476-1_12.0.ltss.py
+  sle12sp0/kgraft-patch_SUSE-SU-2017_2497-1_12.0.ltss.py
+  sle12sp0/kgraft-patch_SUSE-SU-2017_2498-1_12.0.ltss.py
+  sle12sp0/kgraft-patch_SUSE-SU-2017_2499-1_12.0.ltss.py
+  sle12sp0/kgraft-patch_SUSE-SU-2017_2500-1_12.0.ltss.py
+  sle12sp0/kgraft-patch_SUSE-SU-2017_2506-1_12.0.ltss.py
+  sle12sp0/kgraft-patch_SUSE-SU-2017_2508-1_12.0.ltss.py
+  sle12sp0/kgraft-patch_SUSE-SU-2017_2509-1_12.0.ltss.py
+  sle12sp0/kgraft-patch_SUSE-SU-2017_2510-1_12.0.ltss.py
+  sle12sp0/kgraft-patch_SUSE-SU-2017_2511-1_12.0.ltss.py
+  sle12sp0/mozilla-nss_SUSE-SU-2017_2688-1_12.0.ltss.py
+  sle12sp0/mozillafirefox_SUSE-SU-2017_2589-1_12.0.ltss.py
+  sle12sp0/xen_SUSE-SU-2017_2541-1_12.0.ltss.py
+  sle12sp0/xen_SUSE-SU-2017_2541-1_12.0.py
+  sle12sp1/emacs_SUSE-SU-2017_2529-1_12.1.ltss.py
+  sle12sp1/emacs_SUSE-SU-2017_2529-1_12.1.py
+  sle12sp1/kernel_SUSE-SU-2017_2459-1_12.1.ltss.py
+  sle12sp1/kernel_SUSE-SU-2017_2459-1_12.1.py
+  sle12sp1/kgraft-patch_SUSE-SU-2017_2423-1_12.1.ltss.py
+  sle12sp1/kgraft-patch_SUSE-SU-2017_2423-1_12.1.py
+  sle12sp1/kgraft-patch_SUSE-SU-2017_2424-1_12.1.ltss.py
+  sle12sp1/kgraft-patch_SUSE-SU-2017_2424-1_12.1.py
+  sle12sp1/kgraft-patch_SUSE-SU-2017_2436-1_12.1.ltss.py
+  sle12sp1/kgraft-patch_SUSE-SU-2017_2436-1_12.1.py
+  sle12sp1/kgraft-patch_SUSE-SU-2017_2437-1_12.1.ltss.py
+  sle12sp1/kgraft-patch_SUSE-SU-2017_2437-1_12.1.py
+  sle12sp1/kgraft-patch_SUSE-SU-2017_2438-1_12.1.ltss.py
+  sle12sp1/kgraft-patch_SUSE-SU-2017_2438-2_12.1.py
+  sle12sp1/kgraft-patch_SUSE-SU-2017_2439-1_12.1.ltss.py
+  sle12sp1/kgraft-patch_SUSE-SU-2017_2439-1_12.1.py
+  sle12sp1/kgraft-patch_SUSE-SU-2017_2440-1_12.1.ltss.py
+  sle12sp1/kgraft-patch_SUSE-SU-2017_2440-1_12.1.py
+  sle12sp1/kgraft-patch_SUSE-SU-2017_2441-1_12.1.ltss.py
+  sle12sp1/kgraft-patch_SUSE-SU-2017_2441-1_12.1.py
+  sle12sp1/kgraft-patch_SUSE-SU-2017_2442-1_12.1.ltss.py
+  sle12sp1/kgraft-patch_SUSE-SU-2017_2442-1_12.1.py
+  sle12sp1/kgraft-patch_SUSE-SU-2017_2443-1_12.1.ltss.py
+  sle12sp1/kgraft-patch_SUSE-SU-2017_2443-1_12.1.py
+  sle12sp1/kgraft-patch_SUSE-SU-2017_2447-1_12.1.ltss.py
+  sle12sp1/kgraft-patch_SUSE-SU-2017_2447-1_12.1.py
+  sle12sp1/kgraft-patch_SUSE-SU-2017_2448-1_12.1.ltss.py
+  sle12sp1/kgraft-patch_SUSE-SU-2017_2448-1_12.1.py
+  sle12sp1/mozilla-nss_SUSE-SU-2017_2688-1_12.1.ltss.py
+  sle12sp1/mozilla-nss_SUSE-SU-2017_2688-1_12.1.py
+  sle12sp1/mozillafirefox_SUSE-SU-2017_2589-1_12.1.ltss.py
+  sle12sp1/mozillafirefox_SUSE-SU-2017_2589-1_12.1.py
+  sle12sp2/emacs_SUSE-SU-2017_2529-1_12.2.py
+  sle12sp2/kernel_SUSE-SU-2017_2521-1_12.2.py
+  sle12sp2/mozilla-nss_SUSE-SU-2017_2688-1_12.2.py
+  sle12sp2/mozillafirefox_SUSE-SU-2017_2589-1_12.2.py
+  sle12sp2/xen_SUSE-SU-2017_2519-1_12.2.py
+  sle12sp3/emacs_SUSE-SU-2017_2529-1_12.3.py
+  sle12sp3/kernel_SUSE-SU-2017_2523-1_12.3.py
+  sle12sp3/mozilla-nss_SUSE-SU-2017_2688-1_12.3.py
+  sle12sp3/mozillafirefox_SUSE-SU-2017_2589-1_12.3.py
+  sle12sp3/qemu_SUSE-SU-2017_2416-1_12.3.py
+  sle12sp3/spice_SUSE-SU-2017_2552-1_12.3.py
+  sle12sp3/xen_SUSE-SU-2017_2420-1_12.3.py
+
+-------------------------------------------------------------------
 Wed Oct 11 19:49:48 UTC 2017 - jason.record@suse.com
 
 - Module is unknown and cannot login at the console
