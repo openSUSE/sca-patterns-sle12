@@ -1,4 +1,11 @@
 -------------------------------------------------------------------
+Thu Oct 19 16:49:05 UTC 2017 - jason.record@suse.com
+
+- Deprecated targetcli package (bsc#1058995)
+  sle12sp2/targetcli-7022130-sp2.py
+  sle12sp3/targetcli-7022130-sp3.py
+
+-------------------------------------------------------------------
 Wed Oct 11 20:35:31 UTC 2017 - jason.record@suse.com
 
 - New Security Patterns
