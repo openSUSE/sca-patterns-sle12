@@ -1,4 +1,43 @@
 -------------------------------------------------------------------
+Thu Oct 19 16:58:31 UTC 2017 - jason.record@suse.com
+
+- New Security Patterns
+  sle12sp0/kgraft-patch_SUSE-SU-2017_2769-1_12.0.ltss.py
+  sle12sp0/kgraft-patch_SUSE-SU-2017_2770-1_12.0.ltss.py
+  sle12sp0/kgraft-patch_SUSE-SU-2017_2771-1_12.0.ltss.py
+  sle12sp0/kgraft-patch_SUSE-SU-2017_2772-1_12.0.ltss.py
+  sle12sp0/kgraft-patch_SUSE-SU-2017_2773-1_12.0.ltss.py
+  sle12sp0/kgraft-patch_SUSE-SU-2017_2774-1_12.0.ltss.py
+  sle12sp0/kgraft-patch_SUSE-SU-2017_2775-1_12.0.ltss.py
+  sle12sp0/kgraft-patch_SUSE-SU-2017_2776-1_12.0.ltss.py
+  sle12sp0/kgraft-patch_SUSE-SU-2017_2777-1_12.0.ltss.py
+  sle12sp0/kgraft-patch_SUSE-SU-2017_2780-1_12.0.ltss.py
+  sle12sp0/kgraft-patch_SUSE-SU-2017_2781-1_12.0.ltss.py
+  sle12sp0/kgraft-patch_SUSE-SU-2017_2784-1_12.0.ltss.py
+  sle12sp0/wpa_supplicant_SUSE-SU-2017_2745-1_12.0.ltss.py
+  sle12sp1/git_SUSE-SU-2017_2747-1_12.1.ltss.py
+  sle12sp1/git_SUSE-SU-2017_2747-1_12.1.py
+  sle12sp1/kgraft-patch_SUSE-SU-2017_2778-1_12.1.ltss.py
+  sle12sp1/kgraft-patch_SUSE-SU-2017_2778-1_12.1.py
+  sle12sp1/kgraft-patch_SUSE-SU-2017_2779-1_12.1.ltss.py
+  sle12sp1/kgraft-patch_SUSE-SU-2017_2779-1_12.1.py
+  sle12sp1/kgraft-patch_SUSE-SU-2017_2782-1_12.1.ltss.py
+  sle12sp1/kgraft-patch_SUSE-SU-2017_2782-1_12.1.py
+  sle12sp1/kgraft-patch_SUSE-SU-2017_2783-1_12.1.ltss.py
+  sle12sp1/kgraft-patch_SUSE-SU-2017_2783-1_12.1.py
+  sle12sp1/kgraft-patch_SUSE-SU-2017_2785-1_12.1.ltss.py
+  sle12sp1/kgraft-patch_SUSE-SU-2017_2785-1_12.1.py
+  sle12sp1/kgraft-patch_SUSE-SU-2017_2786-1_12.1.ltss.py
+  sle12sp1/kgraft-patch_SUSE-SU-2017_2786-1_12.1.py
+  sle12sp1/wpa_supplicant_SUSE-SU-2017_2745-1_12.1.ltss.py
+  sle12sp1/wpa_supplicant_SUSE-SU-2017_2745-1_12.1.py
+  sle12sp2/git_SUSE-SU-2017_2747-1_12.2.py
+  sle12sp2/wpa_supplicant_SUSE-SU-2017_2745-1_12.2.py
+  sle12sp3/git_SUSE-SU-2017_2747-1_12.3.py
+  sle12sp3/wpa_supplicant_SUSE-SU-2017_2745-1_12.3.py
+  sle12sp3/xen_SUSE-SU-2017_2751-1_12.3.py
+
+-------------------------------------------------------------------
 Thu Oct 19 16:49:05 UTC 2017 - jason.record@suse.com
 
 - Deprecated targetcli package (bsc#1058995)
