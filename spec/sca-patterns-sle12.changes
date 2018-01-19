@@ -1,4 +1,33 @@
 -------------------------------------------------------------------
+Fri Jan 19 21:43:04 UTC 2018 - jason.record@suse.com
+
+- New Security Announcement Patterns
+  sle12sp0/glibc_SUSE-SU-2018_0076-1_12.0.ltss.py
+  sle12sp0/kernel-firmware_SUSE-SU-2018_0051-1_12.0.ltss.py
+  sle12sp0/kernel_SUSE-SU-2018_0115-1_12.0.ltss.py
+  sle12sp0/openssl_SUSE-SU-2018_0112-1_12.0.ltss.py
+  sle12sp0/ucode-intel_SUSE-SU-2018_0067-1_12.0.ltss.py
+  sle12sp1/glibc_SUSE-SU-2018_0071-1_12.1.ltss.py
+  sle12sp1/glibc_SUSE-SU-2018_0071-1_12.1.py
+  sle12sp1/kernel-firmware_SUSE-SU-2018_0041-1_12.1.ltss.py
+  sle12sp1/kernel-firmware_SUSE-SU-2018_0041-1_12.1.py
+  sle12sp1/kernel_SUSE-SU-2018_0114-1_12.1.ltss.py
+  sle12sp1/qemu_SUSE-SU-2018_0056-1_12.1.ltss.py
+  sle12sp1/qemu_SUSE-SU-2018_0056-1_12.1.py
+  sle12sp1/ucode-intel_SUSE-SU-2018_0067-1_12.1.ltss.py
+  sle12sp1/ucode-intel_SUSE-SU-2018_0067-1_12.1.py
+  sle12sp2/glibc_SUSE-SU-2018_0074-1_12.2.py
+  sle12sp2/kernel_SUSE-SU-2018_0069-1_12.2.py
+  sle12sp2/tiff_SUSE-SU-2018_0073-1_12.2.py
+  sle12sp2/ucode-intel_SUSE-SU-2018_0067-1_12.2.py
+  sle12sp2/xmltooling_SUSE-SU-2018_0140-1_12.2.py
+  sle12sp3/glibc_SUSE-SU-2018_0074-1_12.3.py
+  sle12sp3/kernel_SUSE-SU-2018_0113-1_12.3.py
+  sle12sp3/tiff_SUSE-SU-2018_0073-1_12.3.py
+  sle12sp3/ucode-intel_SUSE-SU-2018_0067-1_12.3.py
+  sle12sp3/xmltooling_SUSE-SU-2018_0140-1_12.3.py
+
+-------------------------------------------------------------------
 Mon Jan  8 17:52:57 UTC 2018 - jason.record@suse.com
 
 - New Security Announcement Patterns
