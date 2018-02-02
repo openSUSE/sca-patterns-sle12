@@ -1,4 +1,57 @@
 -------------------------------------------------------------------
+Fri Feb  2 21:01:14 UTC 2018 - jason.record@suse.com
+
+- New Security Announcement Patterns
+  sle12sp0/clamav_SUSE-SU-2018_0255-1_12.0.ltss.py
+  sle12sp0/clamav_SUSE-SU-2018_0255-1_12.0.py
+  sle12sp0/kgraft-patch_SUSE-SU-2018_0233-1_12.0.ltss.py
+  sle12sp0/kgraft-patch_SUSE-SU-2018_0239-1_12.0.ltss.py
+  sle12sp0/kgraft-patch_SUSE-SU-2018_0240-1_12.0.ltss.py
+  sle12sp0/kgraft-patch_SUSE-SU-2018_0241-1_12.0.ltss.py
+  sle12sp0/kgraft-patch_SUSE-SU-2018_0242-1_12.0.ltss.py
+  sle12sp0/kgraft-patch_SUSE-SU-2018_0243-1_12.0.ltss.py
+  sle12sp0/kgraft-patch_SUSE-SU-2018_0244-1_12.0.ltss.py
+  sle12sp0/kgraft-patch_SUSE-SU-2018_0245-1_12.0.ltss.py
+  sle12sp0/kgraft-patch_SUSE-SU-2018_0249-1_12.0.ltss.py
+  sle12sp0/kgraft-patch_SUSE-SU-2018_0250-1_12.0.ltss.py
+  sle12sp0/kgraft-patch_SUSE-SU-2018_0251-1_12.0.ltss.py
+  sle12sp0/kgraft-patch_SUSE-SU-2018_0265-1_12.0.ltss.py
+  sle12sp1/bind_SUSE-SU-2018_0303-1_12.1.ltss.py
+  sle12sp1/bind_SUSE-SU-2018_0303-1_12.1.py
+  sle12sp1/clamav_SUSE-SU-2018_0255-1_12.1.ltss.py
+  sle12sp1/clamav_SUSE-SU-2018_0255-1_12.1.py
+  sle12sp1/kgraft-patch_SUSE-SU-2018_0237-1_12.1.ltss.py
+  sle12sp1/kgraft-patch_SUSE-SU-2018_0237-1_12.1.py
+  sle12sp1/kgraft-patch_SUSE-SU-2018_0238-1_12.1.ltss.py
+  sle12sp1/kgraft-patch_SUSE-SU-2018_0238-1_12.1.py
+  sle12sp1/kgraft-patch_SUSE-SU-2018_0252-1_12.1.ltss.py
+  sle12sp1/kgraft-patch_SUSE-SU-2018_0252-1_12.1.py
+  sle12sp1/kgraft-patch_SUSE-SU-2018_0253-1_12.1.ltss.py
+  sle12sp1/kgraft-patch_SUSE-SU-2018_0253-1_12.1.py
+  sle12sp1/kgraft-patch_SUSE-SU-2018_0266-1_12.1.ltss.py
+  sle12sp1/kgraft-patch_SUSE-SU-2018_0266-1_12.1.py
+  sle12sp1/kgraft-patch_SUSE-SU-2018_0267-1_12.1.ltss.py
+  sle12sp1/kgraft-patch_SUSE-SU-2018_0267-1_12.1.py
+  sle12sp1/kgraft-patch_SUSE-SU-2018_0268-1_12.1.ltss.py
+  sle12sp1/kgraft-patch_SUSE-SU-2018_0268-1_12.1.py
+  sle12sp1/kgraft-patch_SUSE-SU-2018_0270-1_12.1.ltss.py
+  sle12sp1/kgraft-patch_SUSE-SU-2018_0270-1_12.1.py
+  sle12sp1/kgraft-patch_SUSE-SU-2018_0271-1_12.1.ltss.py
+  sle12sp1/kgraft-patch_SUSE-SU-2018_0271-1_12.1.py
+  sle12sp1/kgraft-patch_SUSE-SU-2018_0274-1_12.1.ltss.py
+  sle12sp1/kgraft-patch_SUSE-SU-2018_0274-1_12.1.py
+  sle12sp1/kgraft-patch_SUSE-SU-2018_0275-1_12.1.ltss.py
+  sle12sp1/kgraft-patch_SUSE-SU-2018_0275-1_12.1.py
+  sle12sp1/kgraft-patch_SUSE-SU-2018_0276-1_12.1.ltss.py
+  sle12sp1/kgraft-patch_SUSE-SU-2018_0276-1_12.1.py
+  sle12sp2/bind_SUSE-SU-2018_0303-1_12.2.py
+  sle12sp2/clamav_SUSE-SU-2018_0255-1_12.2.py
+  sle12sp2/webkit2gtk3_SUSE-SU-2018_0219-1_12.2.py
+  sle12sp3/bind_SUSE-SU-2018_0303-1_12.3.py
+  sle12sp3/clamav_SUSE-SU-2018_0255-1_12.3.py
+  sle12sp3/webkit2gtk3_SUSE-SU-2018_0219-1_12.3.py
+
+-------------------------------------------------------------------
 Fri Jan 19 21:43:04 UTC 2018 - jason.record@suse.com
 
 - New Security Announcement Patterns
