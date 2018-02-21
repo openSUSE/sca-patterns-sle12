@@ -1,4 +1,27 @@
 -------------------------------------------------------------------
+Wed Feb 21 00:14:20 UTC 2018 - jason.record@suse.com
+
+- New Security Announcement Patterns
+  sle12sp0/kernel_SUSE-SU-2018_0437-1_12.0.ltss.py
+  sle12sp0/quagga_SUSE-SU-2018_0455-1_12.0.ltss.py
+  sle12sp1/quagga_SUSE-SU-2018_0455-1_12.1.ltss.py
+  sle12sp1/quagga_SUSE-SU-2018_0455-1_12.1.py
+  sle12sp2/freetype2_SUSE-SU-2018_0414-1_12.2.py
+  sle12sp2/glibc_SUSE-SU-2018_0451-1_12.2.py
+  sle12sp2/kernel_SUSE-SU-2018_0416-1_12.2.py
+  sle12sp2/libreoffice_SUSE-SU-2018_0428-1_12.2.py
+  sle12sp2/p7zip_SUSE-SU-2018_0464-1_12.2.py
+  sle12sp2/quagga_SUSE-SU-2018_0456-1_12.2.py
+  sle12sp2/xen_SUSE-SU-2018_0472-1_12.2.py
+  sle12sp3/freetype2_SUSE-SU-2018_0414-1_12.3.py
+  sle12sp3/glibc_SUSE-SU-2018_0451-1_12.3.py
+  sle12sp3/kernel_SUSE-SU-2018_0383-1_12.3.py
+  sle12sp3/libreoffice_SUSE-SU-2018_0443-1_12.3.py
+  sle12sp3/p7zip_SUSE-SU-2018_0464-1_12.3.py
+  sle12sp3/quagga_SUSE-SU-2018_0456-1_12.3.py
+  sle12sp3/xen_SUSE-SU-2018_0438-1_12.3.py
+
+-------------------------------------------------------------------
 Wed Feb  7 13:08:07 UTC 2018 - jason.record@suse.com
 
 - New Security Announcement Patterns
