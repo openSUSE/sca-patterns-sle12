@@ -1,4 +1,86 @@
 -------------------------------------------------------------------
+Mon Jun 11 18:08:28 UTC 2018 - jason.record@suse.com
+
+- New Security Announcement Patterns
+  sle12sp0/kernel_SUSE-SU-2018_1221-1_12.0.ltss.py
+  sle12sp0/kgraft-patch_SUSE-SU-2018_1222-1_12.0.ltss.py
+  sle12sp0/kgraft-patch_SUSE-SU-2018_1224-1_12.0.ltss.py
+  sle12sp0/kgraft-patch_SUSE-SU-2018_1226-1_12.0.ltss.py
+  sle12sp0/kgraft-patch_SUSE-SU-2018_1233-1_12.0.ltss.py
+  sle12sp0/kgraft-patch_SUSE-SU-2018_1234-1_12.0.ltss.py
+  sle12sp0/kgraft-patch_SUSE-SU-2018_1235-1_12.0.ltss.py
+  sle12sp0/kgraft-patch_SUSE-SU-2018_1243-1_12.0.ltss.py
+  sle12sp0/kgraft-patch_SUSE-SU-2018_1244-1_12.0.ltss.py
+  sle12sp0/kgraft-patch_SUSE-SU-2018_1247-1_12.0.ltss.py
+  sle12sp0/kgraft-patch_SUSE-SU-2018_1257-1_12.0.ltss.py
+  sle12sp0/kgraft-patch_SUSE-SU-2018_1261-1_12.0.ltss.py
+  sle12sp0/kgraft-patch_SUSE-SU-2018_1267-1_12.0.ltss.py
+  sle12sp0/kgraft-patch_SUSE-SU-2018_1273-1_12.0.ltss.py
+  sle12sp0/xen_SUSE-SU-2018_1177-1_12.0.ltss.py
+  sle12sp1/kernel_SUSE-SU-2018_1220-1_12.1.ltss.py
+  sle12sp1/kernel_SUSE-SU-2018_1220-1_12.1.py
+  sle12sp1/kgraft-patch_SUSE-SU-2018_1227-1_12.1.ltss.py
+  sle12sp1/kgraft-patch_SUSE-SU-2018_1227-1_12.1.py
+  sle12sp1/kgraft-patch_SUSE-SU-2018_1229-1_12.1.ltss.py
+  sle12sp1/kgraft-patch_SUSE-SU-2018_1229-1_12.1.py
+  sle12sp1/kgraft-patch_SUSE-SU-2018_1231-1_12.1.ltss.py
+  sle12sp1/kgraft-patch_SUSE-SU-2018_1231-1_12.1.py
+  sle12sp1/kgraft-patch_SUSE-SU-2018_1232-1_12.1.ltss.py
+  sle12sp1/kgraft-patch_SUSE-SU-2018_1232-1_12.1.py
+  sle12sp1/kgraft-patch_SUSE-SU-2018_1237-1_12.1.ltss.py
+  sle12sp1/kgraft-patch_SUSE-SU-2018_1237-1_12.1.py
+  sle12sp1/kgraft-patch_SUSE-SU-2018_1251-1_12.1.ltss.py
+  sle12sp1/kgraft-patch_SUSE-SU-2018_1251-1_12.1.py
+  sle12sp1/kgraft-patch_SUSE-SU-2018_1254-1_12.1.ltss.py
+  sle12sp1/kgraft-patch_SUSE-SU-2018_1254-1_12.1.py
+  sle12sp1/kgraft-patch_SUSE-SU-2018_1255-1_12.1.ltss.py
+  sle12sp1/kgraft-patch_SUSE-SU-2018_1255-1_12.1.py
+  sle12sp1/kgraft-patch_SUSE-SU-2018_1259-1_12.1.ltss.py
+  sle12sp1/kgraft-patch_SUSE-SU-2018_1259-1_12.1.py
+  sle12sp1/kgraft-patch_SUSE-SU-2018_1264-1_12.1.ltss.py
+  sle12sp1/kgraft-patch_SUSE-SU-2018_1264-1_12.1.py
+  sle12sp1/kgraft-patch_SUSE-SU-2018_1266-1_12.1.ltss.py
+  sle12sp1/kgraft-patch_SUSE-SU-2018_1266-1_12.1.py
+  sle12sp1/kgraft-patch_SUSE-SU-2018_1269-1_12.1.ltss.py
+  sle12sp1/kgraft-patch_SUSE-SU-2018_1269-1_12.1.py
+  sle12sp1/xen_SUSE-SU-2018_1202-1_12.1.ltss.py
+  sle12sp1/xen_SUSE-SU-2018_1202-1_12.1.py
+  sle12sp2/kernel_SUSE-SU-2018_1173-1_12.2.ltss.py
+  sle12sp2/kernel_SUSE-SU-2018_1173-1_12.2.py
+  sle12sp2/kgraft-patch_SUSE-SU-2018_1223-1_12.2.ltss.py
+  sle12sp2/kgraft-patch_SUSE-SU-2018_1223-1_12.2.py
+  sle12sp2/kgraft-patch_SUSE-SU-2018_1230-1_12.2.ltss.py
+  sle12sp2/kgraft-patch_SUSE-SU-2018_1230-1_12.2.py
+  sle12sp2/kgraft-patch_SUSE-SU-2018_1236-1_12.2.ltss.py
+  sle12sp2/kgraft-patch_SUSE-SU-2018_1236-1_12.2.py
+  sle12sp2/kgraft-patch_SUSE-SU-2018_1239-1_12.2.ltss.py
+  sle12sp2/kgraft-patch_SUSE-SU-2018_1239-1_12.2.py
+  sle12sp2/kgraft-patch_SUSE-SU-2018_1241-1_12.2.ltss.py
+  sle12sp2/kgraft-patch_SUSE-SU-2018_1241-1_12.2.py
+  sle12sp2/kgraft-patch_SUSE-SU-2018_1242-1_12.2.ltss.py
+  sle12sp2/kgraft-patch_SUSE-SU-2018_1242-1_12.2.py
+  sle12sp2/kgraft-patch_SUSE-SU-2018_1245-1_12.2.ltss.py
+  sle12sp2/kgraft-patch_SUSE-SU-2018_1245-1_12.2.py
+  sle12sp2/kgraft-patch_SUSE-SU-2018_1250-1_12.2.ltss.py
+  sle12sp2/kgraft-patch_SUSE-SU-2018_1250-1_12.2.py
+  sle12sp2/kgraft-patch_SUSE-SU-2018_1253-1_12.2.ltss.py
+  sle12sp2/kgraft-patch_SUSE-SU-2018_1253-1_12.2.py
+  sle12sp2/kgraft-patch_SUSE-SU-2018_1256-1_12.2.ltss.py
+  sle12sp2/kgraft-patch_SUSE-SU-2018_1256-1_12.2.py
+  sle12sp2/kgraft-patch_SUSE-SU-2018_1258-1_12.2.ltss.py
+  sle12sp2/kgraft-patch_SUSE-SU-2018_1258-1_12.2.py
+  sle12sp2/kgraft-patch_SUSE-SU-2018_1262-1_12.2.ltss.py
+  sle12sp2/kgraft-patch_SUSE-SU-2018_1262-1_12.2.py
+  sle12sp2/kgraft-patch_SUSE-SU-2018_1268-1_12.2.ltss.py
+  sle12sp2/kgraft-patch_SUSE-SU-2018_1268-1_12.2.py
+  sle12sp2/kgraft-patch_SUSE-SU-2018_1272-1_12.2.ltss.py
+  sle12sp2/kgraft-patch_SUSE-SU-2018_1272-1_12.2.py
+  sle12sp2/xen_SUSE-SU-2018_1216-1_12.2.ltss.py
+  sle12sp2/xen_SUSE-SU-2018_1216-1_12.2.py
+  sle12sp3/patch_SUSE-SU-2018_1128-1_12.3.py
+  sle12sp3/xen_SUSE-SU-2018_1184-1_12.3.py
+
+-------------------------------------------------------------------
 Wed May  2 18:33:49 UTC 2018 - jason.record@suse.com
 
 - New Security Announcement Patterns
