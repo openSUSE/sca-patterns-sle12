@@ -1,4 +1,12 @@
 -------------------------------------------------------------------
+Thu Dec 20 18:45:58 UTC 2018 - jason.record@suse.com
+
+- System panic in update_group_capacity() due to a divide error (bsc#1096254)
+  Pattern: cron-7023601.py
+- Expected cron daemon behavior change from SLES11 to SLES12 (bsc#1017160)
+  Pattern: panic-7023575.py
+
+-------------------------------------------------------------------
 Mon Jun 11 18:08:28 UTC 2018 - jason.record@suse.com
 
 - New Security Announcement Patterns
