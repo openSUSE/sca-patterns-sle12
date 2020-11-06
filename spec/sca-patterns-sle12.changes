@@ -1,4 +1,10 @@
 -------------------------------------------------------------------
+Fri Nov  6 23:51:08 UTC 2020 - jason.record@suse.com
+
+- Additions to version 1.0.1
+  + Added sle12sp5 directory to spec file
+
+-------------------------------------------------------------------
 Thu Dec 20 18:45:58 UTC 2018 - jason.record@suse.com
 
 - System panic in update_group_capacity() due to a divide error (bsc#1096254)

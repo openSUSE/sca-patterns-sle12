@@ -21,7 +21,7 @@
 %define category SLE
 
 Name:         sca-patterns-sle12
-Version:      1.0
+Version:      1.0.1
 Release:      0
 Summary:      Supportconfig Analysis Patterns for SLE12
 License:      GPL-2.0
@@ -52,12 +52,14 @@ install -d %{buildroot}/%{patdir}/%{category}/sle12sp1
 install -d %{buildroot}/%{patdir}/%{category}/sle12sp2
 install -d %{buildroot}/%{patdir}/%{category}/sle12sp3
 install -d %{buildroot}/%{patdir}/%{category}/sle12sp4
+install -d %{buildroot}/%{patdir}/%{category}/sle12sp5
 install -m %{mode} patterns/%{category}/sle12all/* %{buildroot}/%{patdir}/%{category}/sle12all
 install -m %{mode} patterns/%{category}/sle12sp0/* %{buildroot}/%{patdir}/%{category}/sle12sp0
 install -m %{mode} patterns/%{category}/sle12sp1/* %{buildroot}/%{patdir}/%{category}/sle12sp1
 install -m %{mode} patterns/%{category}/sle12sp2/* %{buildroot}/%{patdir}/%{category}/sle12sp2
 install -m %{mode} patterns/%{category}/sle12sp3/* %{buildroot}/%{patdir}/%{category}/sle12sp3
 install -m %{mode} patterns/%{category}/sle12sp4/* %{buildroot}/%{patdir}/%{category}/sle12sp4
+install -m %{mode} patterns/%{category}/sle12sp5/* %{buildroot}/%{patdir}/%{category}/sle12sp5
 %fdupes 
 
 %files
@@ -71,12 +73,14 @@ install -m %{mode} patterns/%{category}/sle12sp4/* %{buildroot}/%{patdir}/%{cate
 %dir %{patdir}/%{category}/sle12sp2
 %dir %{patdir}/%{category}/sle12sp3
 %dir %{patdir}/%{category}/sle12sp4
+%dir %{patdir}/%{category}/sle12sp5
 %attr(%{mode},%{patuser},%{patgrp}) %{patdir}/%{category}/sle12all/*
 %attr(%{mode},%{patuser},%{patgrp}) %{patdir}/%{category}/sle12sp0/*
 %attr(%{mode},%{patuser},%{patgrp}) %{patdir}/%{category}/sle12sp1/*
 %attr(%{mode},%{patuser},%{patgrp}) %{patdir}/%{category}/sle12sp2/*
 %attr(%{mode},%{patuser},%{patgrp}) %{patdir}/%{category}/sle12sp3/*
 %attr(%{mode},%{patuser},%{patgrp}) %{patdir}/%{category}/sle12sp4/*
+%attr(%{mode},%{patuser},%{patgrp}) %{patdir}/%{category}/sle12sp5/*
 
 %changelog
 
