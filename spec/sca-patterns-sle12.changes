@@ -1,4 +1,11 @@
 -------------------------------------------------------------------
+Wed Mar 24 22:40:44 UTC 2021 - jason.record@gmail.com
+
+- New regular patterns (2) for version 1.0.2
+  + sle12sp5/lscpu-000019784-12.py: lscpu segfaults on IBM Power8 - Assertion failed
+  + sle12sp4/plymouth-000019595.py: plymouth hang - login to console not possible
+
+-------------------------------------------------------------------
 Thu Mar  4 03:02:23 UTC 2021 - jason.record@gmail.com
 
 - Changes to version 1.0.2
