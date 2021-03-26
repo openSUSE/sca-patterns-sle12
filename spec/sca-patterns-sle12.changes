@@ -1,4 +1,11 @@
 -------------------------------------------------------------------
+Fri Mar 26 17:15:43 UTC 2021 - jason.record@suse.com
+
+- New regular patterns (2) for version 1.0.2
+  + sle12sp5/btrfscrash-125-000019638.py: System crash during a BTRFS maintenance task (bsc#1163508)
+  + sle12sp4/btrfscrash-124-000019638.py: System crash during a BTRFS maintenance task (bsc#1163508)
+
+-------------------------------------------------------------------
 Fri Mar 26 13:34:42 UTC 2021 - jason.record@suse.com
 
 - New regular patterns (5) for version 1.0.2
