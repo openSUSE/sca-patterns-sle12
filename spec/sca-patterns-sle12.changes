@@ -1,18 +1,18 @@
 -------------------------------------------------------------------
-Thu Mar 25 21:08:06 UTC 2021 - jason.record@suse.com
+Fri Mar 26 13:34:42 UTC 2021 - jason.record@suse.com
 
 - New regular patterns (5) for version 1.0.2
   + sle12sp5/bleedingtooth_125-000019735.py: BleedingTooth aka CVE-2020-12351, CVE-2020-12352, and CVE-2020-24490
   + sle12sp4/bleedingtooth_124-000019735.py: BleedingTooth aka CVE-2020-12351, CVE-2020-12352, and CVE-2020-24490
   + sle12sp3/bleedingtooth_123-000019735.py: BleedingTooth aka CVE-2020-12351, CVE-2020-12352, and CVE-2020-24490
   + sle12sp2/bleedingtooth_122-000019735.py: BleedingTooth aka CVE-2020-12351, CVE-2020-12352, and CVE-2020-24490
-  + sle12all/btrfscron-000019583.py: After upgrading to SLES 12 SP5 BTRFS cron jobs are not working anymore.
+  + sle12all/btrfscron-000019583.py: After upgrading to SLES 12 SP5 BTRFS cron jobs are not working anymore (bsc#1159891)
 
 -------------------------------------------------------------------
 Wed Mar 24 22:40:44 UTC 2021 - jason.record@suse.com
 
 - New regular patterns (2) for version 1.0.2
-  + sle12sp5/lscpu-000019784-12.py: lscpu segfaults on IBM Power8 - Assertion failed
+  + sle12sp5/lscpu-000019784-12.py: lscpu segfaults on IBM Power8 - Assertion failed (bsc#1175623)
   + sle12sp4/plymouth-000019595.py: plymouth hang - login to console not possible
 
 -------------------------------------------------------------------
