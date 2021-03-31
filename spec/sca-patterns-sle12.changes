@@ -1,4 +1,13 @@
 -------------------------------------------------------------------
+Wed Mar 31 20:55:51 UTC 2021 - Jason Record <jason.record@suse.com>
+
+- New regular patterns (4) for version 1.0.2
+  + sle12all/zerologon-000019713.py: Zerologon aka CVE-2020-1472 (bsc#1176579)
+  + sle12sp4/btrfscrash-124-000019638.py: System crash during a BTRFS maintenance task (bsc#1163508)
+  + sle12sp4/tcpdumpcore-000019666.py: Running tcpdump on a SLES12 SP4 System with Kernel 4.12.14-95.48-default may crash the system (bsc#1176579)
+  + sle12sp5/btrfscrash-125-000019638.py: System crash during a BTRFS maintenance task (bsc#1163508)
+
+-------------------------------------------------------------------
 Fri Mar 26 17:15:43 UTC 2021 - jason.record@suse.com
 
 - New regular patterns (2) for version 1.0.2
