@@ -1,7 +1,7 @@
 # 
 # spec file for package sca-patterns-sle12
 #
-# Copyright (c) 2017 SUSE LINUX GmbH, Nuernberg, Germany.
+# Copyright (c) 2017-2021 SUSE LINUX GmbH, Nuernberg, Germany.
 #
 # All modifications and additions to the file contributed by third parties
 # remain the property of their copyright owners, unless otherwise agreed
@@ -29,7 +29,7 @@ URL:          https://github.com/g23guy/sca-patterns-sle12
 Group:        System/Monitoring
 Source:       %{name}-%{version}.tar.gz
 BuildRequires: fdupes
-Requires:     sca-patterns-base
+Requires:     sca-patterns-base >= 1.3.2
 Buildarch:    noarch
 
 %description
