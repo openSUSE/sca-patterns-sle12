@@ -2,10 +2,10 @@
 
 # Title:       Check for Duplicate LVM Volume Groups
 # Description: Duplicate volume groups are usually a configuration issue
-# Modified:    2013 Jun 27
+# Modified:    2021 May 18
 
 ##############################################################################
-#  Copyright (C) 2013,2012 SUSE LLC
+#  Copyright (C) 2012-2021 SUSE LLC
 ##############################################################################
 #
 #  This program is free software; you can redistribute it and/or modify
@@ -22,7 +22,7 @@
 #
 
 #  Authors/Contributors:
-#   Jason Record (jrecord@suse.com)
+#   Jason Record <jason.record@suse.com>
 
 ##############################################################################
 
@@ -46,7 +46,7 @@ use SDP::SUSE;
 	PROPERTY_NAME_PRIMARY_LINK."=META_LINK_TID",
 	PROPERTY_NAME_OVERALL."=$GSTATUS",
 	PROPERTY_NAME_OVERALL_INFO."=None",
-	"META_LINK_TID=http://www.suse.com/support/kb/doc.php?id=7003547"
+	"META_LINK_TID=https://www.suse.com/support/kb/doc/?id=000017046"
 );
 
 ##############################################################################

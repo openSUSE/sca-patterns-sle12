@@ -2,10 +2,10 @@
 
 # Title:       Check for missing LVM UUIDs
 # Description: Physical volumes can be removed or damaged and appear missing. This pattern looks for missing physical volumes.
-# Modified:    2013 Nov 04
+# Modified:    2021 May 17
 
 ##############################################################################
-#  Copyright (C) 2013,2012 SUSE LLC
+#  Copyright (C) 2013,2012-2021 SUSE LLC
 ##############################################################################
 #
 #  This program is free software; you can redistribute it and/or modify
@@ -21,7 +21,7 @@
 #  along with this program; if not, see <http://www.gnu.org/licenses/>.
 #
 #  Authors/Contributors:
-#     Jason Record (jrecord@suse.com)
+#     Jason Record <jason.record@suse.com>
 #
 ##############################################################################
 
@@ -46,8 +46,8 @@ use SDP::SUSE;
 	PROPERTY_NAME_PRIMARY_LINK."=META_LINK_TID",
 	PROPERTY_NAME_OVERALL."=$GSTATUS",
 	PROPERTY_NAME_OVERALL_INFO."=None",
-	"META_LINK_TID=http://www.suse.com/support/kb/doc.php?id=3803380",
-	"META_LINK_CoolSolution=http://www.novell.com/coolsolutions/appnote/19386.html#DiskBelongingtoaVolumeGroupRemoved"
+	"META_LINK_TID=https://www.suse.com/support/kb/doc/?id=000016470"
+	"META_LINK_SUSEBlog=https://www.suse.com/c/recovering-lost-lvm-volume-disk/"
 );
 
 ##############################################################################

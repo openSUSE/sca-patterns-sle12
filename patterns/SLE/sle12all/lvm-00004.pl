@@ -2,10 +2,10 @@
 
 # Title:       Check for LVM Metadata Check Sum Errors
 # Description: LMV Check sum errors may indicate corrupted LVM metadata
-# Modified:    2013 Jun 27
+# Modified:    2021 May 18
 
 ##############################################################################
-#  Copyright (C) 2013 SUSE LLC
+#  Copyright (C) 2013-2021 SUSE LLC
 ##############################################################################
 #
 #  This program is free software; you can redistribute it and/or modify
@@ -22,7 +22,7 @@
 #
 
 #  Authors/Contributors:
-#   Jason Record (jrecord@suse.com)
+#   Jason Record <jason.record@suse.com>
 
 ##############################################################################
 
@@ -43,10 +43,10 @@ use SDP::SUSE;
 	PROPERTY_NAME_CATEGORY."=Disk",
 	PROPERTY_NAME_COMPONENT."=LVM",
 	PROPERTY_NAME_PATTERN_ID."=$PATTERN_ID",
-	PROPERTY_NAME_PRIMARY_LINK."=META_LINK_CoolSolution",
+	PROPERTY_NAME_PRIMARY_LINK."=META_LINK_Blog",
 	PROPERTY_NAME_OVERALL."=$GSTATUS",
 	PROPERTY_NAME_OVERALL_INFO."=None",
-	"META_LINK_CoolSolution=http://www.novell.com/communities/node/1502/recovering+lost+lvm+volume+disk#CorruptedLVMMetaData"
+	"META_LINK_Blog=https://www.suse.com/c/recovering-lost-lvm-volume-disk/"
 );
 
 ##############################################################################
