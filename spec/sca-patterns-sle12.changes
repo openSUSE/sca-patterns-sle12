@@ -1,4 +1,12 @@
 -------------------------------------------------------------------
+Wed May 19 15:47:31 UTC 2021 - Jason Record <jason.record@suse.com>
+
+- Removed OES dependent patterns
+  + sle12all/pdc-00001.pl
+  + sle12all/pdc-00002.pl
+- Fixed sle12all/lvm-00003.pl syntax error
+
+-------------------------------------------------------------------
 Tue May 18 21:40:11 UTC 2021 - Jason Record <jason.record@suse.com>
 
 - Changes in version 1.0.3

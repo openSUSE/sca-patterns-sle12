@@ -46,7 +46,7 @@ use SDP::SUSE;
 	PROPERTY_NAME_PRIMARY_LINK."=META_LINK_TID",
 	PROPERTY_NAME_OVERALL."=$GSTATUS",
 	PROPERTY_NAME_OVERALL_INFO."=None",
-	"META_LINK_TID=https://www.suse.com/support/kb/doc/?id=000016470"
+	"META_LINK_TID=https://www.suse.com/support/kb/doc/?id=000016470",
 	"META_LINK_SUSEBlog=https://www.suse.com/c/recovering-lost-lvm-volume-disk/"
 );
 
