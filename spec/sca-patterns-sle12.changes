@@ -1,10 +1,11 @@
 -------------------------------------------------------------------
-Wed May 19 15:47:31 UTC 2021 - Jason Record <jason.record@suse.com>
+Wed May 19 15:51:17 UTC 2021 - Jason Record <jason.record@suse.com>
 
-- Removed OES dependent patterns
-  + sle12all/pdc-00001.pl
-  + sle12all/pdc-00002.pl
-- Fixed sle12all/lvm-00003.pl syntax error
+- Updated regular patterns (1)
+  + sle12all/lvm-00003.pl: Physical volumes can be removed or damaged and appear missing. This pattern looks for missing physical volumes.
+- Deleted regular patterns (2)
+  + sle12all/pdc-00001.pl: Pattern removed OES Dependent
+  + sle12all/pdc-00002.pl: Pattern removed OES Dependent
 
 -------------------------------------------------------------------
 Tue May 18 21:40:11 UTC 2021 - Jason Record <jason.record@suse.com>
