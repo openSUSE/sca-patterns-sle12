@@ -1,4 +1,9 @@
 -------------------------------------------------------------------
+Thu May 20 17:06:18 UTC 2021 - Jason Record <jason.record@suse.com>
+
+- Fixed crosstalk message strings (bsc#1186312)
+
+-------------------------------------------------------------------
 Wed May 19 15:51:17 UTC 2021 - Jason Record <jason.record@suse.com>
 
 - Updated regular patterns (1)

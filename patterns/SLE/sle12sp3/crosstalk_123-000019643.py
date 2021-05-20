@@ -75,12 +75,12 @@ if( SUSE.packageInstalled(RPM_NAME) ):
 			if( INSTALLED_VERSION_KERN >= 0 ):
 				Core.updateStatus(Core.IGNORE, "Bug fixes applied for " + RPM_NAME + " and kernel version")
 			else:
-				Core.updateStatus(Core.WARN, "Risk of L1D data cache eviction and vector register sampling, update kernel to avoid")
+				Core.updateStatus(Core.WARN, "Risk of CrossTalk attack against special Intel CPU registers, update kernel to avoid")
 		else:
 			if( INSTALLED_VERSION_KERN >= 0 ):
-				Core.updateStatus(Core.WARN, "Risk of L1D data cache eviction and vector register sampling, update " + RPM_NAME + " to avoid")
+				Core.updateStatus(Core.WARN, "Risk of CrossTalk attack against special Intel CPU registers, update " + RPM_NAME + " to avoid")
 			else:
-				Core.updateStatus(Core.WARN, "Risk of L1D data cache eviction and vector register sampling, update system to avoid")
+				Core.updateStatus(Core.WARN, "Risk of CrossTalk attack against special Intel CPU registers, update system to avoid")
 	else:
 		Core.updateStatus(Core.ERROR, "ERROR: Intel CPU not found")
 else:
