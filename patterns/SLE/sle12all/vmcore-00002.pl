@@ -2,10 +2,10 @@
 
 # Title:       Kernel Core Analysis Needed
 # Description: Detects the need for a kernel core analysis
-# Modified:    2013 Jun 27
+# Modified:    2021 May 24
 
 ##############################################################################
-#  Copyright (C) 2013 SUSE LLC
+#  Copyright (C) 2013-2021 SUSE LLC
 ##############################################################################
 #
 #  This program is free software; you can redistribute it and/or modify
@@ -21,7 +21,7 @@
 #  along with this program; if not, see <http://www.gnu.org/licenses/>.
 
 #  Authors/Contributors:
-#   Jason Record (jrecord@suse.com)
+#   Jason Record <jason.record@suse.com>
 
 ##############################################################################
 
@@ -57,7 +57,7 @@ sub vmcoresFound {
 	SDP::Core::printDebug('> vmcoresFound', 'BEGIN');
 	my @LINE_CONTENT = ();
 	my $FILE_OPEN = 'crash.txt';
-	my $SECTION = 'bin/find /';
+	my $SECTION = 'bin/find ';
 	my @CONTENT = ();
 
 	if ( SDP::Core::getSection($FILE_OPEN, $SECTION, \@CONTENT) ) {
