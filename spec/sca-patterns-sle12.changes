@@ -1,4 +1,14 @@
 -------------------------------------------------------------------
+Mon May 24 14:44:44 UTC 2021 - Jason Record <jason.record@suse.com>
+
+- Changes in version 1.0.3
+  - New regular patterns (2)
+    + sle12all/coredumpctl-000018634.py: How to obtain systemd service core dumps (TID000018634)
+    + sle12all/scatool-000020253.py: scatool fails to analyze supportconfigs with xz compression (bsc#1186316)
+  - Deleted regular patterns (1)
+    + sle12all/bhc-scc.sh: Pattern removed (bsc#1184594)
+
+-------------------------------------------------------------------
 Thu May 20 17:06:18 UTC 2021 - Jason Record <jason.record@suse.com>
 
 - Fixed crosstalk message strings (bsc#1186312)
