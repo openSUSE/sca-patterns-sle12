@@ -2,10 +2,10 @@
 
 # Title:       Check for volume_list exit status
 # Description: Validate volume_list does not generate exit 5
-# Modified:    2015 Jul 30
+# Modified:    2021 May 26
 #
 ##############################################################################
-# Copyright (C) 2015 SUSE LLC
+# Copyright (C) 2015-2021 SUSE LLC
 ##############################################################################
 #
 # This program is free software; you can redistribute it and/or modify
@@ -21,7 +21,7 @@
 # along with this program; if not, see <http://www.gnu.org/licenses/>.
 #
 #  Authors/Contributors:
-#   Jason Record (jrecord@suse.com)
+#   Jason Record <jason.record@suse.com>
 #
 ##############################################################################
 
@@ -60,7 +60,7 @@ Core.init(META_CLASS, META_CATEGORY, META_COMPONENT, PATTERN_ID, PRIMARY_LINK, O
 SERVICE = 'lvm2-activation.service'
 SERVICE_INFO = SUSE.getServiceDInfo(SERVICE)
 LVM_CONFIG = SUSE.getConfigFileLVM('activation')
-if "vgchange -aay" in SERVICE_INFO['ExecStart']: #auto activation detected
+if( 'ExecStart' in SERVICE_INFO and "vgchange -aay" in SERVICE_INFO['ExecStart'] ): #auto activation detected
 	if( LVM_CONFIG ): # a valid lvm config file exists
 		if( 'volume_list' in LVM_CONFIG.keys() ): # there is a volume_list entry in lvm.conf
 			if( len(LVM_CONFIG['volume_list']) > 0 ): # there are values associated with the volume_list entry
