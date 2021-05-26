@@ -1,4 +1,10 @@
 -------------------------------------------------------------------
+Wed May 26 20:43:23 UTC 2021 - Jason Record <jason.record@suse.com>
+
+- Updated regular patterns (1)
+  + sle12all/lvm-volume-list-7016683.py: Fixed execution error (bsc#1176021)
+
+-------------------------------------------------------------------
 Mon May 24 17:41:26 UTC 2021 - Jason Record <jason.record@suse.com>
 
 - Changes in version 1.0.3
