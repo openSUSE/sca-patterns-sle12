@@ -1,4 +1,14 @@
 -------------------------------------------------------------------
+Wed Jun  2 22:12:34 UTC 2021 - Jason Record <jason.record@suse.com>
+
+- Changes in version 1.0.4
+  - New regular patterns (4)
+    + sle12all/sysdjobs-000020261.py: Troubleshooting systemd jobs that are hung or stuck (TID000020261)
+    + sle12sp4/nobarrier-000020240.py: XFS nobarrier option has been completely deprecated starting from SLES15 SP2 (bsc#1176375)
+    + sle12sp5/nfstimeout_125-000019943.py: Delayed outgoing packets causing NFS timeouts (bsc#1183405)
+    + sle12sp5/nobarrier-000020240.py: XFS nobarrier option has been completely deprecated starting from SLES15 SP2 (bsc#1176375)
+
+-------------------------------------------------------------------
 Wed May 26 20:43:23 UTC 2021 - Jason Record <jason.record@suse.com>
 
 - Updated regular patterns (1)
