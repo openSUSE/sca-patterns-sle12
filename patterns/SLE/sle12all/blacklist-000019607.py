@@ -1,7 +1,7 @@
 #!/usr/bin/python
 #
 # Title:       Pattern for TID000019607
-# Description: System exit to emergency shell at boot with multipath enabled (SLES12, MPIO)
+# Description: System exit to emergency shell at boot with multipath enabled
 # Source:      Basic Python Pattern Template v0.3.4
 # Options:     SLE,MPIO,Blacklist,blacklist,000019607,0,1,0,0
 # Modified:    2021 Jun 18
