@@ -38,8 +38,8 @@ import datetime
 # Overriden (eventually or in part) from Core.py Module
 ##############################################################################
 
-META_CLASS = "SLE"
-META_CATEGORY = "Updates"
+META_CLASS = "Basic Health"
+META_CATEGORY = "SLE"
 META_COMPONENT = "Registration"
 PATTERN_ID = os.path.basename(__file__)
 PRIMARY_LINK = "META_LINK_SCC"
@@ -56,7 +56,9 @@ Core.init(META_CLASS, META_CATEGORY, META_COMPONENT, PATTERN_ID, PRIMARY_LINK, O
 SCC_INFO = SUSE.getSCCInfo()
 REG_EXPIRED = []
 REG_EXPIRING = []
+REG_VALID = []
 WARNING_DAYS = 60
+EXPIRE_DATE_FOUND = False
 TODAY = datetime.datetime.today()
 if( SCC_INFO ):
 	for PRODUCT in SCC_INFO:
@@ -64,6 +66,7 @@ if( SCC_INFO ):
 		EXPIRE_DATE = ''
 		EXPIRE_STR = ''
 		if 'expires_at' in PRODUCT:
+			EXPIRE_DATE_FOUND = True
 			TMP = PRODUCT['expires_at'].split()
 			del TMP[-1]
 			EXPIRE_DATE = TMP[0]
@@ -75,16 +78,21 @@ if( SCC_INFO ):
 				REG_EXPIRED.append(str(PRODUCT['identifier']) + " " + str(PRODUCT['version']) + ": " + str(EXPIRE_DATE))
 			elif( TODAY > EXPIRATION_WARNING ):
 				REG_EXPIRING.append(str(PRODUCT['identifier']) + " " + str(PRODUCT['version']) + ": " + str(EXPIRE_DATE))
+			else:
+				REG_VALID.append(str(PRODUCT['identifier']) + " " + str(PRODUCT['version']) + ": " + str(EXPIRE_DATE))
 
-	if( REG_EXPIRED ):
-		if( REG_EXPIRING ):
-			Core.updateStatus(Core.CRIT, "Detected expired product registrations: " + str(REG_EXPIRED) + ", expiring within " + str(WARNING_DAYS) + " days: " + str(REG_EXPIRING))
+	if( EXPIRE_DATE_FOUND ):
+		if( REG_EXPIRED ):
+			if( REG_EXPIRING ):
+				Core.updateStatus(Core.CRIT, "Detected expired product registrations: " + ' '.join(REG_EXPIRED) + "; expiring within " + str(WARNING_DAYS) + " days: " + ' '.join(REG_EXPIRING))
+			else:
+				Core.updateStatus(Core.CRIT, "Detected expired product registrations: " + ' '.join(REG_EXPIRED))
+		elif( REG_EXPIRING ):
+				Core.updateStatus(Core.WARN, "Detected product registrations expiring within " + str(WARNING_DAYS) + " days: " + ' '.join(REG_EXPIRING))
 		else:
-			Core.updateStatus(Core.CRIT, "Detected expired product registrations: " + str(REG_EXPIRED))
-	elif( REG_EXPIRING ):
-			Core.updateStatus(Core.WARN, "Detected product registrations expiring within " + str(WARNING_DAYS) + " days: " + str(REG_EXPIRING))
+			Core.updateStatus(Core.SUCC, "No product registrations have expired or will expire within " + str(WARNING_DAYS) + " days, " + ' '.join(REG_VALID))
 	else:
-		Core.updateStatus(Core.IGNORE, "No product registrations have expired or will expire within " + str(WARNING_DAYS) + " days.")
+		Core.updateStatus(Core.ERROR, "SCC Status: No expire dates found")
 else:
 	Core.updateStatus(Core.ERROR, "SCC Status: Not Found")
 
