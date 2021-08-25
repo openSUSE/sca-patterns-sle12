@@ -34,8 +34,8 @@ import Core
 import SUSE
 
 META_CLASS = "Basic Health"
-META_CATEGORY = "Registration"
-META_COMPONENT = "Status"
+META_CATEGORY = "SLE"
+META_COMPONENT = "Registration"
 PATTERN_ID = os.path.basename(__file__)
 PRIMARY_LINK = "META_LINK_TID"
 OVERALL = Core.TEMP
