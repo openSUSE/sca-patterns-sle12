@@ -2,10 +2,10 @@
 
 # Title:       Expired SCC Registrations
 # Description: Identify if SCC registrations have expired
-# Modified:    2015 May 07
+# Modified:    2021 Sep 07
 #
 ##############################################################################
-# Copyright (C) 2015 SUSE LLC
+# Copyright (C) 2015,2021 SUSE LLC
 ##############################################################################
 #
 # This program is free software; you can redistribute it and/or modify
@@ -21,7 +21,7 @@
 # along with this program; if not, see <http://www.gnu.org/licenses/>.
 #
 #  Authors/Contributors:
-#   Jason Record (jrecord@suse.com)
+#   Jason Record <jason.record@suse.com>
 #
 ##############################################################################
 
@@ -45,7 +45,7 @@ PATTERN_ID = os.path.basename(__file__)
 PRIMARY_LINK = "META_LINK_SCC"
 OVERALL = Core.TEMP
 OVERALL_INFO = "NOT SET"
-OTHER_LINKS = "META_LINK_SCC=https://scc.suse.com/dashboard|META_LINK_Renew=https://www.suse.com/products/server/how-to-buy/"
+OTHER_LINKS = "META_LINK_SCC=https://scc.suse.com/dashboard|META_LINK_Renew=https://www.suse.com/renewals/"
 
 Core.init(META_CLASS, META_CATEGORY, META_COMPONENT, PATTERN_ID, PRIMARY_LINK, OVERALL, OVERALL_INFO, OTHER_LINKS)
 
