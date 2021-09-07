@@ -1,10 +1,11 @@
 -------------------------------------------------------------------
-Tue Sep  7 21:58:03 UTC 2021 - Jason Record <jason.record@suse.com>
+Tue Sep  7 22:02:06 UTC 2021 - Jason Record <jason.record@suse.com>
 
 - Updates to version 1.0.8
   + Removed outdated TID2 link in bhc-diskused-00001.pl (bsc#1190260)
   + Added Video link to coredumpctl-000018634.py
   + Updated renewal link in bhc-scc-expired.py
+  + Updated registration link in bhc-scc-registered.py
 
 -------------------------------------------------------------------
 Fri Aug 27 13:41:02 UTC 2021 - Jason Record <jason.record@suse.com>

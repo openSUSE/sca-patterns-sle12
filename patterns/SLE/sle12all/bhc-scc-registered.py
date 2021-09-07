@@ -5,7 +5,7 @@
 # Source:      Basic Python Pattern Template v0.3.4
 # Options:     Basic Health,Registration,Status,registration-scc,000018546,0,2,0,0
 # Distro:      SLES1[2,5] All
-# Modified:    2021 Aug 25
+# Modified:    2021 Sep 07
 #
 ##############################################################################
 # Copyright (C) 2021 SUSE LLC
@@ -40,7 +40,7 @@ PATTERN_ID = os.path.basename(__file__)
 PRIMARY_LINK = "META_LINK_TID"
 OVERALL = Core.TEMP
 OVERALL_INFO = "NOT SET"
-OTHER_LINKS = "META_LINK_TID=https://www.suse.com/support/kb/doc/?id=000018546|META_LINK_SCC=https://scc.suse.com/dashboard|META_LINK_Register=https://www.suse.com/products/server/how-to-buy/"
+OTHER_LINKS = "META_LINK_TID=https://www.suse.com/support/kb/doc/?id=000018546|META_LINK_SCC=https://scc.suse.com/dashboard|META_LINK_Register=https://www.suse.com/support/"
 Core.init(META_CLASS, META_CATEGORY, META_COMPONENT, PATTERN_ID, PRIMARY_LINK, OVERALL, OVERALL_INFO, OTHER_LINKS)
 
 OES_TAG = 'Microfocus'
