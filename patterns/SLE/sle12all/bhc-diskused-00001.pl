@@ -2,10 +2,10 @@
 
 # Title:       Basic Health Check - File System Used Space
 # Description: Check the available of mounted disk space
-# Modified:    2013 Jun 20
+# Modified:    2021 Sep 07
 
 ##############################################################################
-#  Copyright (C) 2013 SUSE LLC
+#  Copyright (C) 2013,2021 SUSE LLC
 ##############################################################################
 #
 #  This program is free software; you can redistribute it and/or modify
@@ -21,7 +21,7 @@
 #  along with this program; if not, see <http://www.gnu.org/licenses/>.
 #
 #  Authors/Contributors:
-#     Jason Record (jrecord@suse.com) - original BASH script
+#     Jason Record <jason.record@suse.com>
 #
 ##############################################################################
 
@@ -54,8 +54,7 @@ use constant LIMIT_OPT_DISKYEL  => 80;          # % Disk Space Used; yellow
 	PROPERTY_NAME_PRIMARY_LINK."=META_LINK_TID",
 	PROPERTY_NAME_OVERALL."=$GSTATUS",
 	PROPERTY_NAME_OVERALL_INFO."=None",
-	"META_LINK_TID=http://www.suse.com/support/kb/doc.php?id=7002723",
-	"META_LINK_TID2=http://www.suse.com/support/kb/doc.php?id=3005720"
+	"META_LINK_TID=http://www.suse.com/support/kb/doc.php?id=7002723"
 );
 
 ##############################################################################

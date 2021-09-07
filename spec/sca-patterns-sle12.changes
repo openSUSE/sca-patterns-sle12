@@ -1,4 +1,10 @@
 -------------------------------------------------------------------
+Tue Sep  7 15:23:57 UTC 2021 - Jason Record <jason.record@suse.com>
+
+- Updates to version 1.0.8
+  + Removed outdated TID2 link in bhc-diskused-00001.pl (bsc#1190260)
+
+-------------------------------------------------------------------
 Fri Aug 27 13:41:02 UTC 2021 - Jason Record <jason.record@suse.com>
 
 - Renamed patterns for file standard
