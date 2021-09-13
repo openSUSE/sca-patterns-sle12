@@ -2,7 +2,7 @@
 
 # Title:       Basic Health Check - File System Used Space
 # Description: Check the available of mounted disk space
-# Modified:    2021 Sep 07
+# Modified:    2021 Sep 13
 
 ##############################################################################
 #  Copyright (C) 2013,2021 SUSE LLC
@@ -54,7 +54,8 @@ use constant LIMIT_OPT_DISKYEL  => 80;          # % Disk Space Used; yellow
 	PROPERTY_NAME_PRIMARY_LINK."=META_LINK_TID",
 	PROPERTY_NAME_OVERALL."=$GSTATUS",
 	PROPERTY_NAME_OVERALL_INFO."=None",
-	"META_LINK_TID=http://www.suse.com/support/kb/doc.php?id=7002723"
+	"META_LINK_TID=http://www.suse.com/support/kb/doc.php?id=7002723",
+	"META_LINK_Video=https://youtu.be/Vgr8n-J1T3M"
 );
 
 ##############################################################################
