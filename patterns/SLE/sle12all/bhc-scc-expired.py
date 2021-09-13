@@ -2,7 +2,7 @@
 
 # Title:       Expired SCC Registrations
 # Description: Identify if SCC registrations have expired
-# Modified:    2021 Sep 07
+# Modified:    2021 Sep 13
 #
 ##############################################################################
 # Copyright (C) 2015,2021 SUSE LLC
@@ -45,7 +45,7 @@ PATTERN_ID = os.path.basename(__file__)
 PRIMARY_LINK = "META_LINK_SCC"
 OVERALL = Core.TEMP
 OVERALL_INFO = "NOT SET"
-OTHER_LINKS = "META_LINK_SCC=https://scc.suse.com/dashboard|META_LINK_Renew=https://www.suse.com/renewals/"
+OTHER_LINKS = "META_LINK_SCC=https://scc.suse.com/dashboard|META_LINK_Renew=https://www.suse.com/renewals/|META_LINK_Video=https://youtu.be/um4XQFG_nCo"
 
 Core.init(META_CLASS, META_CATEGORY, META_COMPONENT, PATTERN_ID, PRIMARY_LINK, OVERALL, OVERALL_INFO, OTHER_LINKS)
 

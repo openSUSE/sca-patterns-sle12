@@ -1,4 +1,9 @@
 -------------------------------------------------------------------
+Mon Sep 13 17:17:30 UTC 2021 - Jason Record <jason.record@suse.com>
+
+- Added Video links to bhc-scc-expired.py and bhc-scc-registered.py
+
+-------------------------------------------------------------------
 Tue Sep  7 22:02:06 UTC 2021 - Jason Record <jason.record@suse.com>
 
 - Updates to version 1.0.8
