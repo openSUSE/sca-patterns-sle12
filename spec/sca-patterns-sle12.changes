@@ -1,5 +1,5 @@
 -------------------------------------------------------------------
-Thu 16 Sep 2021 12:33:09 PM UTC - Jason Record <jason.record@suse.com>
+Thu Sep 16 15:00:32 UTC 2021 - Jason Record <jason.record@suse.com>
 
 - Added video links to patterns (bsc#1190460)
   + bhc-scc-expired.py,  bhc-scc-registered.py, bhc-diskused-00001.pl, bhc-memused-00001.pl
