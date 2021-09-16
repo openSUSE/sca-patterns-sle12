@@ -2,10 +2,10 @@
 
 # Title:       Basic Health Check - Free Memory and Disk Swapping
 # Description: Check the available memory and disk swapping activity
-# Modified:    2014 Mar 4
+# Modified:    2021 Sep 16
 
 ##############################################################################
-#  Copyright (C) 2013,2014 SUSE LLC
+#  Copyright (C) 2013,2014,2021 SUSE LLC
 ##############################################################################
 #
 #  This program is free software; you can redistribute it and/or modify
@@ -21,7 +21,7 @@
 #  along with this program; if not, see <http://www.gnu.org/licenses/>.
 #
 #  Authors/Contributors:
-#     Jason Record (jrecord@suse.com)
+#     Jason Record <jason.record@suse.com>
 #
 #
 ##############################################################################
@@ -54,7 +54,8 @@ use constant LIMIT_OPT_MEMYEL   => 85;           # Megabytes of free RAM; yellow
 	PROPERTY_NAME_PRIMARY_LINK."=META_LINK_TID",
 	PROPERTY_NAME_OVERALL."=$GSTATUS",
 	PROPERTY_NAME_OVERALL_INFO."=None",
-	"META_LINK_TID=http://www.suse.com/support/kb/doc.php?id=7000120"
+	"META_LINK_TID=http://www.suse.com/support/kb/doc.php?id=7000120",
+	"META_LINK_Video=https://youtu.be/yLtX5F7ORJI"
 );
 
 ##############################################################################
