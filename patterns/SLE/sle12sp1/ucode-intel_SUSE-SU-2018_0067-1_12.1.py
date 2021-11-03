@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 #
 # Title:       Important Security Announcement for ucode-intel SUSE-SU-2018:0067-1
 # Description: Security fixes for SUSE Linux Enterprise 12 SP1

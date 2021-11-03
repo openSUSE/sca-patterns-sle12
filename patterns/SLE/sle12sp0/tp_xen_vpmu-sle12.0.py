@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 
 # Title:       Technology Preview: 1.4.2.10 Xen: Performance Monitoring
 # Description: Identify SLE12 technology preview features

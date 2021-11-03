@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 #
 # Title:       Pattern for TID000018705 (7017652)
 # Description: What are all these Bug: soft lockup messages about?

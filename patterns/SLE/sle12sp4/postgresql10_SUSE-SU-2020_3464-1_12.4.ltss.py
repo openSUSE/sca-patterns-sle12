@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 #
 # Title:       Important Security Announcement for postgresql10 SUSE-SU-2020:3464-1
 # Description: Security fixes for SUSE Linux Enterprise 12 SP4 LTSS

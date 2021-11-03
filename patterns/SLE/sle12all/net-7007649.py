@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 
 # Title:       rp_filter communication issues
 # Description: Applying newer SLES Causing Communication Issues

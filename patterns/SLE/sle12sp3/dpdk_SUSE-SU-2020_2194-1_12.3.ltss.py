@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 #
 # Title:       Moderate Security Announcement for dpdk SUSE-SU-2020:2194-1
 # Description: Security fixes for SUSE Linux Enterprise 12 SP3 LTSS

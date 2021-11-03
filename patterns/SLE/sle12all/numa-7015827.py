@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 
 # Title:       vNUMA vs.VCPU hotplug on VMware
 # Description: checks for vNUMA vs.VCPU hotplug on VMware

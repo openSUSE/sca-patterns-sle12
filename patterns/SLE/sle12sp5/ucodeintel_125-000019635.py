@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 #
 # Title:       Pattern for TID000019635
 # Description: Security vulnerability: L1D data cache eviction and Vector Register sampling - CVE-2020-0548, CVE-2020-0549

@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 #
 # Title:       Pattern for TID000020273
 # Description: Frequency scaling driver intel_pstate not loading on some Intel Xeon Scalable processors

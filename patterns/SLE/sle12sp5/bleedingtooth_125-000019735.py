@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 #
 # Title:       Pattern for TID000019735
 # Description: Security Vulnerability: BleedingTooth aka CVE-2020-12351, CVE-2020-12352, and CVE-2020-24490

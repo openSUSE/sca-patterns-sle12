@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 #
 # Title:       Moderate Security Announcement for krb5 SUSE-SU-2020:3379-1
 # Description: Security fixes for SUSE Linux Enterprise 12 SP3 LTSS

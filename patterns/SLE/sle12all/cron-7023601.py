@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 
 # Title:       Check for multiple cron processes
 # Description: Expected cron daemon behavior change from SLES11 to SLES12

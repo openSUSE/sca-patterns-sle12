@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 #
 # Title:       Important Security Announcement for libwpd SUSE-SU-2017:2931-1
 # Description: Security fixes for SUSE Linux Enterprise 12 SP2

@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 #
 # Title:       Important Security Announcement for wget SUSE-SU-2017:2871-2
 # Description: Security fixes for SUSE Linux Enterprise 12 SP1 LTSS

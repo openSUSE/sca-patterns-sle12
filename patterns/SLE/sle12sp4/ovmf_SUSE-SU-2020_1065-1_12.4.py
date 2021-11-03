@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 #
 # Title:       Moderate Security Announcement for ovmf SUSE-SU-2020:1065-1
 # Description: Security fixes for SUSE Linux Enterprise 12 SP4

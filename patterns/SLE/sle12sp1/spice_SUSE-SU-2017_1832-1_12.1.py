@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 #
 # Title:       Important Security Announcement for spice SUSE-SU-2017:1832-1
 # Description: Security fixes for SUSE Linux Enterprise 12 SP1

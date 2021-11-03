@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 #
 # Title:       Moderate Security Announcement for cups SUSE-SU-2021:0286-1
 # Description: Security fixes for SUSE Linux Enterprise 12 SP5

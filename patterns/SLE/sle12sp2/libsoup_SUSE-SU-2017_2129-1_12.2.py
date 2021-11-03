@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 #
 # Title:       Important Security Announcement for libsoup SUSE-SU-2017:2129-1
 # Description: Security fixes for SUSE Linux Enterprise 12 SP2

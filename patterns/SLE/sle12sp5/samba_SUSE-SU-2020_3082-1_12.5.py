@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 #
 # Title:       Important Security Announcement for samba SUSE-SU-2020:3082-1
 # Description: Security fixes for SUSE Linux Enterprise 12 SP5

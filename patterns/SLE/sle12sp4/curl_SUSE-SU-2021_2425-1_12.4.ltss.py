@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 #
 # Title:       Moderate Security Announcement for curl SUSE-SU-2021:2425-1
 # Description: Security fixes for SUSE Linux Enterprise 12 SP4 LTSS

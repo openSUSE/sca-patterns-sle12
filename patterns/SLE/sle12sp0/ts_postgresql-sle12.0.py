@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 
 # Title:       Additional Support Contract: PostgreSQL Database
 # Description: 1.4.3.1 Software Requiring Specific Contracts

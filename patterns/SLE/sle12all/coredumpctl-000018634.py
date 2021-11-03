@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 #
 # Title:       Pattern for TID000018634
 # Description: How to obtain systemd service core dumps
@@ -63,7 +63,7 @@ def journalAppCores():
 				else:
 					CORE_LIST[line.split()[-1]] = True
 
-	if( len(CORE_LIST.keys()) > 0 ):
+	if( len(list(CORE_LIST.keys())) > 0 ):
 		return True
 	else:
 		return False
@@ -73,7 +73,7 @@ def journalAppCores():
 ##############################################################################
 
 if( journalAppCores() ):
-	Core.updateStatus(Core.CRIT, "Detected application core dumps in the journal: " + ' '.join(CORE_LIST.keys()))
+	Core.updateStatus(Core.CRIT, "Detected application core dumps in the journal: " + ' '.join(list(CORE_LIST.keys())))
 else:
 	Core.updateStatus(Core.IGNORE, "No application core dumps found in the journal")
 

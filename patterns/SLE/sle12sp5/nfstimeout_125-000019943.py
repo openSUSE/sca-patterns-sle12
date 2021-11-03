@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 #
 # Title:       Pattern for TID000019943
 # Description: Delayed outgoing packets causing NFS timeouts
@@ -110,7 +110,7 @@ else:
 		if( invalidDefaultQdisc() ):
 			CONNECTIONS_DELAYED = pendingMessagesFound()
 			if( len(CONNECTIONS_DELAYED) > 0 ):
-				Core.updateStatus(Core.CRIT, "Detected NFS timeouts from delayed packets: " + ' '.join(CONNECTIONS_DELAYED.keys()))
+				Core.updateStatus(Core.CRIT, "Detected NFS timeouts from delayed packets: " + ' '.join(list(CONNECTIONS_DELAYED.keys())))
 			else:
 				Core.updateStatus(Core.WARN, "NFS timeouts possible from delayed packets")
 		else:

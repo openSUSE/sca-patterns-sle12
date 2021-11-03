@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 #
 # Title:       Important Security Announcement for shibboleth-sp SUSE-SU-2017:3215-1
 # Description: Security fixes for SUSE Linux Enterprise 12 SP2

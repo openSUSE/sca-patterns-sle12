@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 #
 # Title:       Low Security Announcement for MozillaFirefox SUSE-SU-2021:0431-1
 # Description: Security fixes for SUSE Linux Enterprise 12 SP5

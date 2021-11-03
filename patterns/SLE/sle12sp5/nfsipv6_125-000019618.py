@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 #
 # Title:       Pattern for TID000019618
 # Description: Timeout when attempting NFS mount over IPv6
@@ -56,7 +56,7 @@ if( SUSE.packageInstalled(PACKAGE) ): # nfs package for mounting installed
 	INSTALLED_VERSION = SUSE.compareKernel(KERNEL_VERSION)
 	if( INSTALLED_VERSION < 0 ): # Running the affected kernel version
 		NETWORKS = SUSE.getNetworkInterfaces()
-		for DEVICE in NETWORKS.keys():
+		for DEVICE in list(NETWORKS.keys()):
 			if( len(NETWORKS[DEVICE]['addr6']) > 0 ): # Find IPv6 enabled interfaces
 				IPV6_DEVICES.append(DEVICE)
 				if( FEATURE in NETWORKS[DEVICE] ):

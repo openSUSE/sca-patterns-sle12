@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 
 # Title:       XFS Corruption
 # Description: Race between xfs_zero_eof/direct write can cause corruption

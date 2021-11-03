@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 
 # Title:       MCE Log Checks
 # Description: Machine check exceptions in the logs

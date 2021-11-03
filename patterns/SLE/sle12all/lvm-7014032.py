@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 
 # Title:       LVM volume groups fail at boot time
 # Description: Check for manually configured LVM volume groups

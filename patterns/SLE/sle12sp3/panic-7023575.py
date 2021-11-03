@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 
 # Title:       Check update_group_capacity on SLES12 SP3
 # Description: System panic in update_group_capacity() due to a divide error

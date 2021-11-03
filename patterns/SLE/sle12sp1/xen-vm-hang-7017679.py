@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 
 # Title:       XEN VM Hangs on Shutdown
 # Description: virsh/xl domu shutdown hangs domain, name changes to null

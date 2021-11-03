@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 #
 # Title:       Important Security Announcement for flash-player SUSE-SU-2015:1136-1
 # Description: Security fixes for SUSE Linux Enterprise 12 SP0

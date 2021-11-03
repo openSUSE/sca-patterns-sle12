@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 #
 # Title:       Important Security Announcement for emacs SUSE-SU-2017:2529-1
 # Description: Security fixes for SUSE Linux Enterprise 12 SP3

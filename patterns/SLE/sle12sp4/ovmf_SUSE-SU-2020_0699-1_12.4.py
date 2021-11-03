@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 #
 # Title:       Low Security Announcement for ovmf SUSE-SU-2020:0699-1
 # Description: Security fixes for SUSE Linux Enterprise 12 SP4

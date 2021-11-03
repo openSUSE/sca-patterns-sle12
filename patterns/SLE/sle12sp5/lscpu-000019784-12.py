@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 #
 # Title:       Pattern for TID000019784
 # Description: lscpu segfaults on IBM Power8 - Assertion failed

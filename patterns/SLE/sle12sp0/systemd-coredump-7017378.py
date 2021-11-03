@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 
 # Title:       Systemd Service Core Dumps
 # Description: systemd-coredump is not consistent in dumping systemd service cores

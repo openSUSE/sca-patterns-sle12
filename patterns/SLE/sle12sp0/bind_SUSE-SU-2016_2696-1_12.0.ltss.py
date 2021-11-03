@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 #
 # Title:       Important Security Announcement for bind SUSE-SU-2016:2696-1
 # Description: Security fixes for SUSE Linux Enterprise 12 SP0 LTSS

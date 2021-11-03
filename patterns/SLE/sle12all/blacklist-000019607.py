@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 #
 # Title:       Pattern for TID000019607
 # Description: System exit to emergency shell at boot with multipath enabled
@@ -66,7 +66,7 @@ def ignoredMaps():
 
 MAPS = ignoredMaps()
 if( len(MAPS) > 0 ):
-	Core.updateStatus(Core.CRIT, "Detected unmapped MPIO devices, consider blacklisting: " + ' '.join(MAPS.keys()))
+	Core.updateStatus(Core.CRIT, "Detected unmapped MPIO devices, consider blacklisting: " + ' '.join(list(MAPS.keys())))
 else:
 	Core.updateStatus(Core.IGNORE, "No MPIO unmapped WWIDs found")
 

@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 #
 # Title:       Important Security Announcement for grub2 SUSE-SU-2020:2305-1
 # Description: Security fixes for SUSE Linux Enterprise 12 SP5

@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 #
 # Title:       Pattern for TID000019583
 # Description: After upgrading to SLES 12 SP5 BTRFS cron jobs are not working anymore.

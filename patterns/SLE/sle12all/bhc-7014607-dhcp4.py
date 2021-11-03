@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 
 # Title:       DHCP4 Basic Service Pattern
 # Description: Checks to see if the service is installed, valid and running

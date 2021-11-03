@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 
 # Title:       Technology Preview: s390x 1.4.2.13.4 Hot-patching Support
 # Description: Identify SLE12 technology preview features

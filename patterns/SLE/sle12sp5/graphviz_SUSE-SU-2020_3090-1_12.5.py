@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 #
 # Title:       Low Security Announcement for graphviz SUSE-SU-2020:3090-1
 # Description: Security fixes for SUSE Linux Enterprise 12 SP5

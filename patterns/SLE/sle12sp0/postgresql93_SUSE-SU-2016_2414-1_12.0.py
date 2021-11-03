@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 #
 # Title:       Important Security Announcement for postgresql93 SUSE-SU-2016:2414-1
 # Description: Security fixes for SUSE Linux Enterprise 12 SP0

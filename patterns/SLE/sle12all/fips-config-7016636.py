@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 
 # Title:       FIPS Installed but Fails
 # Description: FIPS installed but not working in kernel mode
@@ -56,7 +56,7 @@ FIPS = SUSE.getBasicFIPSData()
 if( FIPS['Installed'] ):
 	if( FIPS['GrubFips'] ):
 		if( FIPS['Enabled'] ):
-			if( 'Initrd' in FIPS.keys() ):
+			if( 'Initrd' in list(FIPS.keys()) ):
 				if( FIPS['Initrd'] ):
 					Core.updateStatus(Core.IGNORE, "FIPS installed, configured and active")
 				else:

@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 #
 # Title:       Moderate Security Announcement for openssh SUSE-SU-2021:0022-1
 # Description: Security fixes for SUSE Linux Enterprise 12 SP2 LTSS

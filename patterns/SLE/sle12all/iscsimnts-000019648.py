@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 #
 # Title:       Pattern for TID000019648
 # Description: Proper mount options for iSCSI drives
@@ -312,7 +312,7 @@ def checkMountingOptions():
 	global ISCSI_DEVS_PARTIAL
 	global ISCSI_DEVS_NOFAIL
 
-	for key in ISCSI_DEVS.keys():
+	for key in list(ISCSI_DEVS.keys()):
 		OPT_NETDEV = False
 		OPT_SYSD = False
 		for FS in FILESYSTEMS:
@@ -352,15 +352,15 @@ if( SUSE.packageInstalled(PACKAGE) ):
 	if( iscsiMounts() ):
 		if( checkMountingOptions() ):
 			if( len(ISCSI_DEVS_NOFAIL) > 0 ):
-				Core.updateStatus(Core.CRIT, "iSCSI devices with invalid nofail fstab mount option: " + ' '.join(ISCSI_DEVS_NOFAIL.keys()))
+				Core.updateStatus(Core.CRIT, "iSCSI devices with invalid nofail fstab mount option: " + ' '.join(list(ISCSI_DEVS_NOFAIL.keys())))
 			else:
 				if( len(ISCSI_DEVS_NOPT) > 0 ):
 					if( len(ISCSI_DEVS_PARTIAL) > 0 ):
-						Core.updateStatus(Core.CRIT, "iSCSI devices with missing fstab mount options: " + ' '.join(ISCSI_DEVS_NOPT.keys()) + ", and those with one option: " + ' '.join(ISCSI_DEVS_PARTIAL.keys()))
+						Core.updateStatus(Core.CRIT, "iSCSI devices with missing fstab mount options: " + ' '.join(list(ISCSI_DEVS_NOPT.keys())) + ", and those with one option: " + ' '.join(list(ISCSI_DEVS_PARTIAL.keys())))
 					else:
-						Core.updateStatus(Core.CRIT, "iSCSI devices with missing fstab mount options: " + ' '.join(ISCSI_DEVS_NOPT.keys()))
+						Core.updateStatus(Core.CRIT, "iSCSI devices with missing fstab mount options: " + ' '.join(list(ISCSI_DEVS_NOPT.keys())))
 				else:
-					Core.updateStatus(Core.WARN, "Please confirm iSCSI devices with partial fstab mount options: " + ' '.join(ISCSI_DEVS_PARTIAL.keys()))
+					Core.updateStatus(Core.WARN, "Please confirm iSCSI devices with partial fstab mount options: " + ' '.join(list(ISCSI_DEVS_PARTIAL.keys())))
 		else:
 			Core.updateStatus(Core.IGNORE, "All iSCSI devices have correct mount options")
 	else:

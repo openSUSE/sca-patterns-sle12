@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 #
 # Title:       Pattern for TID000018798
 # Description: How to resize/extend a btrfs formatted root partition

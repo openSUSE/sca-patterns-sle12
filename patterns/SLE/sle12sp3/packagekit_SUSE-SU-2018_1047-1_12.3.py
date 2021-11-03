@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 #
 # Title:       Important Security Announcement for PackageKit SUSE-SU-2018:1047-1
 # Description: Security fixes for SUSE Linux Enterprise 12 SP3

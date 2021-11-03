@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 #
 # Title:       Important Security Announcement for kgraft-patch SUSE-SU-2018:0266-1
 # Description: Security fixes for SUSE Linux Kernel Live Patch 12 SP1 LTSS

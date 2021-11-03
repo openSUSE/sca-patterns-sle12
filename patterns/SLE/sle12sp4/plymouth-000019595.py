@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 
 # Title:       Pattern for TID000019595
 # Description: plymouth hang - login to console not possible

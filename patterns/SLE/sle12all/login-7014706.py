@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 
 # Title:       Checking securetty mode
 # Description: Cannot login as root at the console, login incorrect

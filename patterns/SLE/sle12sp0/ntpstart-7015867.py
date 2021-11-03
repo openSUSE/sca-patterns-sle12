@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 
 # Title:       NTP fails to start
 # Description: NTP Service Fails to Start or Hangs on SLES12

@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 #
 # Title:       Important Security Announcement for tiff SUSE-SU-2017:1044-1
 # Description: Security fixes for SUSE Linux Enterprise 12 SP1

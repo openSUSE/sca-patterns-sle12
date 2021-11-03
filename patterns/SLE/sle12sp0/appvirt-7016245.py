@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 
 # Title:       Virtual Guests Fail to Start
 # Description: libvirtd apparmor profile prevents Xen domains from starting

@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 #
 # Title:       Pattern for TID000019666
 # Description: Running tcpdump on a SLES12 SP4 System with Kernel 4.12.14-95.48-default may crash the system

@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 #
 # Title:       Important Security Announcement for gstreamer-0_10-plugins-good SUSE-SU-2017:0210-1
 # Description: Security fixes for SUSE Linux Enterprise 12 SP2

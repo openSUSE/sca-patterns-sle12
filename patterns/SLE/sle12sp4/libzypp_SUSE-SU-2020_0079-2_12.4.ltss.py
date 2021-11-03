@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 #
 # Title:       Moderate Security Announcement for libzypp SUSE-SU-2020:0079-2
 # Description: Security fixes for SUSE Linux Enterprise 12 SP4 LTSS

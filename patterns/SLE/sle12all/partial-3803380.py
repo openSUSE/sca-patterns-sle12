@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 
 # Title:       Detect Partial LVM Volume Groups
 # Description: Checks vgs output for partial volumes

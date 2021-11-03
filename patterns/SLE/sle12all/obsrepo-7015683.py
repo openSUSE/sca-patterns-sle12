@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 
 # Title:       Check for openSUSE Repos
 # Description: System no longer stable after updating with active openSUSE repository enabled

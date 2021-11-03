@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 #
 # Title:       Low Security Announcement for postgresql96 SUSE-SU-2020:0586-1
 # Description: Security fixes for SUSE Linux Enterprise 12 SP2 LTSS

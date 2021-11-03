@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 
 # Title:       ssh logins not recorded in lastlog
 # Description: Users logging into the server with ssh are not recorded in lastlog

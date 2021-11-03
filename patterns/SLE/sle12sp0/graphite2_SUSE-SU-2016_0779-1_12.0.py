@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 #
 # Title:       Important Security Announcement for graphite2 SUSE-SU-2016:0779-1
 # Description: Security fixes for SUSE Linux Enterprise 12 SP0

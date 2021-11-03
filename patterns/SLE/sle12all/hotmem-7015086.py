@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 
 # Title:       Check ACPI with memory hotplug
 # Description: Memory hotplug fails with ACPI error messages

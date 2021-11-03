@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 #
 # Title:       Important Security Announcement for ntp SUSE-SU-2016:1568-1
 # Description: Security fixes for SUSE Linux Enterprise 12 SP0

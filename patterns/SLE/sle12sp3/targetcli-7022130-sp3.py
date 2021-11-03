@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 
 # Title:       targetcli fails in console mode
 # Description: iSCSI LIO configuration with targetcli fails to saveconfig or exit

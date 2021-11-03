@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 #
 # Title:       Moderate Security Announcement for openssl-1_0_0 SUSE-SU-2020:0028-1
 # Description: Security fixes for SUSE Linux Enterprise 12 SP5

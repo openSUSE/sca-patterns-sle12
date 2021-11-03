@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 
 # Title:       Insufficient Disk Space on Boot
 # Description: Kernel upgrade fails due to insufficient space on boot partition

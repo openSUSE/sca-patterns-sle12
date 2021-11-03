@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 
 # Title:       Module is unknown
 # Description: Module is unknown and cannot login at the console

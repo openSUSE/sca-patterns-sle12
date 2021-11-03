@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 
 # Title:       Basic Health Check - CPU Load
 # Description: Processes Waiting for Run Queue (Kernel Load)

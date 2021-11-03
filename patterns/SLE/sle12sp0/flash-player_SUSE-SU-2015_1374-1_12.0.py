@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 #
 # Title:       Critical Security Announcement for flash-player SUSE-SU-2015:1374-1
 # Description: Security fixes for SUSE Linux Enterprise 12 SP0

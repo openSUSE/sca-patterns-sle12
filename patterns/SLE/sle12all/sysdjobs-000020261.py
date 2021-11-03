@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 #
 # Title:       Pattern for TID000020261
 # Description: Troubleshooting systemd jobs that are hung or stuck

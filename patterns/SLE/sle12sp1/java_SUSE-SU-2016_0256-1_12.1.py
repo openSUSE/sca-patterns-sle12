@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 #
 # Title:       Critical Security Announcement for Java SUSE-SU-2016:0256-1
 # Description: Security fixes for SUSE Linux Enterprise 12 SP1

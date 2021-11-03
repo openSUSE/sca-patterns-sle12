@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 
 # Title:       Expired SCC Registrations
 # Description: Identify if SCC registrations have expired

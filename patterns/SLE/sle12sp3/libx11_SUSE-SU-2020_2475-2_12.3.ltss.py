@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 #
 # Title:       Moderate Security Announcement for libX11 SUSE-SU-2020:2475-2
 # Description: Security fixes for SUSE Linux Enterprise 12 SP3 LTSS

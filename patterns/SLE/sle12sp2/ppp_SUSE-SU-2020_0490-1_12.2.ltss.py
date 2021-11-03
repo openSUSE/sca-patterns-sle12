@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 #
 # Title:       Important Security Announcement for ppp SUSE-SU-2020:0490-1
 # Description: Security fixes for SUSE Linux Enterprise 12 SP2 LTSS
