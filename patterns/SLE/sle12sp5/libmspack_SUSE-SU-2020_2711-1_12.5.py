@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 #
 # Title:       Moderate Security Announcement for libmspack SUSE-SU-2020:2711-1
 # Description: Security fixes for SUSE Linux Enterprise 12 SP5

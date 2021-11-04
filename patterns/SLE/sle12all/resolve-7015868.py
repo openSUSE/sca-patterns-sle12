@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 
 # Title:       Hostname DNS searches fail
 # Description: /etc/resolv.conf Domain Search list does not use listed domains

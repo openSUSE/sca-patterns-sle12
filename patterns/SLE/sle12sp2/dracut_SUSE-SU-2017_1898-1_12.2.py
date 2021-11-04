@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 #
 # Title:       Important Security Announcement for dracut SUSE-SU-2017:1898-1
 # Description: Security fixes for SUSE Linux Enterprise 12 SP2

@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 #
 # Title:       Important Security Announcement for grub2 SUSE-SU-2021:0682-1
 # Description: Security fixes for SUSE Linux Enterprise 12 SP3 LTSS

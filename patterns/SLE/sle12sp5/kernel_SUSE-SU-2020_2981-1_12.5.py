@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 #
 # Title:       Critical Security Announcement for Kernel SUSE-SU-2020:2981-1
 # Description: Security fixes for SUSE Linux Enterprise 12 SP5

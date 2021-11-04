@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 #
 # Title:       Moderate Security Announcement for unzip SUSE-SU-2020:1796-1
 # Description: Security fixes for SUSE Linux Enterprise 12 SP4

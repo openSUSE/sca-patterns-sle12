@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 #
 # Title:       Important Security Announcement for yast2-users SUSE-SU-2016:1138-1
 # Description: Security fixes for SUSE Linux Enterprise 12 SP1

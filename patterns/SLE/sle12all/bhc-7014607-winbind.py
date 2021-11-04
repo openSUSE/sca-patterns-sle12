@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 
 # Title:       WinBind Basic Service Pattern
 # Description: Checks to see if the service is installed, valid and running

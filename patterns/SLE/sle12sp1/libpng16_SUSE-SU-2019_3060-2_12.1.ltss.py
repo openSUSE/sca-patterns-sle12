@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 #
 # Title:       Moderate Security Announcement for libpng16 SUSE-SU-2019:3060-2
 # Description: Security fixes for SUSE Linux Enterprise 12 SP1 LTSS

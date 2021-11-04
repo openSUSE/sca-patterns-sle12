@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 #
 # Title:       Moderate Security Announcement for gcc9 SUSE-SU-2020:0394-1
 # Description: Security fixes for SUSE Linux Enterprise 12 SP1 LTSS

@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 
 # Title:       Technology Preview: 1.4.2.11 Virtual Machine Sandbox
 # Description: Identify SLE12 technology preview features

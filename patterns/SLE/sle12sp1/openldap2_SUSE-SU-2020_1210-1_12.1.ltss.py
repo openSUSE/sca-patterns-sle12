@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 #
 # Title:       Important Security Announcement for openldap2 SUSE-SU-2020:1210-1
 # Description: Security fixes for SUSE Linux Enterprise 12 SP1 LTSS

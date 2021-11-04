@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 
 # Title:       AppArmor Rejects Can Cause Unexpected Application Behavior
 # Description: Make sure AppArmor is not rejecting application functionality
@@ -86,7 +86,7 @@ def checkRejectMessages():
 						True
 
 	if( DENIED_COUNT > 0 ):
-		Core.updateStatus(Core.WARN, "Observed " + str(DENIED_COUNT) + " AppArmor denial messages for profiles(s): " + str(DENIED.keys()))
+		Core.updateStatus(Core.WARN, "Observed " + str(DENIED_COUNT) + " AppArmor denial messages for profiles(s): " + str(list(DENIED.keys())))
 	else:
 		Core.updateStatus(Core.SUCC, "No AppArmor denial messages found")
 

@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 #
 # Title:       Pattern for TID000004682
 # Description: Extensive logging in vmware-vmsvc-root.log with open-vm-tools

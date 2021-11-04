@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 
 # Title:       Max Tasks Exceeded
 # Description: Check for TasksCurrent approaching TasksMax
@@ -64,7 +64,7 @@ if Core.listSections(FILE_OPEN, CONTENT):
 		if "/systemctl show" in CONTENT[LINE]:
 			SERVICE_NAME = CONTENT[LINE].split("'")[1]
 			SERVICE_INFO = SUSE.getServiceDInfo(SERVICE_NAME)
-			if ('TasksCurrent' in SERVICE_INFO.keys()):
+			if ('TasksCurrent' in list(SERVICE_INFO.keys())):
 				TASK_RATIO = int(SERVICE_INFO['TasksCurrent'])*100/int(SERVICE_INFO['TasksMax'])
 				if( TASK_RATIO > 100 ):
 					TASK_RATIO = 100
@@ -77,11 +77,11 @@ if Core.listSections(FILE_OPEN, CONTENT):
 
 if( len(CRITICAL_SERVICES) > 0 ):
 	if( len(WARNING_SERVICES) > 0 ):
-		Core.updateStatus(Core.CRIT, "Services that have run out of tasks: " + " ".join(CRITICAL_SERVICES.keys()) + " " + " ".join(WARNING_SERVICES.keys()))
+		Core.updateStatus(Core.CRIT, "Services that have run out of tasks: " + " ".join(list(CRITICAL_SERVICES.keys())) + " " + " ".join(list(WARNING_SERVICES.keys())))
 	else:
-		Core.updateStatus(Core.CRIT, "Services that have run out of tasks: " + " ".join(CRITICAL_SERVICES.keys()))
+		Core.updateStatus(Core.CRIT, "Services that have run out of tasks: " + " ".join(list(CRITICAL_SERVICES.keys())))
 elif( len(WARNING_SERVICES) > 0 ):
-	Core.updateStatus(Core.WARN, "Services that may be running out of tasks: " + " ".join(WARNING_SERVICES.keys()))
+	Core.updateStatus(Core.WARN, "Services that may be running out of tasks: " + " ".join(list(WARNING_SERVICES.keys())))
 else:
 	Core.updateStatus(Core.IGNORE, "Services are within TasksMax limits")
 

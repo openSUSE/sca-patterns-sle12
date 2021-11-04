@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 
 # Title:       FIPS Selftest Errors
 # Description: FIPS enabled, but no FIPS packages installed

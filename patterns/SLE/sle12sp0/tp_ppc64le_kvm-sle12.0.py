@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 
 # Title:       Technology Preview: 1.4.2.12.1 KVM on ppc64le
 # Description: Identify SLE12 technology preview features

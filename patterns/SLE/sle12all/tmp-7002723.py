@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 
 # Title:       Cleaning up temporary directories
 # Description: Suggest tmp cleanup when low on disk space.

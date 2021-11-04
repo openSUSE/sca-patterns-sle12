@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 
 # Title:       NTP Host Name Resolution
 # Description: NTP server does not resolve host names on ntp version 4.2.8, affects SLES11SP4 and SLES12SP1

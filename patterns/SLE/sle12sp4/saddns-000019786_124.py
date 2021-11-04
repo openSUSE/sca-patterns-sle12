@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 
 # Title:       Side-channel AttackeD DNS
 # Description: Security Vulnerability: SADDNS attack (CVE-2020-25705)

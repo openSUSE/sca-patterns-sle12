@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 #
 # Title:       Pattern for TID000020301
 # Description: SCA Appliance configuration reports ERROR 2002 HY000 Cannot connect to MySQL server

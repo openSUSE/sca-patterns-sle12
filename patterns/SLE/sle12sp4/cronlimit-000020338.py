@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 #
 # Title:       Pattern for TID000020338
 # Description: crontab - More than 1000 entries in crontab file, can&#039;t install
@@ -105,7 +105,7 @@ if( SUSE.packageInstalled(RPM_NAME) ):
 			else:
 				CRON_TABLES = systemLogError()
 				if( len(CRON_TABLES) > 0 ):
-					Core.updateStatus(Core.CRIT, "User cron table files have exceeded the entry limit: " + ' '.join(CRON_TABLES.keys()))
+					Core.updateStatus(Core.CRIT, "User cron table files have exceeded the entry limit: " + ' '.join(list(CRON_TABLES.keys())))
 				else:
 					Core.updateStatus(Core.IGNORE, "No individual cron entries to worry about")
 		else:

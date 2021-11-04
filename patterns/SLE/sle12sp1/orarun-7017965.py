@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 
 # Title:       Orarun install fails
 # Description: orarun on SLES 12 SP1 ORACLE

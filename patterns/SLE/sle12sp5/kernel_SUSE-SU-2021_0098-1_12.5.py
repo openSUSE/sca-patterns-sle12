@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 #
 # Title:       Moderate Security Announcement for Kernel SUSE-SU-2021:0098-1
 # Description: Security fixes for SUSE Linux Enterprise 12 SP5

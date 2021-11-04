@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 #
 # Title:       Important Security Announcement for bind SUSE-SU-2021:1468-1
 # Description: Security fixes for SUSE Linux Enterprise 12 SP4 LTSS

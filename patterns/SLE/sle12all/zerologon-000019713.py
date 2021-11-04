@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 #
 # Title:       Pattern for TID000019713
 # Description: Security Vulnerability: Zerologon aka CVE-2020-1472

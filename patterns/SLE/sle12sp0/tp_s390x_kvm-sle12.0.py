@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 
 # Title:       Technology Preview: s390x 1.4.2.13.2 KVM for s390x
 # Description: Identify SLE12 technology preview features

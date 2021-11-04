@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 
 # Title:       SSHD High CPU Load
 # Description: The sshd process is having high CPU load

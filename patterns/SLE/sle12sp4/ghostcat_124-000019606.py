@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 #
 # Title:       Pattern for TID000019606
 # Description: Ghostcat - Apache Tomcat AJP File Read/Inclusion Vulnerability

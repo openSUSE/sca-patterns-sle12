@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 #
 # Title:       Important Security Announcement for java-1_7_0-openjdk SUSE-SU-2014:1422-1
 # Description: Security fixes for SUSE Linux Enterprise 12 SP0

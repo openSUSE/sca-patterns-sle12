@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 #
 # Title:       Important Security Announcement for python36 SUSE-SU-2021:0428-1
 # Description: Security fixes for SUSE Linux Enterprise 12 SP5

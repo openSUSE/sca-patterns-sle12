@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 
 # Title:       Crashdump Failure
 # Description: System fails to generate a kernel crashdump and drops into bash shell after triggering kdump

@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 #
 # Title:       Important Security Announcement for openvpn SUSE-SU-2017:1622-1
 # Description: Security fixes for SUSE Linux Enterprise 12 SP2

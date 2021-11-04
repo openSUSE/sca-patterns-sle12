@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 #
 # Title:       Pattern for TID000019643
 # Description: Security Vulnerability: Special Register Buffer Data Sampling aka CrossTalk (CVE-2020-0543)

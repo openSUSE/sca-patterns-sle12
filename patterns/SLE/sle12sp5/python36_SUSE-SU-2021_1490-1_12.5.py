@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 #
 # Title:       Moderate Security Announcement for python36 SUSE-SU-2021:1490-1
 # Description: Security fixes for SUSE Linux Enterprise 12 SP5

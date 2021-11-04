@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 #
 # Title:       Important Security Announcement for libXfont SUSE-SU-2015:0702-1
 # Description: Security fixes for SUSE Linux Enterprise 12 SP0

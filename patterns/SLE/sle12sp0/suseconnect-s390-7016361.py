@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 
 # Title:       SUSEConnect failure
 # Description: SUSEconnect Validation failed: Uuid should be formatted as UUID

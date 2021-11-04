@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 #
 # Title:       Important Security Announcement for libzypp SUSE-SU-2017:2264-1
 # Description: Security fixes for SUSE Linux Enterprise 12 SP3

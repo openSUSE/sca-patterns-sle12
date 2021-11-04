@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 #
 # Title:       Important Security Announcement for mozilla-nspr, SUSE-SU-2016:0727-1
 # Description: Security fixes for SUSE Linux Enterprise 12 SP0

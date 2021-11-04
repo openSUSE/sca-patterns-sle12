@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 #
 # Title:       Moderate Security Announcement for xerces-c SUSE-SU-2020:2225-1
 # Description: Security fixes for SUSE Linux Enterprise 12 SP5

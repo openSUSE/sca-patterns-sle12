@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 
 # Title:       Check for volume_list exit status
 # Description: Validate volume_list does not generate exit 5
@@ -62,9 +62,9 @@ SERVICE_INFO = SUSE.getServiceDInfo(SERVICE)
 LVM_CONFIG = SUSE.getConfigFileLVM('activation')
 if( 'ExecStart' in SERVICE_INFO and "vgchange -aay" in SERVICE_INFO['ExecStart'] ): #auto activation detected
 	if( LVM_CONFIG ): # a valid lvm config file exists
-		if( 'volume_list' in LVM_CONFIG.keys() ): # there is a volume_list entry in lvm.conf
+		if( 'volume_list' in list(LVM_CONFIG.keys()) ): # there is a volume_list entry in lvm.conf
 			if( len(LVM_CONFIG['volume_list']) > 0 ): # there are values associated with the volume_list entry
-				if( 'auto_activation_volume_list' in LVM_CONFIG.keys() ): # there is an auto_activation_volume_list entry in lvm.conf
+				if( 'auto_activation_volume_list' in list(LVM_CONFIG.keys()) ): # there is an auto_activation_volume_list entry in lvm.conf
 					if( len(LVM_CONFIG['auto_activation_volume_list']) > 0 ): # there are values associated with the auto_activation_volume_list entry
 						if set(LVM_CONFIG['volume_list']).issubset(LVM_CONFIG['auto_activation_volume_list']): # all required entries found in auto_activation_volume_list
 							Core.updateStatus(Core.IGNORE, "All volume_list entries are found within the auto_activation_volume_list, ignore")
@@ -85,7 +85,7 @@ if( 'ExecStart' in SERVICE_INFO and "vgchange -aay" in SERVICE_INFO['ExecStart']
 						Core.updateStatus(Core.WARN, "An auto_activation_volume_list entry in lvm.conf may be needed to avoid errors")
 			else: # volume_list is empty
 				Core.updateStatus(Core.IGNORE, "The volume_list values are empty, ignore")
-		elif( 'auto_activation_volume_list' in LVM_CONFIG.keys() ): # found auto_activation_volume_list that is used for vgchange -aay
+		elif( 'auto_activation_volume_list' in list(LVM_CONFIG.keys()) ): # found auto_activation_volume_list that is used for vgchange -aay
 			Core.updateStatus(Core.IGNORE, "The auto_activation_volume_list key matches the use of vgchange -aay, ignore")
 		else:
 			Core.updateStatus(Core.ERROR, "ERROR: LVM configuration file missing activation volume_list and auto_activation_volume_list")

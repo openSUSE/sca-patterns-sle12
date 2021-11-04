@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 #
 # Title:       Important Security Announcement for dbus-1 SUSE-SU-2021:2424-1
 # Description: Security fixes for SUSE Linux Enterprise 12 SP5

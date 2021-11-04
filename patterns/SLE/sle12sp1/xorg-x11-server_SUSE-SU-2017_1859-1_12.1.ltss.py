@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 #
 # Title:       Important Security Announcement for xorg-x11-server SUSE-SU-2017:1859-1
 # Description: Security fixes for SUSE Linux Enterprise 12 SP1 LTSS

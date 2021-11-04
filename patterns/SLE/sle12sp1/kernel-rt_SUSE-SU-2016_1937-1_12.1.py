@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 #
 # Title:       Important Security Announcement for Kernel-rt SUSE-SU-2016:1937-1
 # Description: Security fixes for SUSE Linux Enterprise Real Time Kernel 12 SP1

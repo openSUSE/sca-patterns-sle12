@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 
 # Title:       Check for Deactivated LVM Volumes
 # Description: Confirm LVM volumes are active

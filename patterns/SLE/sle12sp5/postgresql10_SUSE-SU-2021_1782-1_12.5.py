@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 #
 # Title:       Moderate Security Announcement for postgresql10 SUSE-SU-2021:1782-1
 # Description: Security fixes for SUSE Linux Enterprise 12 SP5

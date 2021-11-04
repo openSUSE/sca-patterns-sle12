@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 #
 # Title:       Pattern for TID000019511
 # Description: Using the find_multipaths yes option in multipath.conf

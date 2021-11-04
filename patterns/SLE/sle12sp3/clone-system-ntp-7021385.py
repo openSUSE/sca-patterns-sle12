@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 
 # Title:       yast clone_system fails on ntp.conf
 # Description: YaST clone_system module errors on ntp.conf changes

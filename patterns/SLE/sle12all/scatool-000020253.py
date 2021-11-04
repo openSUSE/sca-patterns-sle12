@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 #
 # Title:       Pattern for TID000020253
 # Description: scatool fails to analyze supportconfigs with xz compression

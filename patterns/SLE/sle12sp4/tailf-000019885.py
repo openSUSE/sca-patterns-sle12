@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 #
 # Title:       Pattern for TID000019885
 # Description: Aborting tailf causes bash session to be corrupted

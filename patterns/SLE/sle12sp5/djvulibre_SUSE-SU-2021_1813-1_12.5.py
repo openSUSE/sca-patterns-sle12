@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 #
 # Title:       Important Security Announcement for djvulibre SUSE-SU-2021:1813-1
 # Description: Security fixes for SUSE Linux Enterprise 12 SP5

@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 
 # Title:       chmod -R 777 /
 # Description: Create a pattern checking if the chmod -R 777 / command has been run.

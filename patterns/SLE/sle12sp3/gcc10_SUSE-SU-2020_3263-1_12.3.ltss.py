@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 #
 # Title:       Moderate Security Announcement for gcc10 SUSE-SU-2020:3263-1
 # Description: Security fixes for SUSE Linux Enterprise 12 SP3 LTSS

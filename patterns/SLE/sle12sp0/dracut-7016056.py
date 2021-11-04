@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 
 # Title:       Missing dracut modules
 # Description: Additional kernel modules not added to the initrd when specified in /etc/dracut.conf
@@ -70,7 +70,7 @@ def initrdModulesFound(moduleList):
 	content = {}
 	FOUND = 0
 	if Core.getSection(fileOpen, section, content):
-		for i in xrange(len(moduleList)-1):
+		for i in range(len(moduleList)-1):
 			if moduleList[i].endswith(".ko"):
 				modSearch = moduleList[i]
 			else:

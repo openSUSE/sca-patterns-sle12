@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 
 # Title:       Basic Health Check - Zombie Processes
 # Description: Checks for excessive Zombie processes

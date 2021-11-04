@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 #
 # Title:       Low Security Announcement for djvulibre SUSE-SU-2020:0970-1
 # Description: Security fixes for SUSE Linux Enterprise 12 SP4

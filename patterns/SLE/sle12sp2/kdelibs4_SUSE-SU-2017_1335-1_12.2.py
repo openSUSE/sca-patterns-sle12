@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 #
 # Title:       Important Security Announcement for kdelibs4 SUSE-SU-2017:1335-1
 # Description: Security fixes for SUSE Linux Enterprise 12 SP2

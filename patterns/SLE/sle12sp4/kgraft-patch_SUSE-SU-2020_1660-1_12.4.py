@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 #
 # Title:       Moderate Security Announcement for kgraft-patch SUSE-SU-2020:1660-1
 # Description: Security fixes for SUSE Linux Kernel Live Patch 12 SP4

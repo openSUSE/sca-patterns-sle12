@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 #
 # Title:       Pattern for TID000020240
 # Description: XFS nobarrier option has been completely deprecated starting from SLES15 SP2

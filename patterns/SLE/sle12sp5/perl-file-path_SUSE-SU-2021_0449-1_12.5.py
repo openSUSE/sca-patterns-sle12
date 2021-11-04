@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 #
 # Title:       Moderate Security Announcement for perl-File-Path SUSE-SU-2021:0449-1
 # Description: Security fixes for SUSE Linux Enterprise 12 SP5

@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 
 # Title:       Check for failed services
 # Description: Check for failed systemd services
@@ -67,7 +67,7 @@ if Core.getRegExSection(FILE_OPEN, SECTION, CONTENT):
 		if failedState.search(LINE):
 			SERVICE_FOUND = LINE.split()[IDX_UNIT_NAME]
 			FAILED_SERVICES[SERVICE_FOUND] = True
-FAILED_SERVICES_LIST = FAILED_SERVICES.keys()
+FAILED_SERVICES_LIST = list(FAILED_SERVICES.keys())
 
 #check to see if the failed units are currently in a failed state
 for SERVICE in FAILED_SERVICES_LIST:

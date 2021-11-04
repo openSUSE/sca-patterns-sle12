@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 
 # Title:       kernel update causes ext4 failure
 # Description: ext4: first meta block group too large

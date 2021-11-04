@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 #
 # Title:       Important Security Announcement for webkit2gtk3 SUSE-SU-2018:0219-1
 # Description: Security fixes for SUSE Linux Enterprise 12 SP2

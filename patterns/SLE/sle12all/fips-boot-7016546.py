@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 
 # Title:       Boot Failure with FIPS
 # Description: Server will not boot when fips=1 is in the kernel parameter and /boot is a separate partition
