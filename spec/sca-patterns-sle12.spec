@@ -1,7 +1,7 @@
 # 
 # spec file for package sca-patterns-sle12
 #
-# Copyright (c) 2017-2021 SUSE LINUX GmbH, Nuernberg, Germany.
+# Copyright (c) 2022 SUSE LLC
 #
 # All modifications and additions to the file contributed by third parties
 # remain the property of their copyright owners, unless otherwise agreed
