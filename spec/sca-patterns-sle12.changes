@@ -1,4 +1,10 @@
 -------------------------------------------------------------------
+Wed Jul  6 16:28:56 UTC 2022 - Jason Record <jason.record@suse.com>
+
+- Changes in version 1.5.2
+  + SCA schema pattern check
+
+-------------------------------------------------------------------
 Fri May  6 15:43:34 UTC 2022 - Jason Record <jason.record@suse.com>
 
 - Changes in version 1.5.1
