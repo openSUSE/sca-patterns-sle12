@@ -1,4 +1,11 @@
 -------------------------------------------------------------------
+Thu Jul 14 19:01:55 UTC 2022 - Jason Record <jason.record@suse.com>
+
+- Additional patterns in version 1.5.2
+  + sle12all/azurenetaccel-000020694.py: Azure Accelerated Networking fails (bsc#1201522)
+  + sle12all/traceprintk-000020680.py: trace_printk() Messages in System Logs (bsc#1201523)
+
+-------------------------------------------------------------------
 Wed Jul  6 16:28:56 UTC 2022 - Jason Record <jason.record@suse.com>
 
 - Changes in version 1.5.2
