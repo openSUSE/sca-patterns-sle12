@@ -1,7 +1,8 @@
 -------------------------------------------------------------------
-Thu Oct 27 01:19:23 UTC 2022 - jason.record@suse.com
+Thu Oct 27 01:22:42 UTC 2022 - jason.record@suse.com
 
 - Changes in version 1.5.3
+  - Fixed invalid link in lvm-00003.pl (bsc#1186148)
   - Removed invalid pattern dst-00001.pl (bsc#1188137)
   - Removed or fixed patterns with no valid solution links (bsc#1204772)
   - New regular patterns (1)
