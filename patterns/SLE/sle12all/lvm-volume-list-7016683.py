@@ -2,10 +2,10 @@
 
 # Title:       Check for volume_list exit status
 # Description: Validate volume_list does not generate exit 5
-# Modified:    2021 May 26
+# Modified:    2022 Oct 26
 #
 ##############################################################################
-# Copyright (C) 2015-2021 SUSE LLC
+# Copyright (C) 2015-2022 SUSE LLC
 ##############################################################################
 #
 # This program is free software; you can redistribute it and/or modify
@@ -44,7 +44,7 @@ PATTERN_ID = os.path.basename(__file__)
 PRIMARY_LINK = "META_LINK_TID"
 OVERALL = Core.TEMP
 OVERALL_INFO = "NOT SET"
-OTHER_LINKS = "META_LINK_TID=https://www.suse.com/support/kb/doc.php?id=7016683|https://bugzilla.suse.com/show_bug.cgi?id=938098"
+OTHER_LINKS = "META_LINK_TID=https://www.suse.com/support/kb/doc.php?id=7016683|META_LINK_BUG=https://bugzilla.suse.com/show_bug.cgi?id=938098"
 
 Core.init(META_CLASS, META_CATEGORY, META_COMPONENT, PATTERN_ID, PRIMARY_LINK, OVERALL, OVERALL_INFO, OTHER_LINKS)
 

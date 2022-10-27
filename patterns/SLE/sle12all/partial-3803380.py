@@ -2,10 +2,10 @@
 
 # Title:       Detect Partial LVM Volume Groups
 # Description: Checks vgs output for partial volumes
-# Modified:    2013 Nov 04
+# Modified:    2022 Oct 26
 #
 ##############################################################################
-# Copyright (C) 2013 SUSE LLC
+# Copyright (C) 2013,2022 SUSE LLC
 ##############################################################################
 #
 # This program is free software; you can redistribute it and/or modify
@@ -21,7 +21,7 @@
 # along with this program; if not, see <http://www.gnu.org/licenses/>.
 #
 #  Authors/Contributors:
-#   Jason Record (jrecord@suse.com)
+#   Jason Record <jason.record@suse.com>
 #
 ##############################################################################
 
@@ -42,7 +42,7 @@ PATTERN_ID = os.path.basename(__file__)
 PRIMARY_LINK = "META_LINK_TID"
 OVERALL = Core.TEMP
 OVERALL_INFO = "NOT SET"
-OTHER_LINKS = "META_LINK_TID=https://www.suse.com/support/kb/doc.php?id=3803380|META_LINK_CoolSolution=http://www.novell.com/coolsolutions/appnote/19386.html#DiskBelongingtoaVolumeGroupRemoved"
+OTHER_LINKS = "META_LINK_TID=https://www.suse.com/support/kb/doc.php?id=3803380|META_LINK_Blog=https://www.suse.com/c/recovering-lost-lvm-volume-disk/"
 
 Core.init(META_CLASS, META_CATEGORY, META_COMPONENT, PATTERN_ID, PRIMARY_LINK, OVERALL, OVERALL_INFO, OTHER_LINKS)
 

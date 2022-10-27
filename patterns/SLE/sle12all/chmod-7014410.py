@@ -2,10 +2,10 @@
 
 # Title:       chmod -R 777 /
 # Description: Create a pattern checking if the chmod -R 777 / command has been run.
-# Modified:    2014 Mar 06
+# Modified:    2022 Oct 26
 #
 ##############################################################################
-# Copyright (C) 2014 SUSE LLC
+# Copyright (C) 2014,2022 SUSE LLC
 ##############################################################################
 #
 # This program is free software; you can redistribute it and/or modify
@@ -21,7 +21,7 @@
 # along with this program; if not, see <http://www.gnu.org/licenses/>.
 #
 #  Authors/Contributors:
-#   Jason Record (jrecord@suse.com)
+#   Jason Record <jason.record@suse.com>
 #
 ##############################################################################
 
@@ -47,7 +47,7 @@ PATTERN_ID = os.path.basename(__file__)
 PRIMARY_LINK = "META_LINK_TID"
 OVERALL = Core.TEMP
 OVERALL_INFO = "NOT SET"
-OTHER_LINKS = "META_LINK_TID=http://www.novell.com/support/kb/doc.php?id=7014410"
+OTHER_LINKS = "META_LINK_TID=http://www.suse.com/support/kb/doc.php?id=7014410"
 
 Core.init(META_CLASS, META_CATEGORY, META_COMPONENT, PATTERN_ID, PRIMARY_LINK, OVERALL, OVERALL_INFO, OTHER_LINKS)
 

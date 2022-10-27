@@ -1,7 +1,8 @@
 -------------------------------------------------------------------
-Tue Oct 25 17:04:12 UTC 2022 - jason.record@suse.com
+Thu Oct 27 00:35:36 UTC 2022 - jason.record@suse.com
 
 - Changes in version 1.5.3
+  - Removed or fixed patterns with no valid solution links (bsc#1204772)
   - New regular patterns (1)
     + sle12all/nmiconfig-000020754.py: Pattern for TID000020754
   - New security announcement patterns (831)

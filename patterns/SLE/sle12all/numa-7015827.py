@@ -2,10 +2,10 @@
 
 # Title:       vNUMA vs.VCPU hotplug on VMware
 # Description: checks for vNUMA vs.VCPU hotplug on VMware
-# Modified:    2014 Oct 29
+# Modified:    2022 Oct 26
 #
 ##############################################################################
-# Copyright (C) 2014 SUSE LLC
+# Copyright (C) 2014,2022 SUSE LLC
 ##############################################################################
 #
 # This program is free software; you can redistribute it and/or modify
@@ -21,7 +21,7 @@
 # along with this program; if not, see <http://www.gnu.org/licenses/>.
 #
 #  Authors/Contributors:
-#   Jason Record (jrecord@suse.com)
+#   Jason Record <jason.record@suse.com>
 #
 ##############################################################################
 
@@ -44,7 +44,7 @@ PATTERN_ID = os.path.basename(__file__)
 PRIMARY_LINK = "META_LINK_TID"
 OVERALL = Core.TEMP
 OVERALL_INFO = "NOT SET"
-OTHER_LINKS = "META_LINK_TID=https://www.suse.com/support/kb/doc.php?id=7015827|META_LINK_VMware=http://kb.vmware.com/selfservice/microsites/search.do?language=en_US&cmd=displayKC&externalId=2040375"
+OTHER_LINKS = "META_LINK_TID=https://www.suse.com/support/kb/doc.php?id=7015827|META_LINK_VMware=https://kb.vmware.com/s/article/2040375"
 
 Core.init(META_CLASS, META_CATEGORY, META_COMPONENT, PATTERN_ID, PRIMARY_LINK, OVERALL, OVERALL_INFO, OTHER_LINKS)
 

@@ -2,10 +2,10 @@
 
 # Title:       Users Friendly Names on Multipath Root
 # Description: Do not use use_friendly_names when root is multipathed.
-# Modified:    2013 Jun 27
+# Modified:    2022 Oct 26
 
 ##############################################################################
-#  Copyright (C) 2013,2012 SUSE LLC
+#  Copyright (C) 2013,2012,2022 SUSE LLC
 ##############################################################################
 #
 #  This program is free software; you can redistribute it and/or modify
@@ -21,7 +21,7 @@
 #  along with this program; if not, see <http://www.gnu.org/licenses/>.
 
 #  Authors/Contributors:
-#   Jason Record (jrecord@suse.com)
+#   Jason Record <jason.record@suse.com>
 
 ##############################################################################
 
@@ -46,8 +46,7 @@ use SDP::SUSE;
 	PROPERTY_NAME_PRIMARY_LINK."=META_LINK_TID",
 	PROPERTY_NAME_OVERALL."=$GSTATUS",
 	PROPERTY_NAME_OVERALL_INFO."=None",
-	"META_LINK_TID=http://www.suse.com/support/kb/doc.php?id=7001133",
-	"META_LINK_BUG=https://bugzilla.novell.com/show_bug.cgi?id=414381"
+	"META_LINK_TID=http://www.suse.com/support/kb/doc.php?id=7001133"
 );
 
 my @WWIDS = ();
