@@ -2,10 +2,10 @@
 #
 # Title:       Pattern for Master TID000018779
 # Description: BTRFS Master TID
-# Modified:    2021 Jun 14
+# Modified:    2022 Oct 27
 #
 ##############################################################################
-# Copyright (C) 2021 SUSE LLC
+# Copyright (C) 2021,2022 SUSE LLC
 ##############################################################################
 #
 # This program is free software; you can redistribute it and/or modify
@@ -31,7 +31,7 @@ import Core
 import SUSE
 
 META_CLASS = "SLE"
-META_CATEGORY = "Filesystem"
+META_CATEGORY = "Master TID"
 META_COMPONENT = "Btrfs"
 PATTERN_ID = os.path.basename(__file__)
 PRIMARY_LINK = "META_LINK_MASTER"
