@@ -4,10 +4,10 @@
 # Description: How to obtain systemd service core dumps
 # Source:      Basic Python Pattern Template v0.3.4
 # Options:     SLE,Application,Core,coredumpctl,000018634,0,1,0,0
-# Modified:    2021 Sep 07
+# Modified:    2024 Jan 29
 #
 ##############################################################################
-# Copyright (C) 2021 SUSE LLC
+# Copyright (C) 2021-2024 SUSE LLC
 ##############################################################################
 #
 # This program is free software; you can redistribute it and/or modify
@@ -38,7 +38,7 @@ PATTERN_ID = os.path.basename(__file__)
 PRIMARY_LINK = "META_LINK_TID"
 OVERALL = Core.TEMP
 OVERALL_INFO = "NOT SET"
-OTHER_LINKS = "META_LINK_TID=https://www.suse.com/support/kb/doc/?id=000018634|Video=https://youtu.be/CNsuBBh3M10"
+OTHER_LINKS = "META_LINK_TID=https://www.suse.com/support/kb/doc/?id=000018634|META_LINK_Video=https://youtu.be/CNsuBBh3M10"
 Core.init(META_CLASS, META_CATEGORY, META_COMPONENT, PATTERN_ID, PRIMARY_LINK, OVERALL, OVERALL_INFO, OTHER_LINKS)
 
 CORE_LIST = {}
