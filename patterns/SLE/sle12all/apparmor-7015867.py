@@ -45,7 +45,7 @@ PATTERN_ID = os.path.basename(__file__)
 PRIMARY_LINK = "META_LINK_TID1"
 OVERALL = Core.TEMP
 OVERALL_INFO = "NOT SET"
-OTHER_LINKS = "META_LINK_TID1=https://www.suse.com/support/kb/doc.php?id=7015867|META_LINK_TID2=http://www.suse.com/support/kb/doc.php?id=7006073|Docs=https://www.suse.com/documentation/sles-12/book_security/data/part_apparmor.html"
+OTHER_LINKS = "META_LINK_TID1=https://www.suse.com/support/kb/doc.php?id=7015867|META_LINK_TID2=http://www.suse.com/support/kb/doc.php?id=7006073|META_LINK_Docs=https://www.suse.com/documentation/sles-12/book_security/data/part_apparmor.html"
 
 Core.init(META_CLASS, META_CATEGORY, META_COMPONENT, PATTERN_ID, PRIMARY_LINK, OVERALL, OVERALL_INFO, OTHER_LINKS)
 
