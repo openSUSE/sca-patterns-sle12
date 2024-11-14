@@ -1,4 +1,11 @@
 -------------------------------------------------------------------
+Fri Mar 01 16:30:11 UTC 2024 - brad.bendily@suse.com
+
+- Changes in version 1.5.8
+  - New regular pattern 
+    + sle12all/pagecache-000020418.py: detect if pagecache_limit_mb is not 0 (TID000020418)
+
+-------------------------------------------------------------------
 Mon Jan 29 19:05:11 UTC 2024 - jason.record@suse.com
 
 - Changes to version 1.5.7
