@@ -49,7 +49,7 @@ def traceFound():
 	fileOpen = "boot.txt"
 	section = "dmesg -T"
 	content = []
-	CONFIRMED = re.compile("trace_printk()", re.IGNORECASE)
+	CONFIRMED = re.compile(r"trace_printk()", re.IGNORECASE)
 	if Core.isFileActive(fileOpen):
 		if Core.getRegExSection(fileOpen, section, content):
 			for line in content:

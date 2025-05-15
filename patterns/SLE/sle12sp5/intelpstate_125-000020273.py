@@ -54,9 +54,9 @@ def cpuModelAffected():
 	CPU = False
 	FAM = False
 	MOD = False
-	CONFIRM_CPU = re.compile("^model name.*:.*Intel.*Xeon", re.IGNORECASE)
-	CONFIRM_FAM = re.compile("^cpu family.*:.*6", re.IGNORECASE)
-	CONFIRM_MOD = re.compile("^model.*:.*106", re.IGNORECASE)
+	CONFIRM_CPU = re.compile(r"^model name.*:.*Intel.*Xeon", re.IGNORECASE)
+	CONFIRM_FAM = re.compile(r"^cpu family.*:.*6", re.IGNORECASE)
+	CONFIRM_MOD = re.compile(r"^model.*:.*106", re.IGNORECASE)
 	if Core.isFileActive(fileOpen):
 		if Core.getRegExSection(fileOpen, section, content):
 			for line in content:
@@ -92,7 +92,7 @@ def errorMsgFound():
 	fileOpen = "boot.txt"
 	section = "dmesg -T"
 	content = []
-	CONFIRMED = re.compile("intel_pstate: CPU model not supported", re.IGNORECASE)
+	CONFIRMED = re.compile(r"intel_pstate: CPU model not supported", re.IGNORECASE)
 	if Core.isFileActive(fileOpen):
 		if Core.getRegExSection(fileOpen, section, content):
 			for line in content:

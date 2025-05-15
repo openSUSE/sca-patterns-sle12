@@ -54,8 +54,8 @@ def VMwareVM():
 	VMSERVER = False
 
 	content = []
-	HYPERVM = re.compile("Manufacturer.*VMware.*Inc", re.IGNORECASE)
-	VM = re.compile("Identity.*Virtual Machine", re.IGNORECASE)
+	HYPERVM = re.compile(r"Manufacturer.*VMware.*Inc", re.IGNORECASE)
+	VM = re.compile(r"Identity.*Virtual Machine", re.IGNORECASE)
 	if Core.isFileActive(fileOpen):
 		if Core.getRegExSection(fileOpen, section, content):
 			for line in content:

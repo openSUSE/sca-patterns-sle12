@@ -54,7 +54,7 @@ Core.init(META_CLASS, META_CATEGORY, META_COMPONENT, PATTERN_ID, PRIMARY_LINK, O
 ##############################################################################
 
 def panicDetected():
-	PANIC = re.compile("exception RIP.*update_group_capacity", re.IGNORECASE)
+	PANIC = re.compile(r"exception RIP.*update_group_capacity", re.IGNORECASE)
 	FILE_OPEN = "boot.txt"
 	SECTION = "dmesg"
 	CONTENT = []

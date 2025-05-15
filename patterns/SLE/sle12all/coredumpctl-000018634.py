@@ -52,7 +52,7 @@ def journalAppCores():
 	fileOpen = "crash.txt"
 	section = "/coredumpctl list"
 	content = []
-	CONFIRMED = re.compile("", re.IGNORECASE)
+	CONFIRMED = re.compile(r"", re.IGNORECASE)
 	if Core.isFileActive(fileOpen):
 		if Core.getRegExSection(fileOpen, section, content):
 			for line in content:

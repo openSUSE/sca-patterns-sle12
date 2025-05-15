@@ -49,7 +49,7 @@ Core.init(META_CLASS, META_CATEGORY, META_COMPONENT, PATTERN_ID, PRIMARY_LINK, O
 def scaConfigured():
 	fileOpen = "etc.txt"
 	CONFIGURED = True
-	CONFIRMED = re.compile("#Run s", re.IGNORECASE)
+	CONFIRMED = re.compile(r"#Run s", re.IGNORECASE)
 	CONF_FILES = ["/etc/sca/sdbroker.conf", "/etc/sca/sdagent.conf", "/etc/sca/sdp.conf"]
 	for section in CONF_FILES:
 		content = []
@@ -63,7 +63,7 @@ def docsExcluded():
 	fileOpen = "updates.txt"
 	section = "/etc/zypp/zypp.conf"
 	content = []
-	CONFIRMED = re.compile("rpm.install.excludedocs.*yes", re.IGNORECASE)
+	CONFIRMED = re.compile(r"rpm.install.excludedocs.*yes", re.IGNORECASE)
 	if Core.isFileActive(fileOpen):
 		if Core.getRegExSection(fileOpen, section, content):
 			for line in content:

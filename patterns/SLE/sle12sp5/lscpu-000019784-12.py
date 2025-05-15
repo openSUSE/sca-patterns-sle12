@@ -51,7 +51,7 @@ def conditionConfirmed():
 	fileOpen = "crash.txt"
 	section = "coredumpctl list"
 	content = {}
-	CONFIRMED = re.compile("/usr/bin/lscpu", re.IGNORECASE)
+	CONFIRMED = re.compile(r"/usr/bin/lscpu", re.IGNORECASE)
 	if Core.getSection(fileOpen, section, content):
 		for line in content:
 			if CONFIRMED.search(content[line]):
@@ -65,7 +65,7 @@ def conditionConfirmed():
 RPM_NAME = 'util-linux'
 RPM_VERSION_FIXED = '2.33.2-4.6.1'
 SERVER = SUSE.getHostInfo()
-POWER = re.compile("ppc64|s390", re.IGNORECASE)
+POWER = re.compile(r"ppc64|s390", re.IGNORECASE)
 
 if POWER.search(SERVER['Architecture']):
 	if( SUSE.packageInstalled(RPM_NAME) ):

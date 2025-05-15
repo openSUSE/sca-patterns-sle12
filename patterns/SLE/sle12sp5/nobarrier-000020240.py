@@ -59,8 +59,8 @@ def findMsgs():
 	section = "dmesg -T"
 	content = []
 	RCODE = RC_NOTFOUND
-	DEPRECATED = re.compile("XFS.*nobarrier option is deprecated", re.IGNORECASE)
-	UNSUPPORTED = re.compile("XFS.*unknown mount option.*nobarrier", re.IGNORECASE)
+	DEPRECATED = re.compile(r"XFS.*nobarrier option is deprecated", re.IGNORECASE)
+	UNSUPPORTED = re.compile(r"XFS.*unknown mount option.*nobarrier", re.IGNORECASE)
 	if Core.isFileActive(fileOpen):
 		if Core.getRegExSection(fileOpen, section, content):
 			for line in content:

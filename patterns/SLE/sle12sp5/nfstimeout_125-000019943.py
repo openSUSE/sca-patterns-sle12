@@ -69,7 +69,7 @@ def invalidDefaultQdisc():
 	fileOpen = "env.txt"
 	section = "sysctl -a"
 	content = []
-	CONFIRMED = re.compile("net.core.default_qdisc = fq_codel", re.IGNORECASE)
+	CONFIRMED = re.compile(r"net.core.default_qdisc = fq_codel", re.IGNORECASE)
 	if Core.isFileActive(fileOpen):
 		if Core.getRegExSection(fileOpen, section, content):
 			for line in content:
@@ -87,7 +87,7 @@ def pendingMessagesFound():
 	SERVERS = {}
 	IDX_LAST = -1
 	IDX_HOSTNAME = 1
-	CONFIRMED = re.compile("kernel.*nfs.*server.*not responding, still trying", re.IGNORECASE)
+	CONFIRMED = re.compile(r"kernel.*nfs.*server.*not responding, still trying", re.IGNORECASE)
 	#2021-03-07T16:19:31.800974+00:00 vsa8173953 kernel: [1050705.946742] nfs: server hostname not responding, still trying
 	if Core.getRegExSection(fileOpen, section, content):
 		for line in content:

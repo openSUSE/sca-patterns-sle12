@@ -57,7 +57,7 @@ def workAroundApplied():
 	fileOpen = "boot.txt"
 	section = "/proc/cmdline"
 	content = {}
-	CONFIRMED = re.compile("plymouth.enable=0", re.IGNORECASE)
+	CONFIRMED = re.compile(r"plymouth.enable=0", re.IGNORECASE)
 	if Core.getSection(fileOpen, section, content):
 		for line in content:
 			if CONFIRMED.search(content[line]):
@@ -68,7 +68,7 @@ def graphicalTarget():
 	fileOpen = "systemd.txt"
 	section = "/bin/ls -alR /etc/systemd/"
 	content = {}
-	CONFIRMED = re.compile("default\.target.*graphical\.target", re.IGNORECASE)
+	CONFIRMED = re.compile(r"default\.target.*graphical\.target", re.IGNORECASE)
 	if Core.getSection(fileOpen, section, content):
 		for line in content:
 			if CONFIRMED.search(content[line]):
@@ -79,7 +79,7 @@ def plymouthRunning():
 	fileOpen = "systemd.txt"
 	section = "/bin/systemctl.*list-units"
 	content = {}
-	CONFIRMED = re.compile("plymouth-quit-wait.service.*start.*running", re.IGNORECASE)
+	CONFIRMED = re.compile(r"plymouth-quit-wait.service.*start.*running", re.IGNORECASE)
 	if Core.getSection(fileOpen, section, content):
 		for line in content:
 			if CONFIRMED.search(content[line]):

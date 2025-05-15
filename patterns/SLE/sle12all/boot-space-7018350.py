@@ -58,7 +58,7 @@ def errorFound():
 	FILE_OPEN = "updates.txt"
 	SECTION = "/var/log/zypp/history"
 	CONTENT = []
-	FAILED_UPDATE = re.compile("installing package.*needs.*on.*/boot filesystem", re.IGNORECASE)
+	FAILED_UPDATE = re.compile(r"installing package.*needs.*on.*/boot filesystem", re.IGNORECASE)
 	if Core.getRegExSectionRaw(FILE_OPEN, SECTION, CONTENT):
 		for LINE in CONTENT[::-1]: #reverse the list order
 			if FAILED_UPDATE.search(LINE):

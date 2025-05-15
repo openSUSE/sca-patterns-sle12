@@ -51,7 +51,7 @@ def acceleratedNetworking():
 	fileOpen = "hardware.txt"
 	section = "bin/lspci -b"
 	content = []
-	CONFIRMED = re.compile("Ethernet controller: Mellanox Technologies MT27500/MT27520 Family \[ConnectX-3/ConnectX-3 Pro Virtual Function\]", re.IGNORECASE)
+	CONFIRMED = re.compile(r"Ethernet controller: Mellanox Technologies MT27500/MT27520 Family \[ConnectX-3/ConnectX-3 Pro Virtual Function\]", re.IGNORECASE)
 	if Core.isFileActive(fileOpen):
 		if Core.getRegExSection(fileOpen, section, content):
 			for line in content:

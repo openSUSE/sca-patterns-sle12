@@ -59,7 +59,7 @@ def mce_event_found():
 	file_open = "boot.txt"
 	section = "dmesg -T"
 	content = []
-	mcevent = re.compile("mce:.*Hardware Error.*Machine check events logged", re.IGNORECASE)
+	mcevent = re.compile(r"mce:.*Hardware Error.*Machine check events logged", re.IGNORECASE)
 	if Core.isFileActive(file_open):
 		if Core.getRegExSection(file_open, section, content):
 			for line in content:
@@ -72,7 +72,7 @@ def edac_error_found():
 	file_open = "messages.txt"
 	section = "/var/log/warn"
 	content = []
-	confirmed = re.compile("EDAC.*CE memory scrubbing error on.*DIMM|EDAC.*CE memory read error on.*DIMM", re.IGNORECASE)
+	confirmed = re.compile(r"EDAC.*CE memory scrubbing error on.*DIMM|EDAC.*CE memory read error on.*DIMM", re.IGNORECASE)
 	if Core.isFileActive(file_open):
 		if Core.getRegExSection(file_open, section, content):
 			for line in content:

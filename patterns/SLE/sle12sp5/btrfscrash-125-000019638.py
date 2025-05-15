@@ -51,7 +51,7 @@ def btrfsInUse():
 	fileOpen = "fs-btrfs.txt"
 	section = "btrfs filesystem show"
 	content = {}
-	CONFIRMED = re.compile("Label:", re.IGNORECASE)
+	CONFIRMED = re.compile(r"Label:", re.IGNORECASE)
 	if Core.getSection(fileOpen, section, content):
 		for line in content:
 			if CONFIRMED.search(content[line]):
@@ -62,7 +62,7 @@ def kernelCoredumped():
 	fileOpen = "crash.txt"
 	section = "/var/crash"
 	content = {}
-	CONFIRMED = re.compile("dmesg.txt", re.IGNORECASE)
+	CONFIRMED = re.compile(r"dmesg.txt", re.IGNORECASE)
 	if Core.getSection(fileOpen, section, content):
 		for line in content:
 			if CONFIRMED.search(content[line]):

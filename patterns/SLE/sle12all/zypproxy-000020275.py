@@ -51,7 +51,7 @@ def proxyActive():
 	CONTENT = []
 	if Core.isFileActive(FILE_OPEN):
 		if Core.getRegExSection(FILE_OPEN, SECTION, CONTENT):
-			CONFIRMED = re.compile("^http_proxy=|^https_proxy=", re.IGNORECASE)
+			CONFIRMED = re.compile(r"^http_proxy=|^https_proxy=", re.IGNORECASE)
 			for LINE in CONTENT:
 				if CONFIRMED.search(LINE):
 					return True
@@ -79,7 +79,7 @@ def proxyAuthFailed():
 
 	if( len(CURL_TESTS) > 0 ):
 #		print(CURL_TESTS)
-		PROXY_AUTH_FAILED_MSG = re.compile("HTTP/1.1 403 Forbidden|== Info: Authentication problem. Ignoring this", re.IGNORECASE)
+		PROXY_AUTH_FAILED_MSG = re.compile(r"HTTP/1.1 403 Forbidden|== Info: Authentication problem. Ignoring this", re.IGNORECASE)
 		for FILE_OPEN in CURL_TESTS:
 #			print(FILE_OPEN)
 			CONTENT = []

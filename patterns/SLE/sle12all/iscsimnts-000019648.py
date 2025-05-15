@@ -54,7 +54,7 @@ def iscsiDevice(DEV):
 	fileOpen = "fs-diskio.txt"
 	section = "ls -lR.*/dev/disk/"
 	content = []
-	CONFIRMED = re.compile(" ip-.*-iscsi-.*/" + str(DEV) + "$", re.IGNORECASE)
+	CONFIRMED = re.compile(r" ip-.*-iscsi-.*/" + str(DEV) + "$", re.IGNORECASE)
 
 	if Core.isFileActive(fileOpen):
 		if Core.getRegExSection(fileOpen, section, content):
@@ -68,7 +68,7 @@ def getLinkedDMDevice(CHECK_DEV):
 	fileOpen = "fs-diskio.txt"
 	section = "ls -lR.*/dev/disk/"
 	content = []
-	CONFIRMED = re.compile("dm-name-.* -> ../../" + str(CHECK_DEV) + "$", re.IGNORECASE)
+	CONFIRMED = re.compile(r"dm-name-.* -> ../../" + str(CHECK_DEV) + "$", re.IGNORECASE)
 	DEV_INDEX = 7
 	DEV_FULL = ''
 
@@ -108,7 +108,7 @@ def getLVMDevice(LVM_DEV):
 	fileOpen = "lvm.txt"
 	section = "/pvs"
 	content = []
-	CONFIRMED = re.compile(" " + str(LVM_VG) + " ")
+	CONFIRMED = re.compile(r" " + str(LVM_VG) + " ")
 
 	if Core.isFileActive(fileOpen):
 		if Core.getRegExSection(fileOpen, section, content):
@@ -135,7 +135,7 @@ def getMPIODevice(MPIO_DEV):
 	else:
 		CHECK_DEV = MPIO_DEV_BASE
 
-	MPIO_LINK = re.compile("dm-name-" + str(CHECK_DEV) + " -> ../../", re.IGNORECASE)
+	MPIO_LINK = re.compile(r"dm-name-" + str(CHECK_DEV) + " -> ../../", re.IGNORECASE)
 	DM_MPIO_DEV = ''
 	STATE = False
 
@@ -146,7 +146,7 @@ def getMPIODevice(MPIO_DEV):
 				if MPIO_LINK.search(line):
 					DM_MPIO_DEV = line.split('/')[LAST_FIELD]
 		if( 'dm-' in DM_MPIO_DEV ):
-			WWID_LIST = re.compile(" " + str(DM_MPIO_DEV) + " ")
+			WWID_LIST = re.compile(r" " + str(DM_MPIO_DEV) + " ")
 			FIND_DEV = re.compile(r'\d+:\d+:\d+:\d+')
 			content = []
 			if Core.getRegExSection(fileOpen, section_mpiolist, content):

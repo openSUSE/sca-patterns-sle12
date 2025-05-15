@@ -47,7 +47,7 @@ def findMultipaths():
 	fileOpen = "mpio.txt"
 	section = "/multipath.conf"
 	content = []
-	CONFIRMED = re.compile("find_multipaths .*yes", re.IGNORECASE)
+	CONFIRMED = re.compile(r"find_multipaths .*yes", re.IGNORECASE)
 	if Core.isFileActive(fileOpen):
 		if Core.getRegExSection(fileOpen, section, content):
 			for line in content:

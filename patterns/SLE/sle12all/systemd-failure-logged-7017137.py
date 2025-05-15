@@ -62,7 +62,7 @@ CURRENT_FAILED_SERVICES = []
 IDX_UNIT_NAME = -4
 #find any systemd units that have failed
 if Core.getRegExSection(FILE_OPEN, SECTION, CONTENT):
-	failedState = re.compile("systemd.*Unit .* entered failed state", re.IGNORECASE)
+	failedState = re.compile(r"systemd.*Unit .* entered failed state", re.IGNORECASE)
 	for LINE in CONTENT:
 		if failedState.search(LINE):
 			SERVICE_FOUND = LINE.split()[IDX_UNIT_NAME]

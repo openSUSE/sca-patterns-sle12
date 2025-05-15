@@ -57,8 +57,8 @@ HARDWARE_ERRORS = False
 MCE_ERRORS = False
 NOT_DONE = True
 
-hardwareFailure = re.compile("\[Hardware Error\]:", re.IGNORECASE)
-mceFailure = re.compile("MC\d:.*MCE|MC\d:.*Machine Check Event|MC\d:.*Machine Check Exception", re.IGNORECASE)
+hardwareFailure = re.compile(r"\[Hardware Error\]:", re.IGNORECASE)
+mceFailure = re.compile(r"MC\d:.*MCE|MC\d:.*Machine Check Event|MC\d:.*Machine Check Exception", re.IGNORECASE)
 
 FILE_OPEN = "boot.txt"
 SECTION = "/bin/dmesg"
