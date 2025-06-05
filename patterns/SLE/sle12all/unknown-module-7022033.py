@@ -53,8 +53,8 @@ Core.init(META_CLASS, META_CATEGORY, META_COMPONENT, PATTERN_ID, PRIMARY_LINK, O
 # Main Program Execution
 ##############################################################################
 
-MISSING_MODULE = re.compile("PAM unable to dlopen\(.*\): .*cannot open shared object file: No such file or directory", re.IGNORECASE)
-FAILED_LOGIN = re.compile("FAILED LOGIN SESSION.*Module is unknown", re.IGNORECASE)
+MISSING_MODULE = re.compile(r"PAM unable to dlopen\(.*\): .*cannot open shared object file: No such file or directory", re.IGNORECASE)
+FAILED_LOGIN = re.compile(r"FAILED LOGIN SESSION.*Module is unknown", re.IGNORECASE)
 FILE_OPEN = "messages.txt"
 MODULES = {}
 FAILED = False

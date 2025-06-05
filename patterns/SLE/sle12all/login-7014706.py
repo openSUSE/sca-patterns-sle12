@@ -55,7 +55,7 @@ def securettyModeInvalid():
 	section = "rpm -V pam"
 	content = {}
 	if Core.getSection(fileOpen, section, content):
-		securettyMode = re.compile(".*M.*/etc/securetty")
+		securettyMode = re.compile(r".*M.*/etc/securetty")
 		for line in content:
 			if securettyMode.search(content[line]):
 #				print content[line]
@@ -67,7 +67,7 @@ def failedLogin():
 	section = "/var/log/warn"
 	content = {}
 	if Core.getSection(fileOpen, section, content):
-		failure = re.compile("login.*pam_securetty.*/etc/securetty.*writable")
+		failure = re.compile(r"login.*pam_securetty.*/etc/securetty.*writable")
 		for line in content:
 			if failure.search(content[line]):
 				return True

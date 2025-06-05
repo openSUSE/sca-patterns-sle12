@@ -56,7 +56,7 @@ fileOpen = "network.txt"
 section = "nsswitch.conf"
 content = {}
 MSG_SEVERITY = Core.WARN
-DNS_USED = re.compile("^hosts:\s*.*\sdns", re.IGNORECASE)
+DNS_USED = re.compile(r"^hosts:\s*.*\sdns", re.IGNORECASE)
 if Core.getSection(fileOpen, section, content):
 	for line in content:
 		if DNS_USED.search(content[line]):
@@ -66,7 +66,7 @@ section = "resolv.conf"
 content = {}
 SEARCH_COUNT = 0
 SEARCH_FORMAT = False
-INVALID = re.compile("search.*\s\s+\S|search.*\S,\S", re.IGNORECASE)
+INVALID = re.compile(r"search.*\s\s+\S|search.*\S,\S", re.IGNORECASE)
 if Core.getSection(fileOpen, section, content):
 	for line in content:
 		if content[line].lower().startswith('search'):

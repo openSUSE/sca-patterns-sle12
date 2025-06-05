@@ -77,7 +77,7 @@ fileOpen = "etc.txt"
 
 if( SUSE.packageInstalled(PACKAGE) ):
 	if Core.isFileActive(fileOpen):
-		CONFIRMED = re.compile("INSRC=#Run", re.IGNORECASE)
+		CONFIRMED = re.compile(r"INSRC=#Run", re.IGNORECASE)
 		if( brokerConfigured() ):
 			if( agentConfigured() ):
 				Core.updateStatus(Core.IGNORE, "Both the sdbroker and sdagent are configured")

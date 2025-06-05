@@ -57,7 +57,7 @@ def serverNotRegistered():
 	fileOpen = "updates.txt"
 	section = "/zypper.*repos"
 	content = {}
-	repo = re.compile("SLE.12-Updates", re.IGNORECASE)
+	repo = re.compile(r"SLE.12-Updates", re.IGNORECASE)
 	if Core.getSection(fileOpen, section, content):
 		for line in content:
 			if repo.search(content[line]):

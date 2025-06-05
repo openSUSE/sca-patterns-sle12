@@ -50,7 +50,7 @@ def ipv6inHosts():
 	fileOpen = "network.txt"
 	section = "/etc/hosts"
 	content = []
-	CONFIRMED = re.compile("::1.*localhost", re.IGNORECASE)
+	CONFIRMED = re.compile(r"::1.*localhost", re.IGNORECASE)
 	if Core.isFileActive(fileOpen):
 		if Core.getRegExSection(fileOpen, section, content):
 			for line in content:
@@ -65,7 +65,7 @@ def ipv6Disabled():
 	fileOpen = "network.txt"
 	section = "/usr/sbin/wicked ifstatus --verbose all"
 	content = []
-	CONFIRMED = re.compile("addr.*ipv6.*::1/", re.IGNORECASE)
+	CONFIRMED = re.compile(r"addr.*ipv6.*::1/", re.IGNORECASE)
 	if Core.getRegExSection(fileOpen, section, content):
 		for line in content:
 			if CONFIRMED.search(line):

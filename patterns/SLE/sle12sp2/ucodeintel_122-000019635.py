@@ -52,7 +52,7 @@ def intelCPU():
 	fileOpen = "hardware.txt"
 	section = "/proc/cpuinfo"
 	content = []
-	CONFIRMED = re.compile("vendor_id.*GenuineIntel", re.IGNORECASE)
+	CONFIRMED = re.compile(r"vendor_id.*GenuineIntel", re.IGNORECASE)
 	if Core.getRegExSection(fileOpen, section, content):
 		for line in content:
 			if CONFIRMED.search(line):

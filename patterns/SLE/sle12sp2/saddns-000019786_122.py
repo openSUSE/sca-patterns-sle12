@@ -65,7 +65,7 @@ def workAroundApplied():
 	section = "iptables -t filter"
 	content = {}
 	IN_STATE = False
-	WORK_AROUND = re.compile("DROP.*icmp.*icmptype")
+	WORK_AROUND = re.compile(r"DROP.*icmp.*icmptype")
 	if Core.getSection(fileOpen, section, content):
 		for line in content:
 			if IN_STATE:

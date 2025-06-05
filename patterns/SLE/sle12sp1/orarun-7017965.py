@@ -55,7 +55,7 @@ Core.init(META_CLASS, META_CATEGORY, META_COMPONENT, PATTERN_ID, PRIMARY_LINK, O
 
 def errorMessagesFound():
 	FILE_OPEN = "messages.txt"
-	ERROR_MSG = re.compile("OraInstall.*libmawt.so.*cannot open shared object file.*No such file or directory", re.IGNORECASE)
+	ERROR_MSG = re.compile(r"OraInstall.*libmawt.so.*cannot open shared object file.*No such file or directory", re.IGNORECASE)
 	SECTION = "/var/log/warn"
 	CONTENT = []
 	if Core.getRegExSection(FILE_OPEN, SECTION, CONTENT):

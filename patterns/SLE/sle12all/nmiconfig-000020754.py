@@ -49,7 +49,7 @@ def nmi_found():
 	file_open = "boot.txt"
 	section = "dmesg -T"
 	content = []
-	confirmed = re.compile("NMI.*reason .* on CPU", re.IGNORECASE)
+	confirmed = re.compile(r"NMI.*reason .* on CPU", re.IGNORECASE)
 	if Core.isFileActive(file_open):
 		if Core.getRegExSection(file_open, section, content):
 			for line in content:
@@ -61,7 +61,7 @@ def nmi_not_configured():
 	file_open = "env.txt"
 	section = "sysctl -a"
 	content = []
-	confirmed = re.compile("kernel.panic_on_io_nmi|kernel.panic_on_unrecovered_nmi|kernel.unknown_nmi_panic", re.IGNORECASE)
+	confirmed = re.compile(r"kernel.panic_on_io_nmi|kernel.panic_on_unrecovered_nmi|kernel.unknown_nmi_panic", re.IGNORECASE)
 	if Core.isFileActive(file_open):
 		if Core.getRegExSection(file_open, section, content):
 			for line in content:

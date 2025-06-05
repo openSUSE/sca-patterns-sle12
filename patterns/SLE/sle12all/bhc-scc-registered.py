@@ -56,9 +56,9 @@ def getRegService():
 	IDX_NUM = 0
 	IDX_ALIAS = 1
 	SERVICE_TAG = ''
-	SMT = re.compile("SMT-.*suse", re.IGNORECASE)
-	SUSE = re.compile("/updates.suse.com/|/scc.suse.com/", re.IGNORECASE)
-	OES = re.compile("/nu.novell.com/", re.IGNORECASE)
+	SMT = re.compile(r"SMT-.*suse", re.IGNORECASE)
+	SUSE = re.compile(r"/updates.suse.com/|/scc.suse.com/", re.IGNORECASE)
+	OES = re.compile(r"/nu.novell.com/", re.IGNORECASE)
 	if Core.isFileActive(fileOpen):
 		section = "zypper --non-interactive --no-gpg-checks repos -d"
 		if Core.getRegExSection(fileOpen, "zypper --non-interactive --no-gpg-checks repos -d", content):

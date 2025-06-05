@@ -57,8 +57,8 @@ def VMwareFound():
 	section = "Virtualization"
 	content = {}
 	STATE = False
-	MAN = re.compile("^Manufacturer:.*VMware", re.IGNORECASE)
-	ID = re.compile("^Identity:.*Virtual Machine", re.IGNORECASE)
+	MAN = re.compile(r"^Manufacturer:.*VMware", re.IGNORECASE)
+	ID = re.compile(r"^Identity:.*Virtual Machine", re.IGNORECASE)
 	if Core.getSection(fileOpen, section, content):
 		for line in content:
 			if( STATE ):
@@ -73,7 +73,7 @@ def getCPUCount():
 	section = "/proc/cpuinfo"
 	content = {}
 	COUNT = 0
-	CPU = re.compile("^processor\s*:")
+	CPU = re.compile(r"^processor\s*:")
 	if Core.getSection(fileOpen, section, content):
 		for line in content:
 			if CPU.search(content[line]):
@@ -87,7 +87,7 @@ def getNUMAInfo():
 	content = {}
 	INFO = {'Enabled': False, 'MaxNode': -1}
 	NODE_COUNT = 0
-	NODE = re.compile("^node \d cpus:")
+	NODE = re.compile(r"^node \d cpus:")
 	if Core.getSection(fileOpen, section, content):
 		for line in content:
 #			print "Checking => " + str(content[line])

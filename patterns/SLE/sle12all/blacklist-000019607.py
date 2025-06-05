@@ -51,7 +51,7 @@ def ignoredMaps():
 	content = []
 	map_list = {}
 	IDX_WWID = -2
-	CONFIRMED = re.compile("multipathd.*ignoring map", re.IGNORECASE)
+	CONFIRMED = re.compile(r"multipathd.*ignoring map", re.IGNORECASE)
 	# Jun 18 12:51:21 server multipathd[3391]: 364cd98f0cd0b4200263d647def941d99: ignoring map
 	if Core.isFileActive(fileOpen):
 		if Core.getRegExSection(fileOpen, section, content):

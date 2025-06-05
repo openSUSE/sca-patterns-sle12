@@ -55,9 +55,9 @@ def errorsFound():
 	err1Found = False
 	err2Found = False
 	err3Found = False
-	err1 = re.compile("acpi_memhotplug.*probe.*failed with error")
-	err2 = re.compile("API:memory_.*add_memory failed")
-	err3 = re.compile("ACPI:memory_hp:Error in acpi_memory_enable_device")
+	err1 = re.compile(r"acpi_memhotplug.*probe.*failed with error")
+	err2 = re.compile(r"API:memory_.*add_memory failed")
+	err3 = re.compile(r"ACPI:memory_hp:Error in acpi_memory_enable_device")
 	sections = ['/var/log/warn', '/var/log/messages']
 
 	for section in sections:

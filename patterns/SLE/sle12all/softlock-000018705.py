@@ -46,7 +46,7 @@ Core.init(META_CLASS, META_CATEGORY, META_COMPONENT, PATTERN_ID, PRIMARY_LINK, O
 ##############################################################################
 
 def softLockFound():
-	CONFIRMED = re.compile("kernel:.*BUG: soft lockup ", re.IGNORECASE)
+	CONFIRMED = re.compile(r"kernel:.*BUG: soft lockup ", re.IGNORECASE)
 	fileOpen = "messages.txt"
 
 	section = "/var/log/warn"

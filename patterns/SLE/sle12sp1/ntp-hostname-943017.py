@@ -56,7 +56,7 @@ def ntpchrootinfo():
 	fileOpen = "sysconfig.txt"
 	section = "/etc/sysconfig/ntp"
 	content = []
-	regresults = re.compile("CHROOTED.*yes", re.IGNORECASE)
+	regresults = re.compile(r"CHROOTED.*yes", re.IGNORECASE)
 	if Core.getRegExSection(fileOpen, section, content):
 		for line in content:
 			if regresults.search(line):
@@ -67,7 +67,7 @@ def ntpdnsinfo():
 	fileOpen = "ntp.txt"
 	section = "/etc/ntp.conf"
 	content = []
-	regresults = re.compile("^(server|fudge|restrict)[ \t][a-zA-Z0-9\.]*[a-zA-Z]", re.IGNORECASE)
+	regresults = re.compile(r"^(server|fudge|restrict)[ \t][a-zA-Z0-9\.]*[a-zA-Z]", re.IGNORECASE)
 	if Core.getRegExSection(fileOpen, section, content):
 		for line in content:
 			if regresults.search(line):

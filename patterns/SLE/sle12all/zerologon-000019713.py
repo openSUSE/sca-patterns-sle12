@@ -50,8 +50,8 @@ def schannel():
 	fileOpen = "samba.txt"
 	section = "testparm"
 	content = []
-	SETTING = re.compile("server schannel", re.IGNORECASE)
-	CONFIRMED = re.compile("server schannel.*Yes", re.IGNORECASE)
+	SETTING = re.compile(r"server schannel", re.IGNORECASE)
+	CONFIRMED = re.compile(r"server schannel.*Yes", re.IGNORECASE)
 	if Core.isFileActive(fileOpen):
 		if Core.getRegExSection(fileOpen, section, content):
 			for line in content:

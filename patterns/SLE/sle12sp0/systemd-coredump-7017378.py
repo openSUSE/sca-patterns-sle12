@@ -55,7 +55,7 @@ Core.init(META_CLASS, META_CATEGORY, META_COMPONENT, PATTERN_ID, PRIMARY_LINK, O
 
 SERVER = SUSE.getHostInfo()
 RPM_NAME = 'systemd'
-SLE = re.compile("SUSE Linux Enterprise", re.IGNORECASE)
+SLE = re.compile(r"SUSE Linux Enterprise", re.IGNORECASE)
 if SLE.search(SERVER['Distro']):
 	if( SERVER['DistroVersion'] == 12 ):
 		if( SERVER['DistroPatchLevel'] == 0 ):

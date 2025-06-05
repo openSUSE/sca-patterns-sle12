@@ -78,7 +78,7 @@ def systemLogError():
 	fileOpen = "cron.txt"
 	section = "/bin/systemctl status cron.service"
 	content = []
-	CONFIRMED = re.compile("CRON.*too many entries \(.*", re.IGNORECASE)
+	CONFIRMED = re.compile(r"CRON.*too many entries \(.*", re.IGNORECASE)
 	if Core.getRegExSection(fileOpen, section, content):
 		for line in content:
 			if CONFIRMED.search(line):
